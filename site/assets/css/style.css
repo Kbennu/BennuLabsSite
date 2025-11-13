@@ -238,9 +238,36 @@ header {
   color: var(--dark);
 }
 
+.price-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
 .price-period {
   font-size: 1rem;
   color: var(--muted);
+}
+
+.price-hours {
+  font-size: 1rem;
+  color: var(--muted);
+}
+
+.price-features {
+  display: grid;
+  gap: 8px;
+  padding-left: 20px;
+}
+
+.tech-stack {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.tech-stack span {
+  font-weight: 600;
+  color: var(--dark);
 }
 
 .deeplink-cta {
