@@ -1,0 +1,12 @@
+<svg width="160" height="48" viewBox="0 0 160 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="160" height="48" rx="12" fill="#121232"/>
+  <path d="M28 12L38 24L28 36" stroke="url(#paint0_linear)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M52 16H64V20H56V22H63.5C65.9853 22 68 24.0147 68 26.5C68 28.9853 65.9853 31 63.5 31H52V16ZM63.5 27.5H56V27H63.5C63.7761 27 64 26.7761 64 26.5C64 26.2239 63.7761 26 63.5 26H56V24H63.5C64.8807 24 66 25.1193 66 26.5C66 27.8807 64.8807 29 63.5 29H56V31H63.5C66.8137 31 69.5 28.3137 69.5 25C69.5 21.6863 66.8137 19 63.5 19H56V18H63.5C67.0899 18 70 20.9101 70 24.5C70 28.0899 67.0899 31 63.5 31H52V16H63.5C67.6421 16 71 19.3579 71 23.5C71 27.6421 67.6421 31 63.5 31H52V16Z" fill="white"/>
+  <text x="80" y="30" fill="white" font-family="Inter, Arial" font-size="16" font-weight="600">Bennu Labs</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="28" y1="12" x2="38" y2="36" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4A2FC1"/>
+      <stop offset="1" stop-color="#1CBABA"/>
+    </linearGradient>
+  </defs>
+</svg>

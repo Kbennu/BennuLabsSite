@@ -1,0 +1,48 @@
+{
+  "currency": "RUB",
+  "updated_at": "2024-07-01",
+  "packages": [
+    {
+      "id": "starter",
+      "title": "Starter Bot",
+      "price": 240000,
+      "period": "в месяц",
+      "tagline": "Запускаем первый умный бот за 3 недели",
+      "bullets": [
+        "Аудит сценариев и кастдев",
+        "GPT-бот с бренд-голосом",
+        "Интеграция с CRM и веб-сайтом"
+      ],
+      "deeplink": "https://t.me/BennuLabsBot?start=starter",
+      "cta": "Запустить пилот"
+    },
+    {
+      "id": "growth",
+      "title": "Growth AI",
+      "price": 420000,
+      "period": "в месяц",
+      "tagline": "Масштабируем операционный AI",
+      "bullets": [
+        "Дизайн многошаговых AI-сервисов",
+        "Поддержка RAG и собственных баз знаний",
+        "Консоль аналитики влияния на KPI"
+      ],
+      "deeplink": "https://t.me/BennuLabsBot?start=growth",
+      "cta": "Забронировать слот"
+    },
+    {
+      "id": "enterprise",
+      "title": "Enterprise Fabric",
+      "price": 690000,
+      "period": "в месяц",
+      "tagline": "Полный стек AI для корпораций",
+      "bullets": [
+        "AI-платформа с разграничением прав",
+        "Data fabric и мониторинг качества",
+        "SLA 24/7 и выделенная команда"
+      ],
+      "deeplink": "https://t.me/BennuLabsBot?start=enterprise",
+      "cta": "Созвониться с архитектором"
+    }
+  ]
+}

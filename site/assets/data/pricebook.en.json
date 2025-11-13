@@ -1,0 +1,48 @@
+{
+  "currency": "RUB",
+  "updated_at": "2024-07-01",
+  "packages": [
+    {
+      "id": "starter",
+      "title": "Starter Bot",
+      "price": 240000,
+      "period": "per month",
+      "tagline": "Launch your first assistant in 3 weeks",
+      "bullets": [
+        "Scenario discovery and customer interviews",
+        "GPT agent aligned with your tone of voice",
+        "CRM and website integration"
+      ],
+      "deeplink": "https://t.me/BennuLabsBot?start=starter",
+      "cta": "Launch pilot"
+    },
+    {
+      "id": "growth",
+      "title": "Growth AI",
+      "price": 420000,
+      "period": "per month",
+      "tagline": "Scale AI across operations",
+      "bullets": [
+        "Design multi-step AI services",
+        "RAG and proprietary knowledge bases",
+        "Impact analytics console"
+      ],
+      "deeplink": "https://t.me/BennuLabsBot?start=growth",
+      "cta": "Book a slot"
+    },
+    {
+      "id": "enterprise",
+      "title": "Enterprise Fabric",
+      "price": 690000,
+      "period": "per month",
+      "tagline": "End-to-end AI stack for enterprises",
+      "bullets": [
+        "AI platform with role-based access",
+        "Data fabric and quality monitoring",
+        "24/7 SLA and dedicated team"
+      ],
+      "deeplink": "https://t.me/BennuLabsBot?start=enterprise",
+      "cta": "Talk to an architect"
+    }
+  ]
+}
