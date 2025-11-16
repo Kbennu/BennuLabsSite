@@ -11,8 +11,18 @@
 <body>
   <header>
     <div class="navbar">
-      <a href="/index.html"><img src="../../assets/img/logo.svg" alt="Логотип Bennu Labs" /></a>
-      <nav class="nav-links">
+      <div class="navbar-brand">
+        <a href="/index.html"><img src="../../assets/img/logo.svg" alt="Логотип Bennu Labs" /></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Переключить меню">
+          <span class="sr-only">Переключить меню</span>
+          <span class="nav-toggle-icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
+      <nav id="primary-navigation" class="nav-links">
         <a href="/bots/index.html">Боты</a>
         <a href="/ai/index.html">AI-платформа</a>
         <a href="/data/index.html">Данные</a>
@@ -125,6 +135,7 @@
       </div>
     </div>
   </footer>
+  <script src="../../assets/js/nav.js" defer></script>
   <script src="../../assets/js/pricing.js" data-pricebook="../../assets/data/pricebook.ru.json"></script>
 </body>
 </html>
