@@ -57,14 +57,17 @@
           <p>bot@bennulabs.ai<br/>+7 (495) 123-45-67</p>
           <a class="deeplink-cta" data-package-link="starter" href="#">Запустить пилот</a>
         </div>
-        <form class="contact-form">
+        <form class="contact-form" action="https://formspree.io/f/xpzvzwjn" method="POST">
           <label for="name">Имя</label>
           <input id="name" name="name" type="text" placeholder="Введите имя" required />
           <label for="email">Email</label>
           <input id="email" name="email" type="email" placeholder="name@company.com" required />
           <label for="message">Задача</label>
           <textarea id="message" name="message" rows="4" placeholder="Опишите задачу" required></textarea>
+          <input type="hidden" name="source" value="contact-page" />
           <button class="cta-button" type="submit">Отправить запрос</button>
+          <div class="form-status" role="status" aria-live="polite"></div>
+          <p class="form-note">Отправляя форму, вы подтверждаете согласие на обработку персональных данных и принимаете <a href="/privacy/index.html">Политику конфиденциальности</a>.</p>
         </form>
       </div>
     </section>
@@ -74,6 +77,7 @@
       <div>
         <img src="../assets/img/logo.svg" alt="Bennu Labs" style="height:40px; margin-bottom:12px;" />
         <p>Мы открыты к партнерству и совместным проектам.</p>
+        <p><a href="/privacy/index.html">Политика конфиденциальности</a></p>
       </div>
       <div>
         <h4>Материалы</h4>
@@ -89,5 +93,59 @@
     </div>
   </footer>
   <script src="../assets/js/pricing.js" data-pricebook="../assets/data/pricebook.ru.json"></script>
+  <script>
+    (function() {
+      const form = document.querySelector('.contact-form');
+      if (!form) {
+        return;
+      }
+
+      const statusNode = form.querySelector('.form-status');
+      const submitButton = form.querySelector('button[type="submit"]');
+      const defaultButtonText = submitButton ? submitButton.textContent : '';
+
+      const setStatus = (state, message) => {
+        if (!statusNode) {
+          return;
+        }
+        statusNode.textContent = message;
+        statusNode.dataset.state = state;
+      };
+
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        if (submitButton) {
+          submitButton.disabled = true;
+          submitButton.textContent = 'Отправляем...';
+        }
+        setStatus('pending', 'Отправляем запрос...');
+
+        try {
+          const formData = new FormData(form);
+          const response = await fetch(form.action, {
+            method: form.method || 'POST',
+            headers: {
+              'Accept': 'application/json'
+            },
+            body: formData
+          });
+
+          if (!response.ok) {
+            throw new Error('Сервис недоступен, попробуйте позже.');
+          }
+
+          setStatus('success', 'Спасибо! Мы свяжемся в течение рабочего дня.');
+          form.reset();
+        } catch (error) {
+          setStatus('error', error.message || 'Не удалось отправить форму. Попробуйте альтернативный канал связи.');
+        } finally {
+          if (submitButton) {
+            submitButton.disabled = false;
+            submitButton.textContent = defaultButtonText;
+          }
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
