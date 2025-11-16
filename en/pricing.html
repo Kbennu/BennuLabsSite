@@ -12,8 +12,18 @@
 <body>
   <header>
     <div class="navbar">
-      <a href="/en/index.html"><img src="../assets/img/logo.svg" alt="Bennu Labs logo" /></a>
-      <nav class="nav-links">
+      <div class="navbar-brand">
+        <a href="/en/index.html"><img src="../assets/img/logo.svg" alt="Bennu Labs logo" /></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle navigation">
+          <span class="sr-only">Toggle menu</span>
+          <span class="nav-toggle-icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
+      <nav id="primary-navigation" class="nav-links">
         <a href="/en/index.html">Home</a>
         <a href="/en/pricing.html">Pricing</a>
         <a href="/index.html">RU</a>
@@ -98,6 +108,7 @@
       </div>
     </div>
   </footer>
+  <script src="../assets/js/nav.js" defer></script>
   <script src="../assets/js/pricing.js" data-pricebook="../assets/data/pricebook.en.json"></script>
 </body>
 </html>
