@@ -107,7 +107,10 @@ function hydrateDeeplinks(data, selector) {
     const pkg = packages.find((item) => item.id === pkgId);
     if (!pkg) return;
     link.textContent = pkg.cta;
-    link.href = pkg.deeplink;
+    const currentHref = link.getAttribute('href');
+    if (!currentHref || currentHref === '#' || currentHref.toLowerCase().startsWith('javascript:')) {
+      link.href = pkg.deeplink;
+    }
   });
 }
 
