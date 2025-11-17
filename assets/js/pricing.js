@@ -72,6 +72,13 @@ function createCard(pkg, popular = false) {
   const card = document.createElement('article');
   card.className = `price-card${popular ? ' popular' : ''}`;
 
+  if (popular) {
+    const lang = (document.documentElement && document.documentElement.lang) || 'ru';
+    const defaultLabel = lang.toLowerCase().startsWith('en') ? 'Top pick' : 'Топ выбор';
+    const label = pkg.popularLabel || defaultLabel;
+    card.dataset.popularLabel = label;
+  }
+
   const priceValue = typeof pkg.price === 'number'
     ? `${pkg.price.toLocaleString('ru-RU')} ₽`
     : pkg.price;

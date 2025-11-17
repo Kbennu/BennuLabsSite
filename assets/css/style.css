@@ -309,7 +309,7 @@ header {
 }
 
 .price-card.popular::after {
-  content: 'Топ выбор';
+  content: attr(data-popular-label);
   position: absolute;
   top: -14px;
   right: 24px;
