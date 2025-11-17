@@ -1,196 +1,271 @@
 {
   "currency": "RUB",
-  "updated_at": "2025-11-13",
-  "sites_ru": {
-    "landing": {
-      "rub": 350000,
-      "hours": 140,
-      "time": "4 недели",
-      "features": [
-        "Стратегия лендинга и CJM",
-        "AI-копирайтинг и tone of voice",
-        "Сбор лидов и CRM-интеграция"
-      ],
-      "stack": [
-        "Framer",
-        "Tilda",
-        "Segment"
-      ],
-      "deliverables": [
-        "UX-концепт",
-        "Анимации и микровзаимодействия",
-        "Набор промо-изображений"
-      ],
-      "addons": [
-        "A/B-тест гипотез",
-        "AI-чат на лендинге"
-      ]
-    },
-    "product": {
-      "rub": 520000,
-      "hours": 220,
-      "time": "6 недель",
-      "features": [
-        "UX-исследование и прототипирование",
-        "Дашборды и сложные сценарии",
-        "Интеграция с аналитикой продукта"
-      ],
-      "stack": [
-        "React",
-        "Next.js",
-        "Supabase"
-      ],
-      "deliverables": [
-        "UI-kit и дизайн-система",
-        "Готовый фронтенд-шаблон",
-        "Руководство по контенту"
-      ],
-      "addons": [
-        "Юзабилити-тесты",
-        "AI-ассистент поддержки"
-      ]
-    },
-    "enterprise": {
-      "rub": 780000,
-      "hours": 320,
-      "time": "8 недель",
-      "features": [
-        "Омниканальная архитектура",
-        "Сложные интеграции и SSO",
-        "Подготовка к закупочным процедурам"
-      ],
-      "stack": [
-        "Vue",
-        "Nuxt",
-        "1C-Битрикс"
-      ],
-      "deliverables": [
-        "Полный набор макетов",
-        "Дизайн-паттерны и гайды",
-        "Документация по внедрению"
-      ],
-      "addons": [
-        "Dedicated DevOps",
-        "Внедрение BI-дашбордов"
-      ]
-    }
-  },
-  "design_ru": {
-    "sprint": {
-      "rub": 190000,
-      "hours": 80,
-      "time": "2 недели",
-      "features": [
-        "Хипотезы и customer discovery",
-        "Живой прототип в Figma",
-        "Скрипты для AI-ассистентов"
-      ],
-      "stack": [
-        "Figma",
-        "FigJam",
-        "ChatGPT"
-      ],
-      "deliverables": [
-        "UX-архитектура",
-        "UI-скрины ключевых экранов",
-        "Презентация для команды"
-      ],
-      "addons": [
-        "Customer interviews",
-        "AI-персонажи для сценариев"
-      ]
-    },
-    "brand": {
-      "rub": 260000,
-      "hours": 120,
-      "time": "3 недели",
-      "features": [
-        "Архетип бренда и messaging",
-        "Айдентика и визуальный язык",
-        "AI-голос и промо-шаблоны"
-      ],
-      "stack": [
-        "Figma",
-        "Midjourney",
-        "Notion"
-      ],
-      "deliverables": [
-        "Брендбук",
-        "Набор промоматериалов",
-        "AI-плейбук коммуникаций"
-      ],
-      "addons": [
-        "Видео-интро",
-        "AI-аватар для команд"
-      ]
-    },
-    "systems": {
-      "rub": 430000,
-      "hours": 200,
-      "time": "5 недель",
-      "features": [
-        "DesignOps и процессы",
-        "Компонентная библиотека",
-        "Handoff в разработку"
-      ],
-      "stack": [
-        "Figma",
-        "Storybook",
-        "Zeroheight"
-      ],
-      "deliverables": [
-        "Полный UI-kit",
-        "Документация по токенам",
-        "Чеклисты запуска"
-      ],
-      "addons": [
-        "Обучение команды",
-        "Дизайн-аудит каждого релиза"
-      ]
-    }
-  },
-  "packages": [
+  "updated_at": "2025-02-01",
+  "sections": [
     {
-      "id": "starter",
-      "title": "Starter Bot",
-      "price": 240000,
-      "period": "в месяц",
-      "tagline": "Запускаем первый умный бот за 3 недели",
-      "bullets": [
-        "Аудит сценариев и кастдев",
-        "GPT-бот с бренд-голосом",
-        "Интеграция с CRM и веб-сайтом"
-      ],
-      "deeplink": "https://t.me/BennuLabsBot?start=starter",
-      "cta": "Запустить пилот"
+      "id": "dev_packages",
+      "title": "Dev-пакеты Bennu Labs",
+      "subtitle": "Команда архитекторов подключается спринтами 4–8 недель",
+      "highlight": "dev_core",
+      "cards": [
+        {
+          "id": "dev_mini",
+          "title": "Dev Mini",
+          "tagline": "Discovery + пилот",
+          "price": 360000,
+          "period": "за 4 недели",
+          "description": "Для быстрого старта: карта сценариев, пилот и материалы для демо.",
+          "bullets": [
+            "Кастдев, CJM и карта данных",
+            "GPT-бот или агент с CRM-интеграцией",
+            "Видео-демо, метрики и передача в команду"
+          ],
+          "deeplink": "https://t.me/BennuLabsBot?start=dev_mini",
+          "cta": "Запустить Dev Mini"
+        },
+        {
+          "id": "dev_core",
+          "title": "Dev Core",
+          "tagline": "Mix MVP",
+          "price": 540000,
+          "period": "за 6 недель",
+          "description": "Бот + веб + data fabric с аналитикой и базой знаний.",
+          "bullets": [
+            "RAG и управление знаниями",
+            "Единый UI-кит для бота и сайта",
+            "Observability и отчёты по KPI"
+          ],
+          "deeplink": "https://t.me/BennuLabsBot?start=dev_core",
+          "cta": "Забронировать Dev Core"
+        },
+        {
+          "id": "dev_enterprise",
+          "title": "Dev Enterprise",
+          "tagline": "Enterprise Fabric",
+          "price": 780000,
+          "period": "за 8 недель",
+          "description": "Полный стек с безопасным деплоем в РФ и SLA.",
+          "bullets": [
+            "Мультистек и разграничение прав",
+            "RU-деплой, DevOps и мониторинг",
+            "Пакет документов и обучение команд"
+          ],
+          "deeplink": "https://t.me/BennuLabsBot?start=dev_enterprise",
+          "cta": "Запросить Dev Enterprise"
+        }
+      ]
     },
     {
-      "id": "growth",
-      "title": "Growth AI",
-      "price": 420000,
-      "period": "в месяц",
-      "tagline": "Масштабируем операционный AI",
-      "bullets": [
-        "Дизайн многошаговых AI-сервисов",
-        "Поддержка RAG и собственных баз знаний",
-        "Консоль аналитики влияния на KPI"
-      ],
-      "deeplink": "https://t.me/BennuLabsBot?start=growth",
-      "cta": "Забронировать слот"
+      "id": "mix",
+      "title": "Mix-сценарии",
+      "subtitle": "Комбинируем бота, сайт, данные и обучение под один запуск",
+      "highlight": "mix_fabric_data",
+      "cards": [
+        {
+          "id": "mix_intake_site",
+          "title": "Intake + сайт",
+          "tagline": "Сбор лидов",
+          "price": 210000,
+          "period": "за 3 недели",
+          "description": "Intake-бот, одностраничник и общая аналитика.",
+          "bullets": [
+            "Витрина на Framer/Tilda",
+            "Бот-конструктор брифа",
+            "Сквозная аналитика и CRM"
+          ],
+          "deeplink": "https://t.me/BennuLabsBot?start=mix_intake_site",
+          "cta": "Выбрать Intake + сайт"
+        },
+        {
+          "id": "mix_fabric_data",
+          "title": "Fabric + данные",
+          "tagline": "RAG + алерты",
+          "price": 430000,
+          "period": "за 5 недель",
+          "description": "Data fabric, обновление базы знаний и алерты в Telegram.",
+          "bullets": [
+            "ETL и коннекторы",
+            "RAG-бекап и контроль качества",
+            "Дифф-алерты и отчёты"
+          ],
+          "deeplink": "https://t.me/BennuLabsBot?start=mix_fabric_data",
+          "cta": "Собрать Fabric + данные"
+        },
+        {
+          "id": "mix_support_care",
+          "title": "Support + care",
+          "tagline": "Операции",
+          "price": 270000,
+          "period": "за 4 недели",
+          "description": "Сценарии поддержки и переобучение команды.",
+          "bullets": [
+            "AI-ассистент для операторов",
+            "Скрипты эскалаций",
+            "Обучение и база знаний"
+          ],
+          "deeplink": "https://t.me/BennuLabsBot?start=mix_support_care",
+          "cta": "Настроить Support + care"
+        }
+      ]
     },
     {
-      "id": "enterprise",
-      "title": "Enterprise Fabric",
-      "price": 690000,
-      "period": "в месяц",
-      "tagline": "Полный стек AI для корпораций",
-      "bullets": [
-        "AI-платформа с разграничением прав",
-        "Data fabric и мониторинг качества",
-        "SLA 24/7 и выделенная команда"
-      ],
-      "deeplink": "https://t.me/BennuLabsBot?start=enterprise",
-      "cta": "Созвониться с архитектором"
+      "id": "deploy_ru",
+      "title": "RU-деплой",
+      "subtitle": "Готовые окружения в РФ-облаке под SLA",
+      "highlight": "deploy_lite",
+      "cards": [
+        {
+          "id": "deploy_express",
+          "title": "Deploy Express",
+          "tagline": "2 недели",
+          "price": 190000,
+          "period": "за проект",
+          "description": "Контейнеры + мониторинг в Timeweb/Selectel.",
+          "bullets": [
+            "IaC-манифесты",
+            "CI/CD и логирование",
+            "24/7 алерты"
+          ],
+          "deeplink": "https://t.me/BennuLabsBot?start=deploy_express",
+          "cta": "Запустить Deploy Express"
+        },
+        {
+          "id": "deploy_lite",
+          "title": "Deploy Lite",
+          "tagline": "4 недели",
+          "price": 290000,
+          "period": "за проект",
+          "description": "Полный стек Fabric + база данных в РФ.",
+          "bullets": [
+            "Kubernetes + Observability",
+            "Секреты и шифрование",
+            "Документация для ИБ"
+          ],
+          "deeplink": "https://t.me/BennuLabsBot?start=deploy_lite",
+          "cta": "Заказать Deploy Lite"
+        },
+        {
+          "id": "deploy_max",
+          "title": "Deploy Max",
+          "tagline": "8 недель",
+          "price": 480000,
+          "period": "за проект",
+          "description": "Enterprise-окружение, резервирование и DevOps.",
+          "bullets": [
+            "Multi-region и бэкапы",
+            "SSO и аудит",
+            "Обучение DevOps"
+          ],
+          "deeplink": "https://t.me/BennuLabsBot?start=deploy_max",
+          "cta": "Согласовать Deploy Max"
+        }
+      ]
+    },
+    {
+      "id": "subscription",
+      "title": "Подписка Bennu Care",
+      "subtitle": "Сопровождение и улучшение продуктов",
+      "highlight": "care_growth",
+      "cards": [
+        {
+          "id": "care_basic",
+          "title": "Care Basic",
+          "tagline": "8 ч/мес",
+          "price": 120000,
+          "period": "в месяц",
+          "description": "Поддержка пилота и гипотез.",
+          "bullets": [
+            "Обновление знаний",
+            "Мини-спринты дизайна",
+            "Ежемесячный отчёт"
+          ],
+          "deeplink": "https://t.me/BennuLabsBot?start=care_basic",
+          "cta": "Подключить Care Basic"
+        },
+        {
+          "id": "care_growth",
+          "title": "Care Growth",
+          "tagline": "24 ч/мес",
+          "price": 220000,
+          "period": "в месяц",
+          "description": "Непрерывная работа с продуктовой воронкой.",
+          "bullets": [
+            "Обучение команды",
+            "Product analytics",
+            "Бэклог улучшений"
+          ],
+          "deeplink": "https://t.me/BennuLabsBot?start=care_growth",
+          "cta": "Запустить Care Growth"
+        },
+        {
+          "id": "care_scale",
+          "title": "Care Scale",
+          "tagline": "40 ч/мес",
+          "price": 420000,
+          "period": "в месяц",
+          "description": "Выделенная команда Bennu Labs.",
+          "bullets": [
+            "SLA и on-call",
+            "Эксперименты A/B",
+            "Совместный roadmap"
+          ],
+          "deeplink": "https://t.me/BennuLabsBot?start=care_scale",
+          "cta": "Согласовать Care Scale"
+        }
+      ]
+    },
+    {
+      "id": "addons",
+      "title": "Дополнительные услуги",
+      "subtitle": "Можно добавить к любому пакету",
+      "highlight": "addon_design_sprint",
+      "cards": [
+        {
+          "id": "addon_design_sprint",
+          "title": "Design Sprint 2.0",
+          "tagline": "Командный воркшоп",
+          "price": 190000,
+          "period": "за 7 дней",
+          "description": "Карта сценариев, прототип и гайд по запуску.",
+          "bullets": [
+            "Живой прототип в Figma",
+            "AI-скрипты и промпты",
+            "Согласованный план внедрения"
+          ],
+          "deeplink": "https://t.me/BennuLabsBot?start=addon_design_sprint",
+          "cta": "Заказать Design Sprint"
+        },
+        {
+          "id": "addon_data_audit",
+          "title": "Data Fabric Audit",
+          "tagline": "Диагностика данных",
+          "price": 160000,
+          "period": "за 10 дней",
+          "description": "Анализ источников, API и зрелости данных.",
+          "bullets": [
+            "Каталог данных",
+            "Гайд по интеграциям",
+            "Чек-лист готовности"
+          ],
+          "deeplink": "https://t.me/BennuLabsBot?start=addon_data_audit",
+          "cta": "Назначить Data Audit"
+        },
+        {
+          "id": "addon_rpe_lab",
+          "title": "Responsible AI Lab",
+          "tagline": "RPE",
+          "price": 230000,
+          "period": "за 2 недели",
+          "description": "Политика, тесты безопасности и регламент.",
+          "bullets": [
+            "Фреймворк оценок",
+            "Тесты безопасности",
+            "План внедрения"
+          ],
+          "deeplink": "https://t.me/BennuLabsBot?start=addon_rpe_lab",
+          "cta": "Забронировать RPE Lab"
+        }
+      ]
     }
   ]
 }

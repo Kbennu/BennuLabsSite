@@ -1,48 +1,271 @@
 {
   "currency": "RUB",
-  "updated_at": "2024-07-01",
-  "packages": [
+  "updated_at": "2025-02-01",
+  "sections": [
     {
-      "id": "starter",
-      "title": "Starter Bot",
-      "price": 240000,
-      "period": "per month",
-      "tagline": "Launch your first assistant in 3 weeks",
-      "bullets": [
-        "Scenario discovery and customer interviews",
-        "GPT agent aligned with your tone of voice",
-        "CRM and website integration"
-      ],
-      "deeplink": "https://t.me/BennuLabsBot?start=starter",
-      "cta": "Launch pilot"
+      "id": "dev_packages",
+      "title": "Dev packages",
+      "subtitle": "Bennu Labs squad joins for 4–8 week sprints",
+      "highlight": "dev_core",
+      "cards": [
+        {
+          "id": "dev_mini",
+          "title": "Dev Mini",
+          "tagline": "Discovery + pilot",
+          "price": 360000,
+          "period": "4-week sprint",
+          "description": "Fast track to a working assistant and a shareable demo.",
+          "bullets": [
+            "Scenario discovery and KPI map",
+            "GPT bot or agent wired to CRM",
+            "Demo video and enablement kit"
+          ],
+          "deeplink": "https://t.me/BennuLabsBot?start=dev_mini",
+          "cta": "Launch Dev Mini"
+        },
+        {
+          "id": "dev_core",
+          "title": "Dev Core",
+          "tagline": "Mix MVP",
+          "price": 540000,
+          "period": "6-week sprint",
+          "description": "Bot + web + data fabric with analytics and knowledge base.",
+          "bullets": [
+            "RAG and knowledge ops",
+            "Unified UI kit for bot and web",
+            "Observability and KPI deck"
+          ],
+          "deeplink": "https://t.me/BennuLabsBot?start=dev_core",
+          "cta": "Book Dev Core"
+        },
+        {
+          "id": "dev_enterprise",
+          "title": "Dev Enterprise",
+          "tagline": "Enterprise Fabric",
+          "price": 780000,
+          "period": "8-week sprint",
+          "description": "Full stack with secure RU deployment and SLA.",
+          "bullets": [
+            "Role-based multi-stack",
+            "RU cloud deploy + DevOps",
+            "Docs, playbooks and training"
+          ],
+          "deeplink": "https://t.me/BennuLabsBot?start=dev_enterprise",
+          "cta": "Request Dev Enterprise"
+        }
+      ]
     },
     {
-      "id": "growth",
-      "title": "Growth AI",
-      "price": 420000,
-      "period": "per month",
-      "tagline": "Scale AI across operations",
-      "bullets": [
-        "Design multi-step AI services",
-        "RAG and proprietary knowledge bases",
-        "Impact analytics console"
-      ],
-      "deeplink": "https://t.me/BennuLabsBot?start=growth",
-      "cta": "Book a slot"
+      "id": "mix",
+      "title": "Mix bundles",
+      "subtitle": "Combine bot, site, data and enablement in one launch",
+      "highlight": "mix_fabric_data",
+      "cards": [
+        {
+          "id": "mix_intake_site",
+          "title": "Intake + site",
+          "tagline": "Lead capture",
+          "price": 210000,
+          "period": "3 weeks",
+          "description": "Briefing bot, landing page and shared analytics.",
+          "bullets": [
+            "Framer/Tilda landing",
+            "Telegram intake bot",
+            "CRM and attribution"
+          ],
+          "deeplink": "https://t.me/BennuLabsBot?start=mix_intake_site",
+          "cta": "Pick Intake + site"
+        },
+        {
+          "id": "mix_fabric_data",
+          "title": "Fabric + data",
+          "tagline": "RAG + alerts",
+          "price": 430000,
+          "period": "5 weeks",
+          "description": "Data fabric, knowledge refresh and Telegram alerts.",
+          "bullets": [
+            "ETL connectors",
+            "Quality guardrails",
+            "Diff alerts and reports"
+          ],
+          "deeplink": "https://t.me/BennuLabsBot?start=mix_fabric_data",
+          "cta": "Build Fabric + data"
+        },
+        {
+          "id": "mix_support_care",
+          "title": "Support + care",
+          "tagline": "Ops",
+          "price": 270000,
+          "period": "4 weeks",
+          "description": "Support scenarios and team enablement.",
+          "bullets": [
+            "AI assistant for operators",
+            "Escalation scripts",
+            "Training and KB"
+          ],
+          "deeplink": "https://t.me/BennuLabsBot?start=mix_support_care",
+          "cta": "Run Support + care"
+        }
+      ]
     },
     {
-      "id": "enterprise",
-      "title": "Enterprise Fabric",
-      "price": 690000,
-      "period": "per month",
-      "tagline": "End-to-end AI stack for enterprises",
-      "bullets": [
-        "AI platform with role-based access",
-        "Data fabric and quality monitoring",
-        "24/7 SLA and dedicated team"
-      ],
-      "deeplink": "https://t.me/BennuLabsBot?start=enterprise",
-      "cta": "Talk to an architect"
+      "id": "deploy_ru",
+      "title": "RU deploy",
+      "subtitle": "Ready-to-run environments with SLA",
+      "highlight": "deploy_lite",
+      "cards": [
+        {
+          "id": "deploy_express",
+          "title": "Deploy Express",
+          "tagline": "2 weeks",
+          "price": 190000,
+          "period": "per project",
+          "description": "Containers and monitoring in Timeweb/Selectel.",
+          "bullets": [
+            "IaC manifests",
+            "CI/CD and logging",
+            "24/7 alerts"
+          ],
+          "deeplink": "https://t.me/BennuLabsBot?start=deploy_express",
+          "cta": "Start Deploy Express"
+        },
+        {
+          "id": "deploy_lite",
+          "title": "Deploy Lite",
+          "tagline": "4 weeks",
+          "price": 290000,
+          "period": "per project",
+          "description": "Full Fabric stack + database in RU cloud.",
+          "bullets": [
+            "Kubernetes + observability",
+            "Secrets and encryption",
+            "Security documentation"
+          ],
+          "deeplink": "https://t.me/BennuLabsBot?start=deploy_lite",
+          "cta": "Order Deploy Lite"
+        },
+        {
+          "id": "deploy_max",
+          "title": "Deploy Max",
+          "tagline": "8 weeks",
+          "price": 480000,
+          "period": "per project",
+          "description": "Enterprise-grade setup with redundancy and DevOps.",
+          "bullets": [
+            "Multi-region backups",
+            "SSO and audits",
+            "DevOps training"
+          ],
+          "deeplink": "https://t.me/BennuLabsBot?start=deploy_max",
+          "cta": "Plan Deploy Max"
+        }
+      ]
+    },
+    {
+      "id": "subscription",
+      "title": "Bennu Care subscription",
+      "subtitle": "Continuous improvement for your AI products",
+      "highlight": "care_growth",
+      "cards": [
+        {
+          "id": "care_basic",
+          "title": "Care Basic",
+          "tagline": "8h/mo",
+          "price": 120000,
+          "period": "per month",
+          "description": "Support pilots and quick experiments.",
+          "bullets": [
+            "Knowledge refresh",
+            "Mini design sprints",
+            "Monthly report"
+          ],
+          "deeplink": "https://t.me/BennuLabsBot?start=care_basic",
+          "cta": "Activate Care Basic"
+        },
+        {
+          "id": "care_growth",
+          "title": "Care Growth",
+          "tagline": "24h/mo",
+          "price": 220000,
+          "period": "per month",
+          "description": "Product funnel optimization on repeat.",
+          "bullets": [
+            "Team enablement",
+            "Product analytics",
+            "Prioritized backlog"
+          ],
+          "deeplink": "https://t.me/BennuLabsBot?start=care_growth",
+          "cta": "Run Care Growth"
+        },
+        {
+          "id": "care_scale",
+          "title": "Care Scale",
+          "tagline": "40h/mo",
+          "price": 420000,
+          "period": "per month",
+          "description": "Dedicated Bennu Labs squad.",
+          "bullets": [
+            "SLA and on-call",
+            "A/B experiments",
+            "Shared roadmap"
+          ],
+          "deeplink": "https://t.me/BennuLabsBot?start=care_scale",
+          "cta": "Align Care Scale"
+        }
+      ]
+    },
+    {
+      "id": "addons",
+      "title": "Add-on services",
+      "subtitle": "Attach to any plan",
+      "highlight": "addon_design_sprint",
+      "cards": [
+        {
+          "id": "addon_design_sprint",
+          "title": "Design Sprint 2.0",
+          "tagline": "Team workshop",
+          "price": 190000,
+          "period": "7 days",
+          "description": "Scenario map, prototype and launch playbook.",
+          "bullets": [
+            "Live Figma prototype",
+            "AI prompts and scripts",
+            "Implementation plan"
+          ],
+          "deeplink": "https://t.me/BennuLabsBot?start=addon_design_sprint",
+          "cta": "Book Design Sprint"
+        },
+        {
+          "id": "addon_data_audit",
+          "title": "Data Fabric Audit",
+          "tagline": "Data health",
+          "price": 160000,
+          "period": "10 days",
+          "description": "Assess sources, APIs and readiness.",
+          "bullets": [
+            "Data catalog",
+            "Integration guide",
+            "Readiness checklist"
+          ],
+          "deeplink": "https://t.me/BennuLabsBot?start=addon_data_audit",
+          "cta": "Schedule Data Audit"
+        },
+        {
+          "id": "addon_rpe_lab",
+          "title": "Responsible AI Lab",
+          "tagline": "RPE",
+          "price": 230000,
+          "period": "2 weeks",
+          "description": "Policy, safety tests and governance.",
+          "bullets": [
+            "Evaluation framework",
+            "Safety tests",
+            "Rollout plan"
+          ],
+          "deeplink": "https://t.me/BennuLabsBot?start=addon_rpe_lab",
+          "cta": "Book RPE Lab"
+        }
+      ]
     }
   ]
 }
