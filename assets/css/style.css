@@ -348,6 +348,26 @@ header {
   color: var(--muted);
 }
 
+.price-card-details {
+  border-top: 1px solid rgba(15, 16, 40, 0.1);
+  padding-top: 12px;
+  display: grid;
+  gap: 6px;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.price-card-details strong {
+  color: var(--dark);
+}
+
+.pricing-error {
+  background: rgba(233, 76, 61, 0.08);
+  border-radius: 16px;
+  padding: 24px;
+  color: #b83227;
+}
+
 .price-hours {
   font-size: 1rem;
   color: var(--muted);
