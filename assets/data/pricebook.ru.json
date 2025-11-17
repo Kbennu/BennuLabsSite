@@ -23,7 +23,7 @@
           "timeline": "4 недели, 2 релиза",
           "dod": "Telegram intake, CRM-пайплайн и отчёт по метрикам",
           "conditions": "50% аванс, релиз по DoD",
-          "deeplink": "https://t.me/BennuLabsBot?start=dev_lite",
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=dev_lite",
           "cta": "Запросить Dev Lite"
         },
         {
@@ -41,7 +41,7 @@
           "timeline": "6 недель, 3 релиза",
           "dod": "AI-бот + microsite + observability",
           "conditions": "SLA 99% и поддержка 30 дней",
-          "deeplink": "https://t.me/BennuLabsBot?start=dev_starter",
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=dev_starter",
           "cta": "Забронировать Dev Starter"
         },
         {
@@ -59,7 +59,7 @@
           "timeline": "8 недель, 4 релиза",
           "dod": "3 окружения, runbook и готовность к аудиту",
           "conditions": "Фиксированные фазы, постоплата по релизам",
-          "deeplink": "https://t.me/BennuLabsBot?start=dev_pro",
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=dev_pro",
           "cta": "Обсудить Dev Pro"
         }
       ]
@@ -85,7 +85,7 @@
           "timeline": "5 недель",
           "dod": "Intake-поток, microsite и отчёты по CR",
           "conditions": "Комбинируется с Dev Lite/Starter",
-          "deeplink": "https://t.me/BennuLabsBot?start=mix_intake",
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=mix_intake",
           "cta": "Запустить Mix Intake"
         },
         {
@@ -103,7 +103,7 @@
           "timeline": "6 недель",
           "dod": "AI-ассистент, интеграции и мониторинг",
           "conditions": "Передаём DoD и runbook",
-          "deeplink": "https://t.me/BennuLabsBot?start=mix_ops",
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=mix_ops",
           "cta": "Настроить Mix Ops"
         },
         {
@@ -121,7 +121,7 @@
           "timeline": "7 недель",
           "dod": "Field-скрипты, RU-деплой и отчёты NPS",
           "conditions": "Согласование регламентов",
-          "deeplink": "https://t.me/BennuLabsBot?start=mix_field",
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=mix_field",
           "cta": "Заказать Mix Field"
         }
       ]
@@ -147,7 +147,7 @@
           "timeline": "2 недели",
           "dod": "Terraform, Helm и мониторинг",
           "conditions": "Включено 2 handover-сессии",
-          "deeplink": "https://t.me/BennuLabsBot?start=infra_basic",
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=infra_basic",
           "cta": "Заказать Infra Basic"
         },
         {
@@ -165,7 +165,7 @@
           "timeline": "3 недели",
           "dod": "Одобренные чек-листы ИБ",
           "conditions": "Согласование через ИБ-службу",
-          "deeplink": "https://t.me/BennuLabsBot?start=infra_safe",
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=infra_safe",
           "cta": "Выбрать Infra Safe"
         },
         {
@@ -183,7 +183,7 @@
           "timeline": "4 недели",
           "dod": "Multi-region runbook",
           "conditions": "Цена после аудита",
-          "deeplink": "https://t.me/BennuLabsBot?start=infra_hybrid",
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=infra_hybrid",
           "cta": "Обсудить Infra Hybrid"
         }
       ]
@@ -209,7 +209,7 @@
           "timeline": "Поддержка 4 релиза/мес",
           "dod": "Релиз-ноты и отчёт по метрикам",
           "conditions": "Отмена за 15 дней",
-          "deeplink": "https://t.me/BennuLabsBot?start=care_monthly",
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=care_monthly",
           "cta": "Подключить Care Monthly"
         },
         {
@@ -227,7 +227,7 @@
           "timeline": "Спринты каждые 2 недели",
           "dod": "План улучшений и demo",
           "conditions": "SLA 1 рабочий день",
-          "deeplink": "https://t.me/BennuLabsBot?start=care_plus",
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=care_plus",
           "cta": "Запустить Care Plus"
         },
         {
@@ -245,7 +245,7 @@
           "timeline": "Непрерывный релиз",
           "dod": "Roadmap и runbook",
           "conditions": "Минимум 2 месяца",
-          "deeplink": "https://t.me/BennuLabsBot?start=care_scale",
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=care_scale",
           "cta": "Согласовать Care Scale"
         }
       ]
@@ -271,7 +271,7 @@
           "timeline": "10 рабочих дней",
           "dod": "Презентация и roadmap",
           "conditions": "Предоплата 70%",
-          "deeplink": "https://t.me/BennuLabsBot?start=addon_strategy",
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=addon_strategy",
           "cta": "Заказать Strategy Sprint"
         },
         {
@@ -289,7 +289,7 @@
           "timeline": "7 рабочих дней",
           "dod": "Редактура и шаблоны",
           "conditions": "Подходит ко всем пакетам",
-          "deeplink": "https://t.me/BennuLabsBot?start=addon_content",
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=addon_content",
           "cta": "Заказать редакцию"
         },
         {
@@ -307,7 +307,7 @@
           "timeline": "10 рабочих дней",
           "dod": "Отчёт и интеграционный план",
           "conditions": "Доступ к API и схемам",
-          "deeplink": "https://t.me/BennuLabsBot?start=addon_data",
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=addon_data",
           "cta": "Назначить Data Audit"
         },
         {
@@ -325,7 +325,7 @@
           "timeline": "6 недель",
           "dod": "Командный сертификат",
           "conditions": "Для 5 человек",
-          "deeplink": "https://t.me/BennuLabsBot?start=addon_academy",
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=addon_academy",
           "cta": "Оформить Team Pass"
         }
       ]

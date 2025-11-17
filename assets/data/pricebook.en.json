@@ -23,7 +23,7 @@
           "timeline": "4 weeks, 2 releases",
           "dod": "Telegram intake, CRM flow and KPI report",
           "conditions": "50% upfront, release on DoD",
-          "deeplink": "https://t.me/BennuLabsBot?start=dev_lite",
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=dev_lite",
           "cta": "Request Dev Lite"
         },
         {
@@ -41,7 +41,7 @@
           "timeline": "6 weeks, 3 releases",
           "dod": "AI bot + microsite + observability",
           "conditions": "99% SLA, 30-day support",
-          "deeplink": "https://t.me/BennuLabsBot?start=dev_starter",
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=dev_starter",
           "cta": "Book Dev Starter"
         },
         {
@@ -59,7 +59,7 @@
           "timeline": "8 weeks, 4 releases",
           "dod": "3 environments, runbook, audit ready",
           "conditions": "Fixed phases, milestone payments",
-          "deeplink": "https://t.me/BennuLabsBot?start=dev_pro",
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=dev_pro",
           "cta": "Discuss Dev Pro"
         }
       ]
@@ -85,7 +85,7 @@
           "timeline": "5 weeks",
           "dod": "Intake flow, microsite and CR reports",
           "conditions": "Pairs with Dev Lite/Starter",
-          "deeplink": "https://t.me/BennuLabsBot?start=mix_intake",
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=mix_intake",
           "cta": "Launch Mix Intake"
         },
         {
@@ -103,7 +103,7 @@
           "timeline": "6 weeks",
           "dod": "AI assistant, integrations and monitoring",
           "conditions": "DoD handover and runbook",
-          "deeplink": "https://t.me/BennuLabsBot?start=mix_ops",
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=mix_ops",
           "cta": "Configure Mix Ops"
         },
         {
@@ -121,7 +121,7 @@
           "timeline": "7 weeks",
           "dod": "Field scripts, RU deploy, NPS deck",
           "conditions": "Regulation approval",
-          "deeplink": "https://t.me/BennuLabsBot?start=mix_field",
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=mix_field",
           "cta": "Order Mix Field"
         }
       ]
@@ -147,7 +147,7 @@
           "timeline": "2 weeks",
           "dod": "Terraform, Helm, monitoring",
           "conditions": "2 handover sessions",
-          "deeplink": "https://t.me/BennuLabsBot?start=infra_basic",
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=infra_basic",
           "cta": "Order Infra Basic"
         },
         {
@@ -165,7 +165,7 @@
           "timeline": "3 weeks",
           "dod": "Approved security checklists",
           "conditions": "Security team sign-off",
-          "deeplink": "https://t.me/BennuLabsBot?start=infra_safe",
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=infra_safe",
           "cta": "Choose Infra Safe"
         },
         {
@@ -183,7 +183,7 @@
           "timeline": "4 weeks",
           "dod": "Multi-region runbook",
           "conditions": "Price after audit",
-          "deeplink": "https://t.me/BennuLabsBot?start=infra_hybrid",
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=infra_hybrid",
           "cta": "Discuss Infra Hybrid"
         }
       ]
@@ -209,7 +209,7 @@
           "timeline": "4 releases/month",
           "dod": "Release notes and KPI deck",
           "conditions": "15-day cancelation",
-          "deeplink": "https://t.me/BennuLabsBot?start=care_monthly",
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=care_monthly",
           "cta": "Activate Care Monthly"
         },
         {
@@ -227,7 +227,7 @@
           "timeline": "Bi-weekly sprints",
           "dod": "Improvement plan and demo",
           "conditions": "1 business-day SLA",
-          "deeplink": "https://t.me/BennuLabsBot?start=care_plus",
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=care_plus",
           "cta": "Run Care Plus"
         },
         {
@@ -245,7 +245,7 @@
           "timeline": "Continuous release",
           "dod": "Roadmap and runbook",
           "conditions": "2-month minimum",
-          "deeplink": "https://t.me/BennuLabsBot?start=care_scale",
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=care_scale",
           "cta": "Align Care Scale"
         }
       ]
@@ -271,7 +271,7 @@
           "timeline": "10 business days",
           "dod": "Deck and roadmap",
           "conditions": "70% upfront",
-          "deeplink": "https://t.me/BennuLabsBot?start=addon_strategy",
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=addon_strategy",
           "cta": "Book Strategy Sprint"
         },
         {
@@ -289,7 +289,7 @@
           "timeline": "7 business days",
           "dod": "Edited copy and templates",
           "conditions": "Works with all plans",
-          "deeplink": "https://t.me/BennuLabsBot?start=addon_content",
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=addon_content",
           "cta": "Order content studio"
         },
         {
@@ -307,7 +307,7 @@
           "timeline": "10 business days",
           "dod": "Report and integration plan",
           "conditions": "Access to APIs and schemas",
-          "deeplink": "https://t.me/BennuLabsBot?start=addon_data",
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=addon_data",
           "cta": "Schedule Data Audit"
         },
         {
@@ -325,7 +325,7 @@
           "timeline": "6 weeks",
           "dod": "Team certificate",
           "conditions": "Up to 5 people",
-          "deeplink": "https://t.me/BennuLabsBot?start=addon_academy",
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=addon_academy",
           "cta": "Get Team Pass"
         }
       ]
