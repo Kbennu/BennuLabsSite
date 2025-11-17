@@ -1,10 +1,10 @@
 {
   "currency": "RUB",
-  "updated_at": "2025-02-12",
+  "updated_at": "2025-03-05",
   "sections": [
     {
       "id": "platform",
-      "title": "Platform plans",
+      "title": "Dev plans",
       "subtitle": "Lite / Starter / Pro",
       "highlight": "dev_starter",
       "cards": [
@@ -14,17 +14,17 @@
           "tagline": "Intake + CRM",
           "price": 520000,
           "period": "4-week sprint",
-          "description": "Discovery, Telegram intake and CRM pipeline.",
+          "description": "Discovery, Telegram intake, CRM/Notion handoff and analytics dashboard.",
           "bullets": [
-            "Intake bot and UI kit",
+            "Telegram bot + UI kit",
             "amoCRM, Bitrix24, Notion",
-            "Dashboard and knowledge base"
+            "KPI dashboard + knowledge base"
           ],
           "timeline": "4 weeks, 2 releases",
-          "dod": "Telegram intake, CRM flow and KPI report",
+          "dod": "Intake bot, CRM flow, KPI report",
           "conditions": "50% upfront, release on DoD",
           "deeplink": "https://t.me/BennuLabIntakeBot?start=dev_lite",
-          "cta": "Request Dev Lite"
+          "cta": "Launch Dev Lite"
         },
         {
           "id": "dev_starter",
@@ -32,14 +32,14 @@
           "tagline": "AI dialog",
           "price": 890000,
           "period": "6-week sprint",
-          "description": "Generative flows, payments and observability.",
+          "description": "NLU + generative answers, payment/courier APIs, QA and observability.",
           "bullets": [
             "NLU + RAG",
-            "Payments and courier APIs",
-            "Load and QA tests"
+            "Payments + logistics APIs",
+            "Load + QA testing"
           ],
           "timeline": "6 weeks, 3 releases",
-          "dod": "AI bot + microsite + observability",
+          "dod": "AI bot, microsite, monitoring",
           "conditions": "99% SLA, 30-day support",
           "deeplink": "https://t.me/BennuLabIntakeBot?start=dev_starter",
           "cta": "Book Dev Starter"
@@ -50,11 +50,11 @@
           "tagline": "Security + complex APIs",
           "price": "from 1 420 000 ₽",
           "period": "8-week sprint",
-          "description": "Multi environments, security and hybrid deploy.",
+          "description": "Security requirements, multi environments, legacy API integrations and enablement.",
           "bullets": [
-            "Security requirements",
-            "Legacy APIs and queues",
-            "Docs and enablement"
+            "Security readiness",
+            "Legacy APIs & queues",
+            "Docs + enablement"
           ],
           "timeline": "8 weeks, 4 releases",
           "dod": "3 environments, runbook, audit ready",
@@ -66,8 +66,8 @@
     },
     {
       "id": "mix_deploy",
-      "title": "Mix + deploy",
-      "subtitle": "Bundles across channels",
+      "title": "Mix bundles",
+      "subtitle": "Telegram + web / ops / field",
       "highlight": "mix_ops",
       "cards": [
         {
@@ -76,14 +76,14 @@
           "tagline": "Telegram + web",
           "price": 760000,
           "period": "5 weeks",
-          "description": "Intake bot, microsite and CRM pipeline.",
+          "description": "Intake bot, microsite, CRM pipeline and VK Cloud deploy.",
           "bullets": [
-            "Media plan and content",
+            "Media plan + content",
             "Web + Telegram analytics",
             "VK Cloud deploy"
           ],
           "timeline": "5 weeks",
-          "dod": "Intake flow, microsite and CR reports",
+          "dod": "Intake flow, microsite, CR report",
           "conditions": "Pairs with Dev Lite/Starter",
           "deeplink": "https://t.me/BennuLabIntakeBot?start=mix_intake",
           "cta": "Launch Mix Intake"
@@ -91,30 +91,30 @@
         {
           "id": "mix_ops",
           "title": "Mix Ops",
-          "tagline": "Operations",
+          "tagline": "Ops automation",
           "price": 980000,
           "period": "6 weeks",
-          "description": "AI assistant, spreadsheets automation and deploy.",
+          "description": "AI assistant, spreadsheet/1C automation plus monitoring and alerts.",
           "bullets": [
             "Telegram assistants",
             "ETL + Google Sheets/1C",
-            "Observability and alerts"
+            "Observability + alerts"
           ],
           "timeline": "6 weeks",
-          "dod": "AI assistant, integrations and monitoring",
-          "conditions": "DoD handover and runbook",
+          "dod": "Assistant, integrations, monitoring",
+          "conditions": "DoD handover + runbook",
           "deeplink": "https://t.me/BennuLabIntakeBot?start=mix_ops",
           "cta": "Configure Mix Ops"
         },
         {
           "id": "mix_field",
           "title": "Mix Field",
-          "tagline": "Offline + field",
+          "tagline": "Telegram + offline",
           "price": 1260000,
           "period": "7 weeks",
-          "description": "QR journeys, onsite screens and dual deploy.",
+          "description": "QR journeys, onsite screens, analytics plus Selectel deploy and backup.",
           "bullets": [
-            "Telegram + offline",
+            "Telegram + offline activations",
             "Selectel + backup",
             "NPS monitoring"
           ],
@@ -127,9 +127,9 @@
       ]
     },
     {
-      "id": "deploy_ru",
-      "title": "RU deploy",
-      "subtitle": "Infra only",
+      "id": "ru_deploy",
+      "title": "Standalone RU deploy",
+      "subtitle": "Infra + security",
       "highlight": "infra_safe",
       "cards": [
         {
@@ -138,11 +138,11 @@
           "tagline": "IaC + monitoring",
           "price": 180000,
           "period": "per project",
-          "description": "VK Cloud/Selectel, IaC and Grafana.",
+          "description": "VK Cloud/Selectel IaC, CI/CD and Grafana monitoring.",
           "bullets": [
             "Staging + Prod",
-            "CI/CD and secrets",
-            "Update guide"
+            "Secrets + pipelines",
+            "Runbook + access matrix"
           ],
           "timeline": "2 weeks",
           "dod": "Terraform, Helm, monitoring",
@@ -156,15 +156,15 @@
           "tagline": "Security",
           "price": 320000,
           "period": "per project",
-          "description": "Security audit, VPN and logging.",
+          "description": "Security audit, VPN mesh, logging and SOC-ready runbook.",
           "bullets": [
-            "Access matrix",
-            "SOC runbook",
-            "Backups"
+            "Security checklist",
+            "VPN + logging",
+            "Backup strategy"
           ],
           "timeline": "3 weeks",
           "dod": "Approved security checklists",
-          "conditions": "Security team sign-off",
+          "conditions": "Security sign-off",
           "deeplink": "https://t.me/BennuLabIntakeBot?start=infra_safe",
           "cta": "Choose Infra Safe"
         },
@@ -174,10 +174,10 @@
           "tagline": "Hybrid",
           "price": "from 420 000 ₽",
           "period": "per project",
-          "description": "RU + global sync with 99.5% SLA.",
+          "description": "RU + global sync with 99.5% SLA, failover and certification pack.",
           "bullets": [
             "Failover scenarios",
-            "SSO and audit",
+            "SSO + audit",
             "Certification docs"
           ],
           "timeline": "4 weeks",
@@ -189,9 +189,9 @@
       ]
     },
     {
-      "id": "subscription",
-      "title": "Bennu Care subscription",
-      "subtitle": "Product support",
+      "id": "care",
+      "title": "Bennu Care",
+      "subtitle": "Support plans",
       "highlight": "care_plus",
       "cards": [
         {
@@ -200,14 +200,14 @@
           "tagline": "40h/mo",
           "price": 120000,
           "period": "per month",
-          "description": "Content refresh and KPI reporting.",
+          "description": "Content refresh, KPI reporting and release management.",
           "bullets": [
-            "Knowledge base refresh",
+            "Knowledge refresh",
             "Mini design sprints",
             "KPI dashboard"
           ],
           "timeline": "4 releases/month",
-          "dod": "Release notes and KPI deck",
+          "dod": "Release notes + KPI deck",
           "conditions": "15-day cancelation",
           "deeplink": "https://t.me/BennuLabIntakeBot?start=care_monthly",
           "cta": "Activate Care Monthly"
@@ -218,14 +218,14 @@
           "tagline": "60h/mo",
           "price": 220000,
           "period": "per month",
-          "description": "Funnel optimization and enablement.",
+          "description": "Funnel optimization, enablement and shared backlog.",
           "bullets": [
             "Team enablement",
             "Product analytics",
             "Shared backlog"
           ],
           "timeline": "Bi-weekly sprints",
-          "dod": "Improvement plan and demo",
+          "dod": "Improvement plan + demo",
           "conditions": "1 business-day SLA",
           "deeplink": "https://t.me/BennuLabIntakeBot?start=care_plus",
           "cta": "Run Care Plus"
@@ -236,14 +236,14 @@
           "tagline": "100h/mo",
           "price": 420000,
           "period": "per month",
-          "description": "Dedicated Bennu Labs squad.",
+          "description": "Dedicated Bennu Labs squad for continuous delivery.",
           "bullets": [
-            "SLA and on-call",
+            "SLA + on-call",
             "A/B experiments",
             "Strategy sessions"
           ],
           "timeline": "Continuous release",
-          "dod": "Roadmap and runbook",
+          "dod": "Roadmap + runbook",
           "conditions": "2-month minimum",
           "deeplink": "https://t.me/BennuLabIntakeBot?start=care_scale",
           "cta": "Align Care Scale"
@@ -252,24 +252,24 @@
     },
     {
       "id": "addons",
-      "title": "Add-on services",
+      "title": "Add-ons",
       "subtitle": "5–10 day sprints",
       "highlight": "addon_strategy",
       "cards": [
         {
           "id": "addon_strategy",
           "title": "AI Strategy Sprint",
-          "tagline": "2 weeks",
+          "tagline": "10 days",
           "price": 240000,
           "period": "per sprint",
-          "description": "Research, KPIs and roadmap.",
+          "description": "Research, KPIs, scenario map and rollout plan.",
           "bullets": [
             "Scenario map",
             "Impact model",
             "Rollout plan"
           ],
           "timeline": "10 business days",
-          "dod": "Deck and roadmap",
+          "dod": "Deck + roadmap",
           "conditions": "70% upfront",
           "deeplink": "https://t.me/BennuLabIntakeBot?start=addon_strategy",
           "cta": "Book Strategy Sprint"
@@ -280,14 +280,14 @@
           "tagline": "Tone of voice",
           "price": 90000,
           "period": "per project",
-          "description": "Prompts, scripts and tone of voice.",
+          "description": "Prompts, scripts, tone of voice and operator guides.",
           "bullets": [
             "AI handbook",
             "Prompt library",
             "Operator guide"
           ],
           "timeline": "7 business days",
-          "dod": "Edited copy and templates",
+          "dod": "Edited copy + templates",
           "conditions": "Works with all plans",
           "deeplink": "https://t.me/BennuLabIntakeBot?start=addon_content",
           "cta": "Order content studio"
@@ -298,15 +298,15 @@
           "tagline": "Diagnostics",
           "price": 180000,
           "period": "per project",
-          "description": "Data and integrations audit.",
+          "description": "Data/integration audit, storage guidance and readiness checklist.",
           "bullets": [
             "Data catalog",
             "Storage guidance",
             "Readiness checklist"
           ],
           "timeline": "10 business days",
-          "dod": "Report and integration plan",
-          "conditions": "Access to APIs and schemas",
+          "dod": "Report + integration plan",
+          "conditions": "API + schema access",
           "deeplink": "https://t.me/BennuLabIntakeBot?start=addon_data",
           "cta": "Schedule Data Audit"
         },
@@ -316,7 +316,7 @@
           "tagline": "6 weeks",
           "price": 60000,
           "period": "per cohort",
-          "description": "AI Academy access and live reviews.",
+          "description": "AI Academy access with templates and live reviews.",
           "bullets": [
             "Live sessions",
             "Templates",
