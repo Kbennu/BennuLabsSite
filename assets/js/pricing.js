@@ -6,21 +6,31 @@ async function loadPricebook(options = {}) {
     pricebookPath = '../assets/data/pricebook.ru.json'
   } = options;
 
+  const container = document.querySelector(targetSelector);
+  const fallbackHTML = container ? container.innerHTML : '';
+  const lang = getDocumentLang();
+
   try {
-    const response = await fetch(pricebookPath);
+    const response = await fetch(pricebookPath, { cache: 'no-store' });
     if (!response.ok) {
       throw new Error(`Не удалось загрузить прайсбук: ${response.status}`);
     }
     const data = await response.json();
-    renderPricing(data, targetSelector, cardTemplate);
+    renderPricing(data, container, cardTemplate);
     hydrateDeeplinks(data, deeplinkSelector);
   } catch (error) {
     console.error(error);
+    if (container) {
+      if (fallbackHTML && !container.innerHTML.trim()) {
+        container.innerHTML = fallbackHTML;
+      } else if (!container.innerHTML.trim()) {
+        container.innerHTML = `<p class="pricing-error">${getErrorMessage(lang)}</p>`;
+      }
+    }
   }
 }
 
-function renderPricing(data, targetSelector, cardTemplate) {
-  const container = document.querySelector(targetSelector);
+function renderPricing(data, container, cardTemplate) {
   if (!container) return;
 
   const sections = Array.isArray(data.sections) && data.sections.length
@@ -83,17 +93,28 @@ function createCard(pkg, popular = false) {
     ? `${pkg.price.toLocaleString('ru-RU')} ₽`
     : pkg.price;
 
+  const priceMeta = `
+    <div class="price-meta">
+      <span class="price-value">${priceValue}</span>
+      ${pkg.period ? `<span class="price-period">${pkg.period}</span>` : ''}
+    </div>
+  `;
+
   const bullets = Array.isArray(pkg.bullets) ? pkg.bullets : [];
+  const labels = getDetailLabels();
+  const detailBlocks = [
+    pkg.timeline ? `<span><strong>${labels.timeline}:</strong> ${pkg.timeline}</span>` : '',
+    pkg.dod ? `<span><strong>${labels.dod}:</strong> ${pkg.dod}</span>` : '',
+    pkg.conditions ? `<span><strong>${labels.conditions}:</strong> ${pkg.conditions}</span>` : ''
+  ].filter(Boolean).join('');
 
   card.innerHTML = `
     ${pkg.tagline ? `<div class="badge">${pkg.tagline}</div>` : ''}
     <h3>${pkg.title || ''}</h3>
-    <div>
-      <span class="price-value">${priceValue}</span>
-      ${pkg.period ? `<span class="price-period">${pkg.period}</span>` : ''}
-    </div>
+    ${priceMeta}
     ${pkg.description ? `<p>${pkg.description}</p>` : ''}
     ${bullets.length ? `<ul>${bullets.map((item) => `<li>${item}</li>`).join('')}</ul>` : ''}
+    ${detailBlocks ? `<div class="price-card-details">${detailBlocks}</div>` : ''}
     <a class="deeplink-cta" href="${pkg.deeplink || '#'}" data-package-link="${pkg.id}">${pkg.cta || 'Связаться'}</a>
   `;
   return card;
@@ -132,3 +153,23 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   loadPricebook({ pricebookPath });
 });
+
+function getDocumentLang() {
+  const lang = (document.documentElement && document.documentElement.lang) || 'ru';
+  return lang.toLowerCase();
+}
+
+function getDetailLabels() {
+  const lang = getDocumentLang();
+  if (lang.startsWith('en')) {
+    return { timeline: 'Timeline', dod: 'DoD', conditions: 'Terms' };
+  }
+  return { timeline: 'Срок', dod: 'DoD', conditions: 'Условия' };
+}
+
+function getErrorMessage(lang) {
+  if (lang.startsWith('en')) {
+    return 'We could not load the latest pricing. Please try again or ping us in Telegram.';
+  }
+  return 'Не удалось загрузить прайс. Попробуйте обновить страницу или написать нам в Telegram.';
+}
