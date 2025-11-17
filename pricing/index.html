@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="canonical" href="https://bennulabs.online/pricing/" />
-  <title>Тарифы Bennu Labs Platform</title>
+  <title>Bennu Labs · РФ — Прайс и пакеты</title>
   <link rel="stylesheet" href="../assets/css/style.css" />
   <link rel="icon" href="../assets/img/logo.svg" type="image/svg+xml" />
-  <meta name="description" content="Тарифы Bennu Labs для AI-ботов, платформы и корпоративных внедрений." />
+  <meta name="description" content="Прайс Bennu Labs на Telegram-ботов, AI-интеграцию и российский деплой: фиксированные пакеты Dev, Mix, подписка и доп. услуги." />
 </head>
 <body>
   <header>
@@ -36,80 +36,238 @@
     </div>
   </header>
   <main>
-    <section class="hero">
+    <section class="hero hero-compact">
       <div>
-        <div class="tagline">Pricing</div>
-        <h1>Прозрачные пакеты Bennu Labs Platform</h1>
-        <p>Пакеты синхронизированы с Telegram-ботом Bennu Labs. Выбирайте сценарий — бот сразу создаст заявку и отправит в команду архитекторов.</p>
-        <div style="display:flex; gap:16px; flex-wrap:wrap; margin-top:24px;">
-          <a class="cta-button" href="https://t.me/BennuLabsBot?start=pricing">Открыть бота</a>
-          <a class="deeplink-cta" data-package-link="starter" href="#">Starter Bot</a>
-          <a class="deeplink-cta" data-package-link="growth" href="#">Growth AI</a>
-          <a class="deeplink-cta" data-package-link="enterprise" href="#">Enterprise Fabric</a>
+        <div class="tagline">Pricing · RU</div>
+        <h1>Bennu Labs · РФ — Прайс и пакеты</h1>
+        <p>
+          Публикуем открытые пакеты для Telegram-ботов, AI-интеграций и российского деплоя.
+          Любой блок можно активировать через intake-бота или прямой созвон с архитектором.
+        </p>
+        <div class="cta-group">
+          <a class="cta-button" href="http://t.me/BennuLabIntakeBot" target="_blank" rel="noopener">Открыть intake-бота</a>
+          <a class="deeplink-cta" href="https://bennulabs.online" target="_blank" rel="noopener">bennulabs.online</a>
         </div>
       </div>
       <div class="hero-illustration">
-        <span>Что включено</span>
+        <span>Что важно</span>
         <ul>
-          <li>Команда AI-архитектора, дизайнера и инженера данных</li>
-          <li>Синхронизация с вашим стэком и SLA</li>
-          <li>Доступ к материалам AI Academy</li>
+          <li>Команда из AI-архитектора, разработчика и инженера данных</li>
+          <li>Российский деплой (VK Cloud, Selectel, МТС Cloud) либо гибрид</li>
+          <li>Telegram-бот как основной intake и операционный слой</li>
         </ul>
-        <a class="cta-button" href="../assets/docs/ai_strategy_playbook.pdf" download>Скачать презентацию</a>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="tldr">
       <div class="section-header">
-        <h2>Пакеты</h2>
-        <p>Выберите пакет под стадию вашей AI-трансформации. Каждый — готовый контракт и набор KPI.</p>
+        <h2>TL;DR</h2>
+        <p>Текущий прайсборд, который мы показываем клиентам, когда обсуждаем запуск продукта в РФ.</p>
       </div>
-      <div class="pricing-grid" data-pricing-grid>
-        <p>Загрузка тарифов…</p>
+      <div class="quote-grid">
+        <article class="quote-block">
+          <p>«Dev-пакеты закрывают полный цикл Telegram-бота и AI-интерфейсов от discovery до релиза за 4–8 недель.»</p>
+          <span>— Bennu Labs</span>
+        </article>
+        <article class="quote-block">
+          <p>«Mix-пакеты — это связка цифровых каналов + AI-операции. Их выбирают компании, которым нужно измеримый uplift без масштабной трансформации.»</p>
+          <span>— Bennu Labs</span>
+        </article>
+        <article class="quote-block">
+          <p>«RU-деплой оплачивается отдельно: мы готовим инфраструктуру, документацию под ИБ и подключаем monitoring, чтобы IT и безопасность спали спокойно.»</p>
+          <span>— Bennu Labs</span>
+        </article>
       </div>
+      <ul class="tldr-list">
+        <li><strong>Оплата поэтапная:</strong> 50% аванс, 30% по демонстрации, 20% перед релизом.</li>
+        <li><strong>Все пакеты включают</strong> базовый доступ в AI Academy, дизайн-гайд для Telegram и dashboard по метрикам.</li>
+        <li><strong>Интеграции:</strong> amoCRM, Bitrix24, Notion, Google Workspace, 1С, внутренние API.</li>
+      </ul>
     </section>
 
-    <section class="section" id="site-bot-packages">
+    <section class="section" id="dev-packages">
       <div class="section-header">
-        <h2>Дополнительно: сайт под бота</h2>
-        <p>Готовые пакеты разработки сайта под intake-бота и AI-помощника.</p>
+        <h2>Пакеты Dev</h2>
+        <p>Фиксированные спринты для продуктовых команд, которым нужен новый канал в Telegram и AI-интерфейс.</p>
       </div>
-      <div class="pricing-grid" data-sites-grid>
-        <p>Загрузка пакетов…</p>
+      <div class="table-scroll">
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th>Пакет</th>
+              <th>Что входит</th>
+              <th>Срок</th>
+              <th>Стоимость</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Dev.Launch</strong><br/><span class="table-meta">MVP intake-бота</span></td>
+              <td>Discovery, UX сценарии, интеграция с CRM, запуск Telegram-бота + вебхуки, отчётность в Notion.</td>
+              <td>4 недели</td>
+              <td>650 000 ₽</td>
+            </tr>
+            <tr>
+              <td><strong>Dev.Scale</strong><br/><span class="table-meta">AI-диалог + автоматизация</span></td>
+              <td>NLU, генеративные ответы, каталог знаний, подключение платежей/курьеров, QA и нагрузочные тесты.</td>
+              <td>6 недель</td>
+              <td>1 100 000 ₽</td>
+            </tr>
+            <tr>
+              <td><strong>Dev.Custom</strong><br/><span class="table-meta">Архитектура под ИБ</span></td>
+              <td>Проработка требований безопасности, интеграция с legacy API, согласование с ИТ, релиз в несколько окружений.</td>
+              <td>8 недель</td>
+              <td>от 1 600 000 ₽</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
+      <p class="table-note">Стоимость включает команду 3–4 специалистов и выделенный аккаунт. Хранение данных — в выбранном облаке клиента.</p>
     </section>
 
-    <section class="section">
+    <section class="section" id="mix-packages">
       <div class="section-header">
-        <h2>Дополнительно: дизайн-упаковка</h2>
-        <p>Поддерживающие наборы дизайна для запуска и масштабирования.</p>
+        <h2>Пакеты Mix</h2>
+        <p>Комбинированные инициативы: омниканальные кампании, AI-ассистенты для отдела продаж, поддержка офлайн-ивентов.</p>
       </div>
-      <div class="pricing-grid" data-design-grid>
-        <p>Загрузка пакетов…</p>
+      <div class="table-scroll">
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th>Пакет</th>
+              <th>Каналы</th>
+              <th>Метрика успеха</th>
+              <th>Стоимость</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Mix.Dialog</strong></td>
+              <td>Telegram + WhatsApp + email-рассылки</td>
+              <td>CR intake → лид (целевой: 35%+)</td>
+              <td>780 000 ₽</td>
+            </tr>
+            <tr>
+              <td><strong>Mix.Ops</strong></td>
+              <td>Telegram + Google Sheets + внутренние API</td>
+              <td>Сокращение ручных операций на 40%</td>
+              <td>940 000 ₽</td>
+            </tr>
+            <tr>
+              <td><strong>Mix.CX</strong></td>
+              <td>Telegram + web-widgets + onsite QR journeys</td>
+              <td>NPS/CSAT рост на +12 п.п.</td>
+              <td>1 200 000 ₽</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
+      <p class="table-note">Mix-пакеты включают медиаплан, модульные лендинги и постпроектную аналитику.</p>
     </section>
 
-    <section class="section">
+    <section class="section" id="ru-deploy">
       <div class="section-header">
-        <h2>Дополнительные услуги</h2>
-        <p>Можно расширить пакет кастомными проектами и сопровождением.</p>
+        <h2>RU-деплой</h2>
+        <p>Для компаний, которым нужны российские облака, собственные сервера или офлайн-контуры.</p>
       </div>
       <div class="grid">
         <article class="card">
-          <h3>Design Sprint</h3>
-          <p>Командный воркшоп по созданию AI-сценария.</p>
-          <a class="deeplink-cta" data-package-link="starter" href="/design/index.html">Заказать</a>
+          <h3>Infra.Basic — 180 000 ₽</h3>
+          <p>Развёртывание в VK Cloud или Selectel, настройка CI/CD, мониторинг Grafana + Alertmanager.</p>
+          <ul>
+            <li>1 staging + 1 prod окружение</li>
+            <li>Контейнеризация и IaC (Terraform)</li>
+          </ul>
         </article>
         <article class="card">
-          <h3>Data Fabric Audit</h3>
-          <p>Диагностика данных и интеграций.</p>
-          <a class="deeplink-cta" data-package-link="growth" href="/data/index.html">Оформить</a>
+          <h3>Infra.Safe — 320 000 ₽</h3>
+          <p>Дополнительно: аудит ИБ, VPN-маршрутизация, журналирование и закрытый доступ для SOC.</p>
+          <ul>
+            <li>Согласование с службой безопасности</li>
+            <li>Документация и runbook</li>
+          </ul>
         </article>
         <article class="card">
-          <h3>Responsible AI Lab</h3>
-          <p>Проверка качества и безопасности моделей.</p>
-          <a class="deeplink-cta" data-package-link="enterprise" href="/rpe/index.html">Забронировать</a>
+          <h3>Infra.Hybrid — от 420 000 ₽</h3>
+          <p>Гибрид между зарубежным и российским облаком, синхронизация данных, failover и SLA 99.5%.</p>
+          <ul>
+            <li>Два датацентра</li>
+            <li>Настройка безопасных очередей и очередей сообщений</li>
+          </ul>
         </article>
+      </div>
+    </section>
+
+    <section class="section" id="subscription">
+      <div class="section-header">
+        <h2>Подписка Bennu Care</h2>
+        <p>Поддерживаем бот и инфраструктуру после релиза: метрики, контент, эксперименты и гипотезы.</p>
+      </div>
+      <div class="subscription-card">
+        <div>
+          <h3>Care.Monthly</h3>
+          <p>40 часов команды на эксперименты и поддержку + ежемесячный отчёт.</p>
+        </div>
+        <div class="subscription-meta">
+          <span>120 000 ₽ / месяц</span>
+          <small>Без депозита, стоп по уведомлению за 15 дней.</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="extras">
+      <div class="section-header">
+        <h2>Дополнительные услуги</h2>
+        <p>Можно добавить к любому пакету или заказать отдельно.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <h3>AI Strategy Sprint — 240 000 ₽</h3>
+          <p>2-недельный воркшоп с заинтересованными командами, KPI и дорожной картой.</p>
+        </article>
+        <article class="card">
+          <h3>Контент-редакция — 90 000 ₽</h3>
+          <p>Тон-оф-воис, промпты и сценарии, бэкап специалистов Bennu Labs.</p>
+        </article>
+        <article class="card">
+          <h3>Data Fabric Audit — 180 000 ₽</h3>
+          <p>Обследование данных, контроль качества, рекомендации по хранению и синхронизации.</p>
+        </article>
+        <article class="card">
+          <h3>Academy Team Pass — 60 000 ₽</h3>
+          <p>6 недель доступа к AI Academy, живые сессии и подборки методичек.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="notes">
+      <div class="section-header">
+        <h2>Примечания</h2>
+        <p>Чтобы не оставлять вопросов.</p>
+      </div>
+      <ul class="note-list">
+        <li><strong>Оплата</strong> в рублях, с НДС. Возможен эквайринг через зарубежное юрлицо по запросу.</li>
+        <li><strong>Документы</strong>: договор, акт, закрывающие в электронном виде (Диадок или СБИС).</li>
+        <li><strong>Команды</strong> работают спринтами по 1 неделе, синки — в Telegram и Zoom.</li>
+        <li><strong>Данные</strong> клиентов не покидают выбранный контур, настройки доступны в runbook.</li>
+        <li><strong>Кейсы</strong> и развернутые спецификации — по NDA после подписания заявки.</li>
+      </ul>
+    </section>
+
+    <section class="section" id="contacts">
+      <div class="section-header">
+        <h2>Контакты</h2>
+        <p>Пишите в intake-бота или назначайте встречу через сайт. Ответим в течение рабочего дня.</p>
+      </div>
+      <div class="contact-cta">
+        <div>
+          <h3>Быстрый старт</h3>
+          <p>Бот собирает вводные, помогает выбрать пакет и мгновенно передаёт данные архитекторам.</p>
+        </div>
+        <div class="cta-group">
+          <a class="cta-button" href="http://t.me/BennuLabIntakeBot" target="_blank" rel="noopener">Написать в Telegram</a>
+          <a class="deeplink-cta" href="https://bennulabs.online" target="_blank" rel="noopener">Открыть bennulabs.online</a>
+        </div>
       </div>
     </section>
   </main>
@@ -117,7 +275,7 @@
     <div class="footer-grid">
       <div>
         <img src="../assets/img/logo.svg" alt="Bennu Labs" style="height:40px; margin-bottom:12px;" />
-        <p>Пакеты Bennu Labs масштабируются под ваши цели.</p>
+        <p>Команда Bennu Labs строит Telegram-ботов и AI-операции под российский деплой.</p>
       </div>
       <div>
         <h4>Материалы</h4>
@@ -129,13 +287,12 @@
       <div>
         <h4>Контакты</h4>
         <p>
-          <a href="https://t.me/BennuLabsBot" target="_blank" rel="noopener">Telegram-бот</a><br/>
-          <a href="https://t.me/BennuLabs" target="_blank" rel="noopener">Канал Bennu Labs</a>
+          <a href="http://t.me/BennuLabIntakeBot" target="_blank" rel="noopener">Telegram-бот Bennu Labs</a><br/>
+          <a href="https://bennulabs.online" target="_blank" rel="noopener">bennulabs.online</a>
         </p>
       </div>
     </div>
   </footer>
   <script src="../assets/js/nav.js" defer></script>
-  <script src="../assets/js/pricing.js" data-pricebook="../assets/data/pricebook.ru.json"></script>
 </body>
 </html>
