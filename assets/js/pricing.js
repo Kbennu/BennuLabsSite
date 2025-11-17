@@ -16,6 +16,7 @@ async function loadPricebook(options = {}) {
     }
     const data = await response.json();
     renderPricing(data, container, cardTemplate);
+    syncPackageLinks(data);
   } catch (error) {
     console.error(error);
     if (container) {
@@ -87,9 +88,7 @@ function createCard(pkg, popular = false) {
     card.dataset.popularLabel = label;
   }
 
-  const priceValue = typeof pkg.price === 'number'
-    ? `${pkg.price.toLocaleString('ru-RU')} ₽`
-    : pkg.price;
+  const priceValue = formatPriceValue(pkg.price);
 
   const priceMeta = `
     <div class="price-meta">
@@ -101,6 +100,7 @@ function createCard(pkg, popular = false) {
   const bullets = Array.isArray(pkg.bullets) ? pkg.bullets : [];
   const labels = getDetailLabels();
   const detailBlocks = [
+    pkg.rd ? `<span><strong>${labels.rd}:</strong> ${pkg.rd}</span>` : '',
     pkg.timeline ? `<span><strong>${labels.timeline}:</strong> ${pkg.timeline}</span>` : '',
     pkg.dod ? `<span><strong>${labels.dod}:</strong> ${pkg.dod}</span>` : '',
     pkg.conditions ? `<span><strong>${labels.conditions}:</strong> ${pkg.conditions}</span>` : ''
@@ -135,9 +135,9 @@ function getDocumentLang() {
 function getDetailLabels() {
   const lang = getDocumentLang();
   if (lang.startsWith('en')) {
-    return { timeline: 'Timeline', dod: 'DoD', conditions: 'Terms' };
+    return { rd: 'wd', timeline: 'Timeline', dod: 'DoD', conditions: 'Terms' };
   }
-  return { timeline: 'Срок', dod: 'DoD', conditions: 'Условия' };
+  return { rd: 'р.д.', timeline: 'Срок', dod: 'DoD', conditions: 'Условия' };
 }
 
 function getErrorMessage(lang) {
@@ -145,4 +145,70 @@ function getErrorMessage(lang) {
     return 'We could not load the latest pricing. Please try again or ping us in Telegram.';
   }
   return 'Не удалось загрузить прайс. Попробуйте обновить страницу или написать нам в Telegram.';
+}
+
+function formatPriceValue(price) {
+  if (typeof price === 'number') {
+    return `${price.toLocaleString('ru-RU')} ₽`;
+  }
+  return price || '';
+}
+
+function syncPackageLinks(data) {
+  if (!data) return;
+  const elements = document.querySelectorAll('[data-package-link]');
+  if (!elements.length) return;
+
+  const pkgMap = buildPackageMap(data);
+  if (!pkgMap.size) return;
+
+  elements.forEach((el) => {
+    const pkgId = el.dataset.packageLink;
+    if (!pkgId || !pkgMap.has(pkgId)) return;
+    const pkg = pkgMap.get(pkgId);
+    const priceText = formatPriceValue(pkg.price);
+    const timeline = pkg.rd || pkg.timeline || pkg.period || '';
+    const template = el.dataset.packageTemplate;
+
+    let label = '';
+    if (template) {
+      label = template
+        .replace('{title}', pkg.title || '')
+        .replace('{price}', priceText || '')
+        .replace('{rd}', timeline || '');
+    } else {
+      if (pkg.shortLabel) {
+        label = timeline ? `${pkg.shortLabel} / ${timeline}` : pkg.shortLabel;
+      } else {
+        const pieces = [];
+        if (pkg.title) pieces.push(pkg.title);
+        if (priceText) pieces.push(priceText);
+        if (timeline) pieces.push(timeline);
+        label = pieces.join(' · ');
+      }
+    }
+
+    if (label && label.trim()) {
+      el.textContent = label.trim();
+    }
+
+    const currentHref = el.getAttribute('href');
+    if ((!currentHref || currentHref === '#') && pkg.deeplink) {
+      el.setAttribute('href', pkg.deeplink);
+    }
+  });
+}
+
+function buildPackageMap(data) {
+  const map = new Map();
+  const sections = Array.isArray(data.sections) ? data.sections : [];
+  sections.forEach((section) => {
+    const cards = Array.isArray(section.cards) ? section.cards : [];
+    cards.forEach((card) => {
+      if (card && card.id) {
+        map.set(card.id, card);
+      }
+    });
+  });
+  return map;
 }
