@@ -2,7 +2,6 @@ async function loadPricebook(options = {}) {
   const {
     targetSelector = '[data-pricing-grid]',
     cardTemplate = createCard,
-    deeplinkSelector = '[data-package-link]',
     pricebookPath = '../assets/data/pricebook.ru.json'
   } = options;
 
@@ -17,7 +16,6 @@ async function loadPricebook(options = {}) {
     }
     const data = await response.json();
     renderPricing(data, container, cardTemplate);
-    hydrateDeeplinks(data, deeplinkSelector);
   } catch (error) {
     console.error(error);
     if (container) {
@@ -115,34 +113,9 @@ function createCard(pkg, popular = false) {
     ${pkg.description ? `<p>${pkg.description}</p>` : ''}
     ${bullets.length ? `<ul>${bullets.map((item) => `<li>${item}</li>`).join('')}</ul>` : ''}
     ${detailBlocks ? `<div class="price-card-details">${detailBlocks}</div>` : ''}
-    <a class="deeplink-cta" href="${pkg.deeplink || '#'}" data-package-link="${pkg.id}">${pkg.cta || 'Связаться'}</a>
+    <a class="deeplink-cta" href="${pkg.deeplink || '#'}">${pkg.cta || 'Связаться'}</a>
   `;
   return card;
-}
-
-function hydrateDeeplinks(data, selector) {
-  const packages = getAllPackages(data);
-  document.querySelectorAll(selector).forEach((link) => {
-    const pkgId = link.getAttribute('data-package-link');
-    if (!pkgId) return;
-    const pkg = packages.find((item) => item.id === pkgId);
-    if (!pkg) return;
-    link.textContent = pkg.cta;
-    const currentHref = link.getAttribute('href');
-    if (!currentHref || currentHref === '#' || currentHref.toLowerCase().startsWith('javascript:')) {
-      link.href = pkg.deeplink;
-    }
-  });
-}
-
-function getAllPackages(data) {
-  if (Array.isArray(data.sections) && data.sections.length) {
-    return data.sections.flatMap((section) => section.cards || []);
-  }
-  if (Array.isArray(data.packages)) {
-    return data.packages;
-  }
-  return [];
 }
 
 document.addEventListener('DOMContentLoaded', () => {

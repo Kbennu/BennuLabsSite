@@ -161,6 +161,14 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
+.hero > * {
+  min-width: 0;
+}
+
+.hero.sticky-hero {
+  align-items: flex-start;
+}
+
 .hero-meta {
   margin-top: 24px;
   display: flex;
@@ -285,6 +293,9 @@ header {
   margin-top: 16px;
   font-size: 0.95rem;
   color: var(--muted);
+  line-height: 1.6;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 .price-note a {
@@ -420,6 +431,11 @@ header {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.hero.sticky-hero .hero-illustration {
+  position: sticky;
+  top: 120px;
 }
 
 .hero-illustration span {
@@ -650,6 +666,10 @@ header {
 @media (max-width: 768px) {
   .hero {
     padding: 96px 20px 60px;
+  }
+
+  .hero.sticky-hero .hero-illustration {
+    position: static;
   }
 
   .section {
