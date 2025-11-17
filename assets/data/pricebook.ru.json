@@ -1,9 +1,9 @@
 {
   "currency": "RUB",
-  "updated_at": "2025-02-12",
+  "updated_at": "2025-03-02",
   "sections": [
     {
-      "id": "platform",
+      "id": "dev",
       "title": "Dev-пакеты",
       "subtitle": "Lite / Starter / Pro",
       "highlight": "dev_starter",
@@ -12,321 +12,391 @@
           "id": "dev_lite",
           "title": "Dev Lite",
           "tagline": "Intake + CRM",
-          "price": 520000,
-          "period": "за 4 недели",
-          "description": "Discovery, Telegram intake и CRM-воронка.",
+          "price": 24900,
+          "period": "за 2 недели",
+          "rd": "1–2 р.д.",
+          "timeline": "Discovery + build",
+          "dod": "Telegram intake, CRM-пайплайн и отчёт в Sheets",
+          "conditions": "50% предоплата, релиз по demo",
+          "description": "Discovery-сессия, прототип бота, CRM-воронка и handover.",
           "bullets": [
-            "Intake-бот и UI kit",
-            "Интеграции amoCRM, Bitrix24, Notion",
-            "Дэшборд и база знаний"
+            "Mindmap сценариев и контент",
+            "Интеграции amoCRM/Notion",
+            "UI kit и инструкции"
           ],
-          "timeline": "4 недели, 2 релиза",
-          "dod": "Telegram intake, CRM-пайплайн и отчёт по метрикам",
-          "conditions": "50% аванс, релиз по DoD",
           "deeplink": "https://t.me/BennuLabIntakeBot?start=dev_lite",
-          "cta": "Запросить Dev Lite"
+          "cta": "Запросить Dev Lite",
+          "shortLabel": "Lite · 24 900 ₽"
         },
         {
           "id": "dev_starter",
           "title": "Dev Starter",
           "tagline": "AI-диалог",
-          "price": 890000,
-          "period": "за 6 недель",
-          "description": "Генеративные сценарии, платежи и наблюдаемость.",
-          "bullets": [
-            "NLU + RAG",
-            "Платежные и курьерские интеграции",
-            "Нагрузочные тесты"
-          ],
-          "timeline": "6 недель, 3 релиза",
-          "dod": "AI-бот + microsite + observability",
+          "price": 39900,
+          "period": "за 3 недели",
+          "rd": "2–4 р.д.",
+          "timeline": "Сборка, тесты, релиз",
+          "dod": "AI-бот с RAG, microsite и наблюдаемость",
           "conditions": "SLA 99% и поддержка 30 дней",
+          "description": "Генеративные ответы, платежи/курьеры, observability и KPI.",
+          "bullets": [
+            "Intent-маршрутизация",
+            "Платежные интеграции",
+            "Looker Studio дашборд"
+          ],
           "deeplink": "https://t.me/BennuLabIntakeBot?start=dev_starter",
-          "cta": "Забронировать Dev Starter"
+          "cta": "Забронировать Starter",
+          "shortLabel": "Starter · 39 900 ₽"
         },
         {
           "id": "dev_pro",
           "title": "Dev Pro",
-          "tagline": "ИБ + сложные API",
-          "price": "от 1 420 000 ₽",
-          "period": "за 8 недель",
-          "description": "Мультиокружения, безопасность и гибридный деплой.",
+          "tagline": "ИБ + API",
+          "price": 59900,
+          "period": "за 4 недели",
+          "rd": "4–7 р.д.",
+          "timeline": "Многоокружный релиз",
+          "dod": "3 окружения, runbook и готовность к аудиту",
+          "conditions": "Фиксированные фазы, постоплата по релизам",
+          "description": "Гибридные деплои, сложные API и документы для службы безопасности.",
           "bullets": [
             "ИБ-требования и аудит",
             "Legacy API и очереди",
-            "Пакет документов и обучение"
+            "Failover и обучение"
           ],
-          "timeline": "8 недель, 4 релиза",
-          "dod": "3 окружения, runbook и готовность к аудиту",
-          "conditions": "Фиксированные фазы, постоплата по релизам",
           "deeplink": "https://t.me/BennuLabIntakeBot?start=dev_pro",
-          "cta": "Обсудить Dev Pro"
+          "cta": "Обсудить Pro",
+          "shortLabel": "Pro · 59 900 ₽"
         }
       ]
     },
     {
-      "id": "mix_deploy",
+      "id": "mix",
       "title": "Mix + деплой",
-      "subtitle": "Комбинируем каналы и инфраструктуру",
-      "highlight": "mix_ops",
+      "subtitle": "Комбинируем Dev и маркетинг",
+      "highlight": "mix_starter_std",
       "cards": [
         {
-          "id": "mix_intake",
-          "title": "Mix Intake",
-          "tagline": "Telegram + веб",
-          "price": 760000,
+          "id": "mix_lite_lite",
+          "title": "Mix Lite+Lite",
+          "tagline": "Telegram + microsite",
+          "price": 49900,
           "period": "за 5 недель",
-          "description": "Интегрированный intake-бот, microsite и CRM.",
+          "rd": "5–6 р.д.",
+          "timeline": "Intake + сайт + RU",
+          "dod": "Dev Lite, microsite и VK Cloud",
+          "conditions": "Комбинируется с Lite",
+          "description": "Intake-бот, лендинг, аналитика и деплой в VK Cloud/Selectel.",
           "bullets": [
             "Медиаплан и контент",
-            "Веб + Telegram аналитика",
-            "Деплой в VK Cloud"
+            "Единая аналитика",
+            "Notion handover"
           ],
-          "timeline": "5 недель",
-          "dod": "Intake-поток, microsite и отчёты по CR",
-          "conditions": "Комбинируется с Dev Lite/Starter",
-          "deeplink": "https://t.me/BennuLabIntakeBot?start=mix_intake",
-          "cta": "Запустить Mix Intake"
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=mix_lite",
+          "cta": "Запустить Mix Lite",
+          "shortLabel": "Mix Lite+Lite · 49 900 ₽"
         },
         {
-          "id": "mix_ops",
-          "title": "Mix Ops",
-          "tagline": "Операции",
-          "price": 980000,
+          "id": "mix_starter_std",
+          "title": "Mix Starter+Std",
+          "tagline": "AI intake + отчётность",
+          "price": 89900,
           "period": "за 6 недель",
-          "description": "AI-ассистент, автоматизация таблиц и деплой.",
+          "rd": "6–7 р.д.",
+          "timeline": "Dev Starter + BI",
+          "dod": "AI intake, BI и RU-деплой Std",
+          "conditions": "Включены KPI и медиаплан",
+          "description": "Dev Starter с мультиязычным лендингом, Looker Studio отчётами и failover.",
           "bullets": [
-            "Телеграм-ассистенты для back-office",
-            "ETL + Google Sheets/1C",
-            "Observability и алерты"
+            "Промо и контент",
+            "BI-дашборды",
+            "Observability"
           ],
-          "timeline": "6 недель",
-          "dod": "AI-ассистент, интеграции и мониторинг",
-          "conditions": "Передаём DoD и runbook",
           "deeplink": "https://t.me/BennuLabIntakeBot?start=mix_ops",
-          "cta": "Настроить Mix Ops"
+          "cta": "Настроить Mix Starter",
+          "shortLabel": "Mix Starter+Std · 89 900 ₽"
         },
         {
-          "id": "mix_field",
-          "title": "Mix Field",
-          "tagline": "Офлайн + field",
-          "price": 1260000,
-          "period": "за 7 недель",
-          "description": "QR-маршруты, onsite-экраны и двойной деплой.",
-          "bullets": [
-            "Телеграм + офлайн активации",
-            "Selectel + резерв",
-            "NPS-мониторинг"
-          ],
-          "timeline": "7 недель",
-          "dod": "Field-скрипты, RU-деплой и отчёты NPS",
+          "id": "mix_pro_max",
+          "title": "Mix Pro+Max",
+          "tagline": "Field + гибрид",
+          "price": 169000,
+          "period": "за 8 недель",
+          "rd": "8–10 р.д.",
+          "timeline": "Pro + field",
+          "dod": "Dev Pro, field-активации и Max-деплой",
           "conditions": "Согласование регламентов",
+          "description": "Dev Pro плюс оффлайн-активации, гибридный деплой и NPS-аналитика.",
+          "bullets": [
+            "QR-маршруты",
+            "Selectel + резерв",
+            "NPS-отчёты"
+          ],
           "deeplink": "https://t.me/BennuLabIntakeBot?start=mix_field",
-          "cta": "Заказать Mix Field"
+          "cta": "Собрать Mix Pro",
+          "shortLabel": "Mix Pro+Max · 169 000 ₽"
         }
       ]
     },
     {
-      "id": "deploy_ru",
+      "id": "ru_deploy",
       "title": "RU-деплой",
-      "subtitle": "Инфраструктура отдельно",
-      "highlight": "infra_safe",
+      "subtitle": "Express / Lite / Std / Max",
+      "highlight": "ru_deploy_lite",
       "cards": [
         {
-          "id": "infra_basic",
-          "title": "Infra Basic",
-          "tagline": "IaC + мониторинг",
-          "price": 180000,
+          "id": "ru_deploy_express",
+          "title": "RU Deploy Express",
+          "tagline": "VK Cloud / Selectel",
+          "price": 19900,
           "period": "за проект",
-          "description": "VK Cloud/Selectel, IaC и Grafana.",
+          "rd": "5–7 р.д.",
+          "timeline": "IaC и мониторинг",
+          "dod": "Staging/Prod, Grafana и журнал",
+          "conditions": "Входит 1 handover",
+          "description": "IaC, окружение и базовые алерты для быстрого запуска.",
           "bullets": [
-            "Staging + Prod",
+            "Terraform/Helm",
             "CI/CD и секреты",
             "Гайд по обновлениям"
           ],
-          "timeline": "2 недели",
-          "dod": "Terraform, Helm и мониторинг",
-          "conditions": "Включено 2 handover-сессии",
-          "deeplink": "https://t.me/BennuLabIntakeBot?start=infra_basic",
-          "cta": "Заказать Infra Basic"
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=ru_deploy_express",
+          "cta": "Запросить Express",
+          "shortLabel": "Express · 19 900 ₽"
         },
         {
-          "id": "infra_safe",
-          "title": "Infra Safe",
-          "tagline": "ИБ",
-          "price": 320000,
+          "id": "ru_deploy_lite",
+          "title": "RU Deploy Lite",
+          "tagline": "VPN + резервы",
+          "price": 29900,
           "period": "за проект",
-          "description": "ИБ-аудит, VPN и журналирование.",
+          "rd": "7–10 р.д.",
+          "timeline": "VPN и аудит",
+          "dod": "Сегментация сети и журналы",
+          "conditions": "Согласование с ИБ",
+          "description": "Добавляем VPN, ротацию ключей, журналы аудита и обучение команды.",
           "bullets": [
             "Access matrix",
-            "Runbook для SOC",
-            "Резервное копирование"
+            "Журналы и отчёты",
+            "Хэндовер в SOC"
           ],
-          "timeline": "3 недели",
-          "dod": "Одобренные чек-листы ИБ",
-          "conditions": "Согласование через ИБ-службу",
-          "deeplink": "https://t.me/BennuLabIntakeBot?start=infra_safe",
-          "cta": "Выбрать Infra Safe"
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=ru_deploy_lite",
+          "cta": "Оформить Lite",
+          "shortLabel": "RU Lite · 29 900 ₽"
         },
         {
-          "id": "infra_hybrid",
-          "title": "Infra Hybrid",
-          "tagline": "Гибрид",
-          "price": "от 420 000 ₽",
+          "id": "ru_deploy_std",
+          "title": "RU Deploy Std",
+          "tagline": "Failover",
+          "price": 49900,
           "period": "за проект",
-          "description": "Синхронизация RU + зарубеж, SLA 99.5%.",
+          "rd": "10–14 р.д.",
+          "timeline": "Мультиконтур",
+          "dod": "Failover runbook и SLA",
+          "conditions": "2 handover-сессии",
+          "description": "Несколько контуров, CI/CD, мониторинг Grafana и инструкции по резервам.",
           "bullets": [
-            "Failover-сценарии",
-            "SSO и аудит",
-            "Документы для сертификации"
+            "CI/CD и алерты",
+            "Резервные очереди",
+            "Документы по SLA"
           ],
-          "timeline": "4 недели",
-          "dod": "Multi-region runbook",
-          "conditions": "Цена после аудита",
-          "deeplink": "https://t.me/BennuLabIntakeBot?start=infra_hybrid",
-          "cta": "Обсудить Infra Hybrid"
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=ru_deploy_std",
+          "cta": "Выбрать Std",
+          "shortLabel": "RU Std · 49 900 ₽"
+        },
+        {
+          "id": "ru_deploy_max",
+          "title": "RU Deploy Max",
+          "tagline": "Гибрид",
+          "price": 119000,
+          "period": "за проект",
+          "rd": "14–21 р.д.",
+          "timeline": "Гибрид РФ + мир",
+          "dod": "Гибридный runbook и пакет документов",
+          "conditions": "SLA 99.5%",
+          "description": "Гибрид РФ/международ, резервные очереди, пакет документов для сертификаций.",
+          "bullets": [
+            "Selectel + резерв",
+            "SSO и аудит",
+            "Документы для ИБ"
+          ],
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=ru_deploy_max",
+          "cta": "Спланировать Max",
+          "shortLabel": "RU Max · 119 000 ₽"
         }
       ]
     },
     {
       "id": "subscription",
       "title": "Подписка Bennu Care",
-      "subtitle": "Поддержка продуктов",
-      "highlight": "care_plus",
+      "subtitle": "Поддержка после релиза",
       "cards": [
         {
           "id": "care_monthly",
           "title": "Care Monthly",
           "tagline": "40 ч/мес",
-          "price": 120000,
+          "price": 35000,
           "period": "в месяц",
-          "description": "Обновления контента и отчётность.",
-          "bullets": [
-            "Обновление базы знаний",
-            "Мини-спринты дизайна",
-            "KPI-дашборд"
-          ],
-          "timeline": "Поддержка 4 релиза/мес",
-          "dod": "Релиз-ноты и отчёт по метрикам",
+          "rd": "SLA 4 ч",
+          "timeline": "Споты каждые 2 недели",
+          "dod": "План улучшений и demo",
           "conditions": "Отмена за 15 дней",
+          "description": "Оптимизация воронок, промпт-инжиниринг и обучение операторов.",
+          "bullets": [
+            "Обновления контента",
+            "A/B-эксперименты",
+            "Notion-отчёты"
+          ],
           "deeplink": "https://t.me/BennuLabIntakeBot?start=care_monthly",
-          "cta": "Подключить Care Monthly"
+          "cta": "Подключить Care",
+          "shortLabel": "Care · 35 000 ₽"
         },
         {
           "id": "care_plus",
           "title": "Care Plus",
           "tagline": "60 ч/мес",
-          "price": 220000,
+          "price": 59000,
           "period": "в месяц",
-          "description": "Оптимизация воронки и обучение.",
+          "rd": "SLA 2 ч",
+          "timeline": "Weekly релизы",
+          "dod": "Roadmap и runbook",
+          "conditions": "Минимум 2 месяца",
+          "description": "Выделенная команда Bennu Labs, on-call и стратегические сессии.",
           "bullets": [
-            "Обучение команды",
+            "Runbook обновлений",
             "Product analytics",
             "Совместный backlog"
           ],
-          "timeline": "Спринты каждые 2 недели",
-          "dod": "План улучшений и demo",
-          "conditions": "SLA 1 рабочий день",
           "deeplink": "https://t.me/BennuLabIntakeBot?start=care_plus",
-          "cta": "Запустить Care Plus"
-        },
-        {
-          "id": "care_scale",
-          "title": "Care Scale",
-          "tagline": "100 ч/мес",
-          "price": 420000,
-          "period": "в месяц",
-          "description": "Выделенная команда Bennu Labs.",
-          "bullets": [
-            "SLA и on-call",
-            "Эксперименты A/B",
-            "Стратегические сессии"
-          ],
-          "timeline": "Непрерывный релиз",
-          "dod": "Roadmap и runbook",
-          "conditions": "Минимум 2 месяца",
-          "deeplink": "https://t.me/BennuLabIntakeBot?start=care_scale",
-          "cta": "Согласовать Care Scale"
+          "cta": "Запустить Care Plus",
+          "shortLabel": "Care Plus · 59 000 ₽"
         }
       ]
     },
     {
       "id": "addons",
       "title": "Дополнительные услуги",
-      "subtitle": "Подключаем за 5–10 дней",
+      "subtitle": "5–10 р.д.",
       "highlight": "addon_strategy",
       "cards": [
         {
           "id": "addon_strategy",
           "title": "AI Strategy Sprint",
           "tagline": "2 недели",
-          "price": 240000,
+          "price": 25000,
           "period": "за спринт",
-          "description": "Исследование, KPI и дорожная карта.",
+          "rd": "10 р.д.",
+          "timeline": "Discovery",
+          "dod": "Презентация и roadmap",
+          "conditions": "Предоплата 70%",
+          "description": "Исследование, KPI и дорожная карта внедрения.",
           "bullets": [
             "Карта сценариев",
             "Финмодель эффектов",
             "План внедрения"
           ],
-          "timeline": "10 рабочих дней",
-          "dod": "Презентация и roadmap",
-          "conditions": "Предоплата 70%",
           "deeplink": "https://t.me/BennuLabIntakeBot?start=addon_strategy",
-          "cta": "Заказать Strategy Sprint"
+          "cta": "Заказать Strategy Sprint",
+          "shortLabel": "Strategy · 25 000 ₽"
         },
         {
           "id": "addon_content",
           "title": "Контент-редакция",
           "tagline": "Тональность",
-          "price": 90000,
+          "price": 14900,
           "period": "за проект",
-          "description": "Промпты, скрипты и tone of voice.",
+          "rd": "5 р.д.",
+          "timeline": "Редактура",
+          "dod": "AI handbook и шаблоны",
+          "conditions": "Подходит ко всем пакетам",
+          "description": "Промпты, сценарии и tone of voice.",
           "bullets": [
             "AI handbook",
-            "Промпты и сценарии",
+            "Промпты",
             "Гайд для операторов"
           ],
-          "timeline": "7 рабочих дней",
-          "dod": "Редактура и шаблоны",
-          "conditions": "Подходит ко всем пакетам",
           "deeplink": "https://t.me/BennuLabIntakeBot?start=addon_content",
-          "cta": "Заказать редакцию"
+          "cta": "Заказать редакцию",
+          "shortLabel": "Редакция · 14 900 ₽"
         },
         {
           "id": "addon_data",
           "title": "Data Fabric Audit",
           "tagline": "Диагностика",
-          "price": 180000,
+          "price": 34900,
           "period": "за проект",
+          "rd": "7 р.д.",
+          "timeline": "Аудит",
+          "dod": "Отчёт и рекомендации",
+          "conditions": "Доступ к API",
           "description": "Аудит данных и интеграций.",
           "bullets": [
             "Каталог данных",
-            "Рекомендации по хранению",
+            "Рекомендации",
             "Чек-лист готовности"
           ],
-          "timeline": "10 рабочих дней",
-          "dod": "Отчёт и интеграционный план",
-          "conditions": "Доступ к API и схемам",
           "deeplink": "https://t.me/BennuLabIntakeBot?start=addon_data",
-          "cta": "Назначить Data Audit"
+          "cta": "Назначить Data Audit",
+          "shortLabel": "Data Audit · 34 900 ₽"
         },
         {
           "id": "addon_academy",
           "title": "Academy Team Pass",
           "tagline": "6 недель",
-          "price": 60000,
+          "price": 9900,
           "period": "за поток",
+          "rd": "6 недель",
+          "timeline": "Обучение",
+          "dod": "Командный сертификат",
+          "conditions": "Для 5 человек",
           "description": "Доступ к AI Academy и живым разборам.",
           "bullets": [
             "Онлайн-сессии",
-            "Шаблоны и чек-листы",
-            "Сертификация ролей"
+            "Шаблоны",
+            "Сертификация"
           ],
-          "timeline": "6 недель",
-          "dod": "Командный сертификат",
-          "conditions": "Для 5 человек",
           "deeplink": "https://t.me/BennuLabIntakeBot?start=addon_academy",
-          "cta": "Оформить Team Pass"
+          "cta": "Оформить Team Pass",
+          "shortLabel": "Academy · 9 900 ₽"
+        }
+      ]
+    },
+    {
+      "id": "availability",
+      "title": "Доступность",
+      "subtitle": "Ближайшие слоты Bennu Labs",
+      "cards": [
+        {
+          "id": "slot_dev",
+          "title": "Dev Lite/Starter",
+          "tagline": "Telegram intake",
+          "price": "Старт через 1–2 р.д.",
+          "period": "после брифа",
+          "rd": "Онбординг 30 мин",
+          "timeline": "Intake сессия",
+          "dod": "Готовый спринт",
+          "conditions": "Слот бронируем после счета",
+          "description": "Свободны два окна на ближайшей неделе для Dev Lite и Starter.",
+          "bullets": [
+            "Бриф в Telegram",
+            "Demo на 2 день"
+          ]
+        },
+        {
+          "id": "slot_mix",
+          "title": "Mix/Deploy",
+          "tagline": "Маркетинг + RU",
+          "price": "Слот через 4 р.д.",
+          "period": "после оплаты",
+          "rd": "Спринт 5–8 р.д.",
+          "timeline": "Медиаплан",
+          "dod": "Mix DoD",
+          "conditions": "Согласование медиаплана",
+          "description": "Ближайший Mix Starter+Std запускаем через 4 рабочих дня, Mix Pro+Max — через 6.",
+          "bullets": [
+            "Отдельный менеджер",
+            "BI-setup"
+          ]
         }
       ]
     }
