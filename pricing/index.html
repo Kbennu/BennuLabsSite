@@ -279,67 +279,71 @@
         <article class="package-card">
           <header class="package-card-header">
             <div>
-              <p class="package-name">RU Deploy Express</p>
-              <p class="package-tag">VK Cloud / Selectel</p>
+              <p class="package-name">Express 24h</p>
+              <p class="package-tag">0.5–1 р.д.</p>
             </div>
             <div class="package-price-wrap">
               <span class="package-price">19 900&nbsp;₽</span>
-              <span class="package-time">5–7 р.д.</span>
+              <span class="package-time">0.5–1 р.д.</span>
             </div>
           </header>
           <ul class="package-list compact-list">
-            <li>Готовим IaC, окружение и журнал действий.</li>
-            <li>Базовые алерты и инструкции по обновлениям.</li>
+            <li>Готовим IaC, выпускаем HTTPS и подключаем <code>setWebhook</code>.</li>
+            <li>Собираем <code>/health</code> endpoint и журнал действий за 24 часа.</li>
           </ul>
         </article>
         <article class="package-card">
           <header class="package-card-header">
             <div>
-              <p class="package-name">RU Deploy Lite</p>
-              <p class="package-tag">+ VPN и резервы</p>
+              <p class="package-name">RU Deploy LITE</p>
+              <p class="package-tag">Docker Compose</p>
             </div>
             <div class="package-price-wrap">
               <span class="package-price">29 900&nbsp;₽</span>
-              <span class="package-time">7–10 р.д.</span>
+              <span class="package-time">1 р.д.</span>
             </div>
           </header>
           <ul class="package-list compact-list">
-            <li>Серверы с VPN, ротация ключей, журналы аудита.</li>
-            <li>Hand-over в службу безопасности + обучение.</li>
+            <li>Собираем Docker Compose (app + redis + caddy) с VPN и секретами.</li>
+            <li>Описываем ротацию ключей, выдаём инструкции по обновлениям.</li>
           </ul>
         </article>
         <article class="package-card">
           <header class="package-card-header">
             <div>
-              <p class="package-name">RU Deploy Std</p>
-              <p class="package-tag">Failover</p>
+              <p class="package-name">RU Deploy STANDARD</p>
+              <p class="package-tag">CI/CD + fail2ban</p>
             </div>
             <div class="package-price-wrap">
               <span class="package-price">49 900&nbsp;₽</span>
-              <span class="package-time">10–14 р.д.</span>
+              <span class="package-time">1.5–2.5 р.д.</span>
             </div>
           </header>
           <ul class="package-list compact-list">
-            <li>Несколько контуров, CI/CD, мониторинг Grafana.</li>
-            <li>Отчёт по нагрузке и инструкции по резервам.</li>
+            <li>CI/CD пайплайн, fail2ban и наблюдение (логирование + алерты).</li>
+            <li>Отчёт по нагрузке, резервам и runbook для автоподъёма.</li>
           </ul>
         </article>
         <article class="package-card">
           <header class="package-card-header">
             <div>
-              <p class="package-name">RU Deploy Max</p>
-              <p class="package-tag">Гибрид и сертификация</p>
+              <p class="package-name">RU Deploy MAX</p>
+              <p class="package-tag">Uptime-Kuma + Sentry</p>
             </div>
             <div class="package-price-wrap">
               <span class="package-price">119 000&nbsp;₽</span>
-              <span class="package-time">14–21 р.д.</span>
+              <span class="package-time">3–5 р.д.</span>
             </div>
           </header>
           <ul class="package-list compact-list">
-            <li>Гибрид РФ+зарубеж, резервные очереди и SLA 99.5%.</li>
-            <li>Пакет документов для ИБ и сертификаций.</li>
+            <li>Uptime-Kuma, Sentry и OpenTofu IaC под гибридный контур.</li>
+            <li>Документы для ИБ, SLA 99.5% и handover с наблюдением.</li>
           </ul>
         </article>
+      </div>
+      <div class="package-note">
+        <p><strong>DoD:</strong> валидный HTTPS, <code>/health=200</code>, <code>setWebhook=ok</code>, автоподъём сервисов и переданные доступы.</p>
+        <p><strong>OPEX:</strong> оплачивается напрямую в VK Cloud, Selectel или МТС Cloud; обычно 6–15 тыс.&nbsp;₽/мес. за prod+stage и можно перенести в ваш контур.</p>
       </div>
     </section>
 

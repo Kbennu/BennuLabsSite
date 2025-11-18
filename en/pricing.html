@@ -220,67 +220,71 @@
         <article class="package-card">
           <header class="package-card-header">
             <div>
-              <p class="package-name">RU Deploy Express</p>
-              <p class="package-tag">VK Cloud / Selectel</p>
+              <p class="package-name">Express 24h</p>
+              <p class="package-tag">0.5–1 wd</p>
             </div>
             <div class="package-price-wrap">
               <span class="package-price">19&nbsp;900&nbsp;₽</span>
-              <span class="package-time">5–7 wd</span>
+              <span class="package-time">0.5–1 wd</span>
             </div>
           </header>
           <ul class="package-list compact-list">
-            <li>IaC, environment prep and action log.</li>
-            <li>Baseline alerts and update instructions.</li>
+            <li>Prep IaC, issue HTTPS and wire the <code>setWebhook</code>.</li>
+            <li><code>/health</code> endpoint and action log delivered within 24h.</li>
           </ul>
         </article>
         <article class="package-card">
           <header class="package-card-header">
             <div>
-              <p class="package-name">RU Deploy Lite</p>
-              <p class="package-tag">+ VPN and reserves</p>
+              <p class="package-name">RU Deploy LITE</p>
+              <p class="package-tag">Docker Compose</p>
             </div>
             <div class="package-price-wrap">
               <span class="package-price">29&nbsp;900&nbsp;₽</span>
-              <span class="package-time">7–10 wd</span>
+              <span class="package-time">1 wd</span>
             </div>
           </header>
           <ul class="package-list compact-list">
-            <li>Servers with VPN, key rotation, audit logs.</li>
-            <li>Handover to security + training.</li>
+            <li>Docker Compose (app + redis + caddy) plus VPN and secrets.</li>
+            <li>Document key rotation and give update instructions.</li>
           </ul>
         </article>
         <article class="package-card">
           <header class="package-card-header">
             <div>
-              <p class="package-name">RU Deploy Std</p>
-              <p class="package-tag">Failover</p>
+              <p class="package-name">RU Deploy STANDARD</p>
+              <p class="package-tag">CI/CD + fail2ban</p>
             </div>
             <div class="package-price-wrap">
               <span class="package-price">49&nbsp;900&nbsp;₽</span>
-              <span class="package-time">10–14 wd</span>
+              <span class="package-time">1.5–2.5 wd</span>
             </div>
           </header>
           <ul class="package-list compact-list">
-            <li>Multiple contours, CI/CD, Grafana monitoring.</li>
-            <li>Load report and reserve instructions.</li>
+            <li>CI/CD pipeline, fail2ban and observability (logs + alerts).</li>
+            <li>Load report, reserve guidance and an auto-recovery runbook.</li>
           </ul>
         </article>
         <article class="package-card">
           <header class="package-card-header">
             <div>
-              <p class="package-name">RU Deploy Max</p>
-              <p class="package-tag">Hybrid + certification</p>
+              <p class="package-name">RU Deploy MAX</p>
+              <p class="package-tag">Uptime-Kuma + Sentry</p>
             </div>
             <div class="package-price-wrap">
               <span class="package-price">119&nbsp;000&nbsp;₽</span>
-              <span class="package-time">14–21 wd</span>
+              <span class="package-time">3–5 wd</span>
             </div>
           </header>
           <ul class="package-list compact-list">
-            <li>Hybrid RU + abroad, reserve queues and 99.5% SLA.</li>
-            <li>Documentation for security and certifications.</li>
+            <li>Uptime-Kuma, Sentry and OpenTofu IaC for the hybrid contour.</li>
+            <li>Security docs, 99.5% SLA and a monitored handover.</li>
           </ul>
         </article>
+      </div>
+      <div class="package-note">
+        <p><strong>DoD:</strong> valid HTTPS, <code>/health=200</code>, <code>setWebhook=ok</code>, auto-recovery and delivered accesses.</p>
+        <p><strong>OPEX:</strong> paid directly to VK Cloud, Selectel or MTS Cloud; typically 6–15k&nbsp;₽/mo for prod+stage and can be moved to your contour.</p>
       </div>
     </section>
 
