@@ -316,6 +316,24 @@ header {
   color: var(--muted);
 }
 
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.contact-list a {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.contact-list a:hover,
+.contact-list a:focus {
+  color: var(--secondary);
+}
+
 .badge {
   display: inline-flex;
   align-items: center;
