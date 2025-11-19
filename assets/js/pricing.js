@@ -103,6 +103,7 @@ function createCard(pkg, popular = false) {
     pkg.rd ? `<span><strong>${labels.rd}:</strong> ${pkg.rd}</span>` : '',
     pkg.timeline ? `<span><strong>${labels.timeline}:</strong> ${pkg.timeline}</span>` : '',
     pkg.dod ? `<span><strong>${labels.dod}:</strong> ${pkg.dod}</span>` : '',
+    pkg.kpi ? `<span><strong>${labels.kpi}:</strong> ${pkg.kpi}</span>` : '',
     pkg.conditions ? `<span><strong>${labels.conditions}:</strong> ${pkg.conditions}</span>` : ''
   ].filter(Boolean).join('');
 
@@ -135,9 +136,9 @@ function getDocumentLang() {
 function getDetailLabels() {
   const lang = getDocumentLang();
   if (lang.startsWith('en')) {
-    return { rd: 'wd', timeline: 'Timeline', dod: 'DoD', conditions: 'Terms' };
+    return { rd: 'wd', timeline: 'Timeline', dod: 'DoD', kpi: 'KPI', conditions: 'Terms' };
   }
-  return { rd: 'р.д.', timeline: 'Срок', dod: 'DoD', conditions: 'Условия' };
+  return { rd: 'р.д.', timeline: 'Срок', dod: 'DoD', kpi: 'KPI', conditions: 'Условия' };
 }
 
 function getErrorMessage(lang) {
