@@ -222,6 +222,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 18px;
+  word-break: break-word;
 }
 
 .package-card-header {
