@@ -75,7 +75,7 @@
         <li><strong>Отличия от шаблонов:</strong> собираем сценарии под ваши KPI, выдаём документацию, handover и runbook для ИТ.</li>
         <li><strong>Фикс-прайсы (Dev):</strong> Lite/Starter/Pro по 24 900 / 39 900 / 59 900&nbsp;₽ как короткие спринты на 1–7 р.д.</li>
         <li><strong>Микс (Dev + деплой):</strong> Lite+Lite, Starter+Std и Pro+Max за 49 900 / 89 900 / 169 000&nbsp;₽ с RU-инфраструктурой.</li>
-        <li><strong>Сроки:</strong> стартуем через 1–2 р.д. после брифа, деплой в VK Cloud / Selectel / МТС Cloud занимает до 10 р.д.</li>
+        <li><strong>Сроки:</strong> Dev спринты 1–2 / 2–4 / 4–7 р.д.; Mix пакеты 2–3 / 4–6 / 7–12 р.д.; RU-деплой 0.5–5 р.д. (Express/LITE/STANDARD/MAX).</li>
         <li><strong>Способы оплаты (RU):</strong> счета на юрлицо и оплаты по карте РФ или через USDT для локальных юрлиц.</li>
         <li><strong>Способы оплаты (global):</strong> принимаем USDT и TON, выставляя инвойсы в USD для зарубежных структур.</li>
         <li><strong>Схема 70/30:</strong> фиксируем 70% предоплаты перед стартом спринта, оставшиеся 30% — в день демонстрации.</li>
@@ -154,7 +154,7 @@
         <span class="section-marker">2)</span>
         <div>
           <h2>Mix-пакеты с деплоем</h2>
-          <p>Кому нужны маркетинг, отчётность и RU-инфраструктура в одном окне. Мы комбинируем Dev-пакеты и медиаплан, добавляем KPI и передачу в маркетинг.</p>
+          <p>Фиксированные связки Dev + RU-инфраструктура для команд, которым нужны intake-боты, медиапланы и always-on деплой в одном окне.</p>
         </div>
       </div>
       <div class="package-grid">
@@ -162,7 +162,7 @@
           <header class="package-card-header">
             <div>
               <p class="package-name">Lite Dev + LITE деплой</p>
-              <p class="package-tag">Intake + VPN контур</p>
+              <p class="package-tag">Intake + Docker Compose</p>
             </div>
             <div class="package-price-wrap">
               <span class="package-price">49 900&nbsp;₽</span>
@@ -173,30 +173,30 @@
             <div>
               <p class="package-subtitle">Dev</p>
               <ul class="package-list compact-list">
-                <li>Discovery-сессия, mindmap и intake-бот с CRM пайплайном.</li>
-                <li>Notion handover, отчёт в Google Sheets и базовая аналитика.</li>
+                <li>Пакет Lite: mindmap, FSM-заявка до 7 шагов, канал Leads + CSV-бэкап.</li>
+                <li>Антиспам, <code>/health</code>, README + <code>.env.example</code>, тексты RU/EN.</li>
               </ul>
             </div>
             <div>
               <p class="package-subtitle">Deploy</p>
               <ul class="package-list compact-list">
-                <li>RU Deploy Lite: VPN, сегментация сети и журналы аудита.</li>
-                <li>Настраиваем алерты и выдаём инструкции по обновлениям.</li>
+                <li>VM 1 vCPU/2 GB + статический IP в Yandex/Timeweb/Selectel.</li>
+                <li>Docker Compose (app+redis+caddy), HTTPS + автопродление, webhook и Runbook.</li>
               </ul>
             </div>
           </div>
           <ul class="package-list compact-list package-meta">
-            <li><strong>Срок:</strong> 1–2 р.д. Dev + 1 р.д. деплой.</li>
-            <li><strong>DoD:</strong> Telegram intake, CRM-пайплайн и VK Cloud.</li>
+            <li><strong>Срок:</strong> 2–3 р.д. после брифа.</li>
+            <li><strong>DoD:</strong> валидный HTTPS, <code>/health=200</code>, <code>setWebhook=ok</code>, автоподъём.</li>
             <li><strong>KPI:</strong> CR заявок +25% за 4 недели.</li>
           </ul>
-          <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=mix_lite" target="_blank" rel="noopener">Запросить Lite Dev + LITE деплой</a>
+          <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=mix_lite" target="_blank" rel="noopener">Lite Dev + LITE деплой · 49 900&nbsp;₽</a>
         </article>
         <article class="package-card">
           <header class="package-card-header">
             <div>
               <p class="package-name">Starter Dev + STANDARD</p>
-              <p class="package-tag">AI intake + failover</p>
+              <p class="package-tag">AI intake + CI/CD</p>
             </div>
             <div class="package-price-wrap">
               <span class="package-price">89 900&nbsp;₽</span>
@@ -207,24 +207,24 @@
             <div>
               <p class="package-subtitle">Dev</p>
               <ul class="package-list compact-list">
-                <li>Генеративные ответы, intent-маршрутизация и интеграции amoCRM/Bitrix24.</li>
-                <li>Платежи/курьеры, observability и дашборд в Looker Studio.</li>
+                <li>Пакет Starter: Sheets/Яндекс Таблицы, видео-гайд, AI-ответы и intent-маршрутизация.</li>
+                <li>Платежи/курьеры, тонкая настройка текстов и базовый логгинг.</li>
               </ul>
             </div>
             <div>
               <p class="package-subtitle">Deploy</p>
               <ul class="package-list compact-list">
-                <li>RU Deploy Std: несколько окружений, CI/CD и Grafana.</li>
-                <li>Failover runbook и медиаплан handover для маркетинга.</li>
+                <li>CI/CD (GitHub Actions → YCR), бэкапы <code>.env</code>/Compose, ротация логов, fail2ban.</li>
+                <li>Hardening доступа, rollback-план и 7 дней наблюдения.</li>
               </ul>
             </div>
           </div>
           <ul class="package-list compact-list package-meta">
-            <li><strong>Срок:</strong> 3–4 р.д. Dev + 1–2 р.д. деплой.</li>
-            <li><strong>DoD:</strong> AI intake, BI-отчётность и Std-деплой.</li>
+            <li><strong>Срок:</strong> 4–6 р.д. (Dev + деплой).</li>
+            <li><strong>DoD:</strong> AI intake, таблица лидов, CI/CD + failover.</li>
             <li><strong>KPI:</strong> −30% ручных касаний за 6 недель.</li>
           </ul>
-          <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=mix_ops" target="_blank" rel="noopener">Запросить Starter Dev + STANDARD</a>
+          <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=mix_ops" target="_blank" rel="noopener">Starter Dev + STANDARD · 89 900&nbsp;₽</a>
         </article>
         <article class="package-card">
           <header class="package-card-header">
@@ -241,32 +241,31 @@
             <div>
               <p class="package-subtitle">Dev</p>
               <ul class="package-list compact-list">
-                <li>Field-скрипты, QR-механики и интеграции с внутренними API.</li>
-                <li>Мониторинг, runbook для ИТ и NPS-аналитика.</li>
+                <li>Пакет Pro: статусы, кнопки Quote/Pay, +1 интеграция (Sheets/CRM) и i18n EN/RU.</li>
+                <li>Field-скрипты, QR-маршруты, документация и NPS-аналитика.</li>
               </ul>
             </div>
             <div>
               <p class="package-subtitle">Deploy</p>
               <ul class="package-list compact-list">
-                <li>RU Deploy Max: гибрид Selectel + зарубежный резерв.</li>
-                <li>Документы для ИБ, SLA 99.5% и сопровождение handover.</li>
+                <li>Uptime-Kuma + TG-алерты, Sentry/self-hosted или лёгкий error-логгер.</li>
+                <li>Staging + blue/green (Caddy), OpenTofu (IaC), операционная дока 5–7 стр.</li>
               </ul>
             </div>
           </div>
           <ul class="package-list compact-list package-meta">
-            <li><strong>Срок:</strong> 5–7 р.д. Dev + 2–5 р.д. деплой.</li>
-            <li><strong>DoD:</strong> Field-скрипты, гибридный контур и Max-деплой.</li>
-            <li><strong>KPI:</strong> NPS +12 п.п., таймлайн 8 недель.</li>
+            <li><strong>Срок:</strong> 7–12 р.д. с учётом деплоя.</li>
+            <li><strong>DoD:</strong> выкладки без простоя, быстрый откат, наблюдаемость.</li>
+            <li><strong>KPI:</strong> NPS +12 п.п., field-активации.</li>
           </ul>
-          <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=mix_field" target="_blank" rel="noopener">Запросить Pro Dev + MAX</a>
+          <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=mix_field" target="_blank" rel="noopener">Pro Dev + MAX · 169 000&nbsp;₽</a>
         </article>
       </div>
       <div class="package-note">
         <p><strong>Дополнительные комбо:</strong></p>
         <ul class="compact-list">
-          <li>Lite Dev + STANDARD деплой — если нужен failover без расширения Dev.</li>
-          <li>Starter Dev + MAX деплой — гибрид Selectel + зарубежный резерв.</li>
-          <li>Pro Dev + Care Pro 32ч — подключаем on-call Bennu и прозрачную отчётность.</li>
+          <li>Starter Dev + LITE деплой — 64 900&nbsp;₽ · 3–4 р.д. (если нужен VPN-контур без CI/CD).</li>
+          <li>Pro Dev + STANDARD деплой — 109 900&nbsp;₽ · 5–8 р.д. (гибрид + failover без расширенного наблюдения).</li>
         </ul>
       </div>
     </section>
@@ -276,7 +275,7 @@
         <span class="section-marker">3)</span>
         <div>
           <h2>RU-деплой отдельно</h2>
-          <p>Выделяем инженера, собираем IaC и мониторинг, передаём runbook и сопровождаем запуск. Можно добавить к любому Dev/Mix или заказать отдельно.</p>
+          <p>Переносим готовые проекты с Render/Vercel или поднимаем новый контур в российских облаках: выделенный инженер, runbook, наблюдение и handover.</p>
         </div>
       </div>
       <div class="package-grid">
@@ -292,9 +291,10 @@
             </div>
           </header>
           <ul class="package-list compact-list">
-            <li>Готовим IaC, выпускаем HTTPS и подключаем <code>setWebhook</code>.</li>
-            <li>Собираем <code>/health</code> endpoint и журнал действий за 24 часа.</li>
+            <li>Nginx + certbot (HTTPS), запуск приложения и webhook в VK/Selectel/MTS Cloud.</li>
+            <li>Cheat-sheet с командами перезапуска, <code>/health</code> и базовый журнал действий.</li>
           </ul>
+          <p class="package-note">*Ограничения: без Redis, без Caddy/реверса, без CI/CD и лог-ротации.*</p>
         </article>
         <article class="package-card">
           <header class="package-card-header">
@@ -308,8 +308,8 @@
             </div>
           </header>
           <ul class="package-list compact-list">
-            <li>Собираем Docker Compose (app + redis + caddy) с VPN и секретами.</li>
-            <li>Описываем ротацию ключей, выдаём инструкции по обновлениям.</li>
+            <li>VM 1 vCPU/2 GB, статический IP, Docker Compose (app+redis+caddy) и HTTPS с автопродлением.</li>
+            <li>Webhooks, Runbook, инструкции по обновлениям и ротации секретов.</li>
           </ul>
         </article>
         <article class="package-card">
@@ -324,15 +324,15 @@
             </div>
           </header>
           <ul class="package-list compact-list">
-            <li>CI/CD пайплайн, fail2ban и наблюдение (логирование + алерты).</li>
-            <li>Отчёт по нагрузке, резервам и runbook для автоподъёма.</li>
+            <li>CI/CD (GitHub Actions → YCR), бэкапы <code>.env</code>/Compose, лог-менеджмент и алерты.</li>
+            <li>Hardening (SSH-ключи, fail2ban), rollback-план и 7 дней наблюдения.</li>
           </ul>
         </article>
         <article class="package-card">
           <header class="package-card-header">
             <div>
               <p class="package-name">RU Deploy MAX</p>
-              <p class="package-tag">Uptime-Kuma + Sentry</p>
+              <p class="package-tag">Uptime-Kuma + IaC</p>
             </div>
             <div class="package-price-wrap">
               <span class="package-price">119 000&nbsp;₽</span>
@@ -340,14 +340,14 @@
             </div>
           </header>
           <ul class="package-list compact-list">
-            <li>Uptime-Kuma, Sentry и OpenTofu IaC под гибридный контур.</li>
-            <li>Документы для ИБ, SLA 99.5% и handover с наблюдением.</li>
+            <li>Uptime-Kuma + TG-алерты, Sentry/self-hosted или лёгкий error-логгер, staging + blue/green.</li>
+            <li>OpenTofu (IaC), операционная дока 5–7 стр., подготовка к SLA 99.5%.</li>
           </ul>
         </article>
       </div>
       <div class="package-note">
-        <p><strong>DoD:</strong> валидный HTTPS, <code>/health=200</code>, <code>setWebhook=ok</code>, автоподъём сервисов и переданные доступы.</p>
-        <p><strong>OPEX:</strong> оплачивается напрямую в VK Cloud, Selectel или МТС Cloud; обычно 6–15 тыс.&nbsp;₽/мес. за prod+stage и можно перенести в ваш контур.</p>
+        <p><strong>DoD:</strong> валидный HTTPS, <code>/health=200</code>, <code>setWebhook=ok</code>, время ответа &lt; 1&nbsp;с, автоподъём и переданные доступы.</p>
+        <p><strong>OPEX:</strong> 1–2 тыс.&nbsp;₽/мес. за VM в Yandex/Timeweb/Selectel/VK Cloud; оплачивается напрямую заказчиком.</p>
       </div>
     </section>
 
@@ -373,12 +373,12 @@
           </header>
           <ul class="package-list compact-list">
             <li>8 часов на мини-итерации, обновления контента и консультации по интеграциям.</li>
-            <li>Фиксируем задачи в Notion, сверхлимитная ставка 2 500&nbsp;₽/час.</li>
+            <li>Задачи ведём в Notion + Telegram, подключаем архитектора по запросу.</li>
           </ul>
           <ul class="package-list compact-list package-meta">
             <li><strong>SLA:</strong> ответ до 8 часов, слоты по 2 часа.</li>
-            <li><strong>Оплата:</strong> 70/30 — перед стартом и после отчёта.</li>
-            <li><strong>Условия:</strong> отмена за 7 дней, отчёт каждую неделю.</li>
+            <li><strong>Сверх лимита:</strong> 2 200&nbsp;₽/час.</li>
+            <li><strong>Условия:</strong> помесячный биллинг, отмена за 15 дней, оплата 70/30.</li>
           </ul>
           <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=care_basic" target="_blank" rel="noopener">Care Basic · 12 000&nbsp;₽</a>
         </article>
@@ -394,13 +394,13 @@
             </div>
           </header>
           <ul class="package-list compact-list">
-            <li>16 часов на гипотезы, промпт-инжиниринг и A/B эксперименты.</li>
-            <li>Единый backlog, релизы контента и KPI-отчётность в Notion.</li>
+            <li>16 часов на гипотезы, промпт-инжиниринг, релизы и отчёты по KPI.</li>
+            <li>Единый backlog, приоритезация и синки 1–2 раза в неделю.</li>
           </ul>
           <ul class="package-list compact-list package-meta">
             <li><strong>SLA:</strong> ответ до 4 часов, выделенный чат и демо каждые 2 недели.</li>
-            <li><strong>Оплата:</strong> 70/30 — перед спринтом и после демонстрации.</li>
-            <li><strong>Условия:</strong> отмена за 10 дней, общий roadmap.</li>
+            <li><strong>Сверх лимита:</strong> 2 200&nbsp;₽/час, биллинг помесячно.</li>
+            <li><strong>Условия:</strong> 70/30, отмена за 15 дней, общий roadmap.</li>
           </ul>
           <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=care_standard" target="_blank" rel="noopener">Care Standard · 22 000&nbsp;₽</a>
         </article>
@@ -417,12 +417,12 @@
           </header>
           <ul class="package-list compact-list">
             <li>32 часа on-call Bennu, product analytics и совместный roadmap.</li>
-            <li>Обновляем runbook, внедряем RAG/AI-эксперименты и отчётность C-level.</li>
+            <li>Обновляем runbook, внедряем RAG/AI-эксперименты и готовим C-level отчёты.</li>
           </ul>
           <ul class="package-list compact-list package-meta">
             <li><strong>SLA:</strong> ответ до 2 часов, on-call инженеры и weekly релизы.</li>
-            <li><strong>Оплата:</strong> 70/30 — инвойс перед запуском, закрытие по релизу.</li>
-            <li><strong>Условия:</strong> минимум 2 месяца, при паузе удерживаем 30%.</li>
+            <li><strong>Сверх лимита:</strong> 2 200&nbsp;₽/час, отчётность еженедельно.</li>
+            <li><strong>Условия:</strong> минимум 2 месяца, 70/30, при паузе удерживаем 30%.</li>
           </ul>
           <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=care_pro" target="_blank" rel="noopener">Care Pro · 42 000&nbsp;₽</a>
         </article>
@@ -492,10 +492,11 @@
         </div>
       </div>
       <ul class="note-list">
-        <li><strong>Ответы:</strong> intake-бот работает 24/7, архитектор подключается в рабочие часы и отвечает до 4 часов.</li>
-        <li><strong>Оплата:</strong> счета в рублях с НДС, этапность 50/30/20, эквайринг — по запросу.</li>
+        <li><strong>Ответы:</strong> intake-бот работает 24/7, архитектор на связи 09:00–20:00 МСК и подключается за 1–2&nbsp;р.д.</li>
+        <li><strong>Оплата:</strong> 70/30 (предоплата/приёмка); RU — счета с НДС, карта или USDT, global — USDT/TON.</li>
+        <li><strong>Возвраты:</strong> не предусмотрены; при паузе удерживаем 30% от неиспользованного остатка.</li>
         <li><strong>Документы:</strong> договор, акт, runbook, чек-лист ИБ, доступы выдаём по ролям.</li>
-        <li><strong>Контуры:</strong> VK Cloud, Selectel, МТС Cloud, гибриды с зарубежным резервом.</li>
+        <li><strong>Контуры:</strong> Yandex Cloud, Timeweb, Selectel, VK Cloud, МТС Cloud + гибриды с резервом.</li>
         <li><strong>Материалы:</strong> Notion workspace, UI kit, шаблоны промптов и отчётности.</li>
       </ul>
     </section>

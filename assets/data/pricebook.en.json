@@ -79,19 +79,19 @@
         {
           "id": "mix_lite_lite",
           "title": "Lite Dev + LITE deploy",
-          "tagline": "Intake + VPN perimeter",
+          "tagline": "Intake + Docker Compose",
           "price": 49900,
           "period": "per bundle",
           "rd": "2–3 wd",
           "timeline": "1–2 wd Dev + 1 wd deploy",
-          "dod": "Telegram intake, CRM and VK Cloud",
+          "dod": "Valid HTTPS, /health=200, setWebhook=ok, auto-restart.",
           "kpi": "+25% lead CR in 4 weeks",
           "conditions": "70/30, launch after brief",
-          "description": "Mindmap, intake bot with CRM pipeline plus RU Deploy Lite with VPN and logs.",
+          "description": "Dev Lite (mindmap, FSM, Leads/CSV) bundled with Docker Compose (app+redis+caddy), HTTPS and webhook.",
           "bullets": [
-            "Discovery and Notion handover",
-            "Google Sheets report",
-            "RU Deploy Lite: VPN + logs"
+            "Dev Lite: mindmap, FSM, Leads/CSV channel",
+            "VM 1 vCPU/2 GB + static IP",
+            "Docker Compose, auto-TLS, runbook"
           ],
           "deeplink": "https://t.me/BennuLabIntakeBot?start=mix_lite",
           "cta": "Launch Lite + LITE",
@@ -100,19 +100,19 @@
         {
           "id": "mix_starter_std",
           "title": "Starter Dev + STANDARD",
-          "tagline": "AI intake + failover",
+          "tagline": "AI intake + CI/CD",
           "price": 89900,
           "period": "per bundle",
           "rd": "4–6 wd",
           "timeline": "3–4 wd Dev + 1–2 wd deploy",
-          "dod": "AI intake, BI and Std deploy",
+          "dod": "AI intake, lead table and CI/CD + failover.",
           "kpi": "−30% manual touches in 6 weeks",
           "conditions": "Media plan + KPI included",
-          "description": "Dev Starter with BI, Looker Studio plus RU Deploy Standard with CI/CD + failover.",
+          "description": "Dev Starter with AI replies plus CI/CD (GitHub Actions → YCR), backups, logging and failover.",
           "bullets": [
-            "AI intake and intent routes",
-            "Payments, observability & BI",
-            "RU Deploy Std: CI/CD + runbook"
+            "Sheets/Yandex Tables + video guide",
+            "Payments, intent routing, observability",
+            "CI/CD, hardening and 7-day monitoring"
           ],
           "deeplink": "https://t.me/BennuLabIntakeBot?start=mix_ops",
           "cta": "Book Starter + STANDARD",
@@ -121,19 +121,19 @@
         {
           "id": "mix_pro_max",
           "title": "Pro Dev + MAX",
-          "tagline": "Field + hybrid",
+          "tagline": "Field + observability",
           "price": 169000,
           "period": "per bundle",
           "rd": "7–12 wd",
           "timeline": "5–7 wd Dev + 2–5 wd deploy",
-          "dod": "Field scripts and Max deploy",
+          "dod": "Zero-downtime releases, fast rollback and observability.",
           "kpi": "+12pp NPS in 8 weeks",
           "conditions": "Field playbooks sign-off",
-          "description": "Field scripts, QR mechanics and RU Deploy Max with Selectel + backup region.",
+          "description": "Dev Pro (statuses, Quote/Pay, +1 integration) plus Uptime-Kuma, Sentry/self-hosted and OpenTofu (IaC).",
           "bullets": [
-            "Field activations & QR",
-            "NPS analytics + runbook",
-            "RU Deploy Max: hybrid + SLA"
+            "Field scripts, QR flows, NPS analytics",
+            "Uptime-Kuma + TG alerts, Sentry/self-hosted",
+            "Staging + blue/green (Caddy), OpenTofu and 5–7p ops doc"
           ],
           "deeplink": "https://t.me/BennuLabIntakeBot?start=mix_field",
           "cta": "Assemble Pro + MAX",
@@ -154,14 +154,14 @@
           "price": 19900,
           "period": "per project",
           "rd": "0.5–1 wd",
-          "timeline": "IaC + HTTPS in 24h",
-          "dod": "IaC, HTTPS and activity log",
+          "timeline": "Nginx + webhook in 24h",
+          "dod": "Nginx+HTTPS, webhook and cheat-sheet",
           "conditions": "Slot after payment",
-          "description": "IaC, HTTPS, setWebhook and audit logs delivered within one business day.",
+          "description": "Nginx + certbot (HTTPS), app launch and webhook in 24 hours.",
           "bullets": [
-            "IaC + HTTPS",
-            "Health endpoint",
-            "Activity journal"
+            "HTTPS + webhook",
+            "/health + basic log",
+            "Cheat-sheet + instructions"
           ],
           "deeplink": "https://t.me/BennuLabIntakeBot?start=ru_deploy_express",
           "cta": "Request Express",
@@ -174,14 +174,14 @@
           "price": 29900,
           "period": "per project",
           "rd": "1 wd",
-          "timeline": "Dev/test environment",
-          "dod": "Docker Compose, VPN and guides",
+          "timeline": "Dev/test + prod contour",
+          "dod": "HTTPS, /health=200, Leads/CSV, runbook.",
           "conditions": "70/30 billing, RU clouds",
-          "description": "Compose stack (app+redis+caddy), VPN, secrets rotation and update guide.",
+          "description": "VM 1 vCPU/2 GB, Docker Compose (app+redis+caddy), auto-TLS HTTPS and webhook.",
           "bullets": [
-            "VPN + secrets",
-            "Key rotation",
-            "Update instructions"
+            "Docker Compose + static IP",
+            "Runbook + secret rotation",
+            "Always-on contour"
           ],
           "deeplink": "https://t.me/BennuLabIntakeBot?start=ru_deploy_lite",
           "cta": "Order Lite",
@@ -194,14 +194,14 @@
           "price": 49900,
           "period": "per project",
           "rd": "1.5–2.5 wd",
-          "timeline": "Failover ready",
+          "timeline": "Failover contour in 1.5–2.5 wd",
           "dod": "CI/CD pipeline, fail2ban and runbook",
           "conditions": "Alerts + load report included",
-          "description": "CI/CD, fail2ban, logging/alerts and a failover runbook for your team.",
+          "description": "CI/CD (GitHub Actions → YCR), backups, logging, alerts and fail2ban.",
           "bullets": [
-            "CI/CD + alerts",
-            "Load & reserve report",
-            "Failover runbook"
+            "CI/CD + observability",
+            "Hardening + rollback plan",
+            "7-day monitoring"
           ],
           "deeplink": "https://t.me/BennuLabIntakeBot?start=ru_deploy_std",
           "cta": "Choose Std",
@@ -210,18 +210,18 @@
         {
           "id": "ru_deploy_max",
           "title": "RU Deploy Max",
-          "tagline": "Uptime-Kuma + Sentry",
+          "tagline": "Uptime-Kuma + IaC",
           "price": 119000,
           "period": "per project",
           "rd": "3–5 wd",
-          "timeline": "Hybrid perimeter",
+          "timeline": "Hybrid Selectel + reserve",
           "dod": "OpenTofu IaC, Sentry and 99.5% SLA",
           "conditions": "Security docs + handover",
-          "description": "Hybrid Selectel + backup region, Uptime-Kuma, Sentry and compliance pack.",
+          "description": "Uptime-Kuma + TG alerts, Sentry/self-hosted, staging + blue/green and OpenTofu (IaC).",
           "bullets": [
-            "OpenTofu IaC",
-            "Sentry & observability",
-            "Security paperwork"
+            "Uptime-Kuma + Sentry",
+            "Staging + blue/green (Caddy)",
+            "OpenTofu + 5–7p ops doc"
           ],
           "deeplink": "https://t.me/BennuLabIntakeBot?start=ru_deploy_max",
           "cta": "Plan Max",
@@ -243,12 +243,12 @@
           "rd": "8h SLA",
           "timeline": "Weekly slots",
           "dod": "To-do, report and demo",
-          "conditions": "70/30, 7-day cancel",
-          "description": "8 hours for micro-iterations, content refresh and integration consults.",
+          "conditions": "70/30, 15-day cancellation, 2 200 ₽/h overage.",
+          "description": "8 hours for mini-iterations, content updates and integration consults.",
           "bullets": [
             "Notion reports",
             "2h slots",
-            "2 500 ₽/h overtime"
+            "Overage 2 200 ₽/h"
           ],
           "deeplink": "https://t.me/BennuLabIntakeBot?start=care_basic",
           "cta": "Care Basic",
@@ -263,8 +263,8 @@
           "rd": "4h SLA",
           "timeline": "Bi-weekly demos",
           "dod": "Improvement plan + demo",
-          "conditions": "70/30, 10-day cancel",
-          "description": "16 hours for hypotheses, prompt engineering, A/B and a shared KPI backlog.",
+          "conditions": "70/30, 15-day cancellation, 2 200 ₽/h overage.",
+          "description": "16 hours for hypotheses, prompt engineering, releases and KPI reporting.",
           "bullets": [
             "Shared backlog",
             "Notion KPI",
@@ -283,8 +283,8 @@
           "rd": "2h SLA",
           "timeline": "Weekly releases",
           "dod": "Roadmap and runbook",
-          "conditions": "70/30, 2-month minimum",
-          "description": "32 hours of on-call Bennu, product analytics, RAG/AI experiments and C-level reports.",
+          "conditions": "70/30, 2-month minimum, 30% retention on pause.",
+          "description": "32 hours of on-call Bennu, product analytics, RAG/AI experiments and C-level reporting.",
           "bullets": [
             "On-call",
             "Runbook",

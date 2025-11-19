@@ -79,19 +79,19 @@
         {
           "id": "mix_lite_lite",
           "title": "Lite Dev + LITE деплой",
-          "tagline": "Intake + VPN контур",
+          "tagline": "Intake + Docker Compose",
           "price": 49900,
           "period": "за bundle",
           "rd": "2–3 р.д.",
           "timeline": "1–2 р.д. Dev + 1 р.д. деплой",
-          "dod": "Telegram intake, CRM и VK Cloud",
+          "dod": "Валидный HTTPS, /health=200, setWebhook=ok, автоподъём.",
           "kpi": "CR заявок +25% за 4 недели",
           "conditions": "70/30, запуск после брифа",
-          "description": "Mindmap, intake-бот с CRM пайплайном и RU Deploy Lite c VPN и журналами.",
+          "description": "Пакет Lite (mindmap, FSM, Leads/CSV) + Docker Compose (app+redis+caddy), HTTPS и webhook.",
           "bullets": [
-            "Discovery и Notion handover",
-            "Отчёт в Google Sheets",
-            "RU Deploy Lite: VPN и журналы"
+            "Пакет Lite: mindmap, FSM-заявка, Leads/CSV",
+            "VM 1 vCPU/2 GB + статический IP",
+            "Docker Compose, HTTPS + автопродление, Runbook"
           ],
           "deeplink": "https://t.me/BennuLabIntakeBot?start=mix_lite",
           "cta": "Запустить Lite + LITE",
@@ -100,19 +100,19 @@
         {
           "id": "mix_starter_std",
           "title": "Starter Dev + STANDARD",
-          "tagline": "AI intake + failover",
+          "tagline": "AI intake + CI/CD",
           "price": 89900,
           "period": "за bundle",
           "rd": "4–6 р.д.",
           "timeline": "3–4 р.д. Dev + 1–2 р.д. деплой",
-          "dod": "AI intake, BI и Std-деплой",
+          "dod": "AI intake, таблица лидов и CI/CD + failover.",
           "kpi": "−30% ручных касаний за 6 недель",
           "conditions": "Включены KPI и медиаплан",
-          "description": "Dev Starter с BI, Looker Studio и RU Deploy Standard с CI/CD и failover.",
+          "description": "Dev Starter с AI-ответами + CI/CD (GitHub Actions → YCR), бэкапы, логгинг и failover.",
           "bullets": [
-            "AI intake и intent-маршруты",
-            "Платежи, observability и BI",
-            "RU Deploy Std: CI/CD и runbook"
+            "Sheets/Яндекс Таблицы и видео-гайд",
+            "Платежи, intent-маршруты, observability",
+            "CI/CD, hardening и 7 дней наблюдения"
           ],
           "deeplink": "https://t.me/BennuLabIntakeBot?start=mix_ops",
           "cta": "Запросить Starter + STANDARD",
@@ -121,19 +121,19 @@
         {
           "id": "mix_pro_max",
           "title": "Pro Dev + MAX",
-          "tagline": "Field + гибрид",
+          "tagline": "Field + наблюдаемость",
           "price": 169000,
           "period": "за bundle",
           "rd": "7–12 р.д.",
           "timeline": "5–7 р.д. Dev + 2–5 р.д. деплой",
-          "dod": "Field-скрипты и Max-деплой",
+          "dod": "Выкладки без простоя, быстрый откат и наблюдаемость.",
           "kpi": "NPS +12 п.п. за 8 недель",
           "conditions": "Согласуем регламенты field-активаций",
-          "description": "Field-скрипты, QR-механики и гибридный RU Deploy Max с Selectel + резервом.",
+          "description": "Dev Pro (статусы, Quote/Pay, +1 интеграция) + Uptime-Kuma, Sentry/self-hosted и OpenTofu (IaC).",
           "bullets": [
-            "Field-активации и QR",
-            "NPS и runbook для ИТ",
-            "RU Deploy Max: гибрид + SLA"
+            "Field-скрипты, QR-маршруты, NPS-аналитика",
+            "Uptime-Kuma + TG-алерты, Sentry/self-hosted",
+            "Staging + blue/green (Caddy), OpenTofu и дока 5–7 стр."
           ],
           "deeplink": "https://t.me/BennuLabIntakeBot?start=mix_field",
           "cta": "Запросить Pro + MAX",
@@ -154,14 +154,14 @@
           "price": 19900,
           "period": "за проект",
           "rd": "0.5–1 р.д.",
-          "timeline": "IaC + HTTPS за 24 часа",
-          "dod": "IaC, HTTPS и журнал действий",
+          "timeline": "Nginx + webhook за 24 часа",
+          "dod": "Nginx+HTTPS, webhook и cheat-sheet",
           "conditions": "Слот после оплаты",
-          "description": "Готовим IaC, подключаем HTTPS и настраиваем setWebhook и журналы за сутки.",
+          "description": "Nginx + certbot (HTTPS), запуск приложения и webhook за 24 часа.",
           "bullets": [
-            "IaC и HTTPS",
-            "Health endpoint",
-            "Журнал действий"
+            "HTTPS + webhook",
+            "/health и базовый лог",
+            "Cheat-sheet и инструкции"
           ],
           "deeplink": "https://t.me/BennuLabIntakeBot?start=ru_deploy_express",
           "cta": "Запросить Express",
@@ -174,14 +174,14 @@
           "price": 29900,
           "period": "за проект",
           "rd": "1 р.д.",
-          "timeline": "Dev/test окружение",
-          "dod": "Docker Compose, VPN и инструкции",
+          "timeline": "Dev/test окружение + prod",
+          "dod": "HTTPS, /health=200, Leads/CSV, инструкции.",
           "conditions": "Оплата 70/30, запуск в РФ контурах",
-          "description": "Собираем Docker Compose (app+redis+caddy), VPN, секреты и гайд по обновлениям.",
+          "description": "VM 1 vCPU/2 GB, Docker Compose (app+redis+caddy), HTTPS с автопродлением и webhook.",
           "bullets": [
-            "VPN и секреты",
-            "Ротация ключей",
-            "Инструкции по апдейту"
+            "Docker Compose и статический IP",
+            "Runbook и ротация секретов",
+            "Always-on контур"
           ],
           "deeplink": "https://t.me/BennuLabIntakeBot?start=ru_deploy_lite",
           "cta": "Оформить Lite",
@@ -194,14 +194,14 @@
           "price": 49900,
           "period": "за проект",
           "rd": "1.5–2.5 р.д.",
-          "timeline": "Failover контур",
+          "timeline": "Failover контур 1.5–2.5 р.д.",
           "dod": "CI/CD пайплайн, fail2ban и runbook",
           "conditions": "Включены алерты и отчёт",
-          "description": "Настраиваем CI/CD, fail2ban, наблюдение (логирование+алерты) и runbook.",
+          "description": "CI/CD (GitHub Actions → YCR), бэкапы, логирование, алерты и fail2ban.",
           "bullets": [
-            "CI/CD и алерты",
-            "Отчёт по нагрузке",
-            "Failover runbook"
+            "CI/CD и наблюдение",
+            "Hardening и rollback-план",
+            "7 дней наблюдения"
           ],
           "deeplink": "https://t.me/BennuLabIntakeBot?start=ru_deploy_std",
           "cta": "Выбрать Std",
@@ -210,18 +210,18 @@
         {
           "id": "ru_deploy_max",
           "title": "RU Deploy Max",
-          "tagline": "Uptime-Kuma + Sentry",
+          "tagline": "Uptime-Kuma + IaC",
           "price": 119000,
           "period": "за проект",
           "rd": "3–5 р.д.",
-          "timeline": "Гибридный контур",
+          "timeline": "Гибрид Selectel + резерв",
           "dod": "OpenTofu IaC, Sentry и SLA 99.5%",
           "conditions": "Документы для ИБ, handover",
-          "description": "Готовим гибрид Selectel + резерв, Uptime-Kuma, Sentry и пакет документов.",
+          "description": "Uptime-Kuma + TG-алерты, Sentry/self-hosted, staging + blue/green и OpenTofu (IaC).",
           "bullets": [
-            "OpenTofu IaC",
-            "Sentry и observability",
-            "Документы для ИБ"
+            "Uptime-Kuma и Sentry",
+            "Staging + blue/green (Caddy)",
+            "OpenTofu и дока 5–7 стр."
           ],
           "deeplink": "https://t.me/BennuLabIntakeBot?start=ru_deploy_max",
           "cta": "Спланировать Max",
@@ -243,12 +243,12 @@
           "rd": "SLA 8 ч",
           "timeline": "Слоты 1 раз в неделю",
           "dod": "To-do, отчёт и demo",
-          "conditions": "70/30, отмена за 7 дней",
-          "description": "8 часов на мини-итерации, обновление контента и консультации по интеграциям.",
+          "conditions": "70/30, отмена за 15 дней, сверх лимита 2 200 ₽/ч.",
+          "description": "8 часов на мини-итерации, обновления контента и консультации по интеграциям.",
           "bullets": [
             "Notion-отчёты",
             "Слоты по 2 часа",
-            "Сверхлимит 2 500 ₽/ч"
+            "Сверхлимит 2 200 ₽/ч"
           ],
           "deeplink": "https://t.me/BennuLabIntakeBot?start=care_basic",
           "cta": "Care Basic",
@@ -263,8 +263,8 @@
           "rd": "SLA 4 ч",
           "timeline": "Демо каждые 2 недели",
           "dod": "План улучшений и demo",
-          "conditions": "70/30, отмена за 10 дней",
-          "description": "16 часов на гипотезы, промпт-инжиниринг, A/B и единый backlog с KPI.",
+          "conditions": "70/30, отмена за 15 дней, сверх лимита 2 200 ₽/ч.",
+          "description": "16 часов на гипотезы, промпт-инжиниринг, релизы и KPI-отчётность.",
           "bullets": [
             "Shared backlog",
             "Notion KPI",
@@ -283,7 +283,7 @@
           "rd": "SLA 2 ч",
           "timeline": "Weekly релизы",
           "dod": "Roadmap и runbook",
-          "conditions": "70/30, минимум 2 месяца",
+          "conditions": "70/30, минимум 2 месяца, при паузе удерживаем 30%.",
           "description": "32 часа on-call Bennu, product analytics, RAG/AI-эксперименты и C-level отчётность.",
           "bullets": [
             "On-call",
