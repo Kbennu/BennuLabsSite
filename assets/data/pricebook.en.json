@@ -232,44 +232,64 @@
       "subtitle": "Post-launch support",
       "cards": [
         {
-          "id": "care_monthly",
-          "title": "Care Monthly",
-          "tagline": "40h/mo",
-          "price": 35000,
+          "id": "care_basic",
+          "title": "Care Basic",
+          "tagline": "8h/mo",
+          "price": 12000,
           "period": "per month",
-          "rd": "4h SLA",
-          "timeline": "Bi-weekly sprints",
-          "dod": "Improvement plan and demo",
-          "conditions": "15-day cancellation",
-          "description": "Funnel optimization, prompt engineering and operator enablement.",
+          "rd": "8h SLA",
+          "timeline": "Weekly slots",
+          "dod": "To-do + demo",
+          "conditions": "70/30 billing, 7-day cancelation",
+          "description": "Micro-iterations, content refresh and architect consultations.",
           "bullets": [
-            "Content updates",
-            "A/B experiments",
-            "Notion reports"
+            "Notion updates",
+            "2h slots",
+            "2 500 ₽/h overtime"
           ],
-          "deeplink": "https://t.me/BennuLabIntakeBot?start=care_monthly",
-          "cta": "Start Care",
-          "shortLabel": "Care · 35 000 ₽"
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=care_basic",
+          "cta": "Care Basic",
+          "shortLabel": "Care Basic · 12 000 ₽"
         },
         {
-          "id": "care_plus",
-          "title": "Care Plus",
-          "tagline": "60h/mo",
-          "price": 59000,
+          "id": "care_standard",
+          "title": "Care Standard",
+          "tagline": "16h/mo",
+          "price": 22000,
+          "period": "per month",
+          "rd": "4h SLA",
+          "timeline": "Bi-weekly demos",
+          "dod": "Improvement plan and demo",
+          "conditions": "70/30 billing, 10-day cancelation",
+          "description": "Hypotheses, prompt engineering, A/B tests and a shared backlog with KPI reporting.",
+          "bullets": [
+            "Shared backlog",
+            "Notion KPI",
+            "A/B experiments"
+          ],
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=care_standard",
+          "cta": "Care Standard",
+          "shortLabel": "Care Standard · 22 000 ₽"
+        },
+        {
+          "id": "care_pro",
+          "title": "Care Pro",
+          "tagline": "32h/mo",
+          "price": 42000,
           "period": "per month",
           "rd": "2h SLA",
           "timeline": "Weekly releases",
           "dod": "Roadmap and runbook",
-          "conditions": "2-month minimum",
-          "description": "Dedicated Bennu Labs pod, on-call and strategy sessions.",
+          "conditions": "70/30 invoice split, 2-month minimum",
+          "description": "On-call Bennu engineers, product analytics, RAG/AI experiments and C-level reporting.",
           "bullets": [
-            "Release runbook",
-            "Product analytics",
-            "Shared backlog"
+            "On-call",
+            "Runbook",
+            "RAG/AI"
           ],
-          "deeplink": "https://t.me/BennuLabIntakeBot?start=care_plus",
-          "cta": "Launch Care Plus",
-          "shortLabel": "Care Plus · 59 000 ₽"
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=care_pro",
+          "cta": "Care Pro",
+          "shortLabel": "Care Pro · 42 000 ₽"
         }
       ]
     },
