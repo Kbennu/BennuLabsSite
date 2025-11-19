@@ -232,44 +232,64 @@
       "subtitle": "Поддержка после релиза",
       "cards": [
         {
-          "id": "care_monthly",
-          "title": "Care Monthly",
-          "tagline": "40 ч/мес",
-          "price": 35000,
+          "id": "care_basic",
+          "title": "Care Basic",
+          "tagline": "8 ч/мес",
+          "price": 12000,
           "period": "в месяц",
-          "rd": "SLA 4 ч",
-          "timeline": "Споты каждые 2 недели",
-          "dod": "План улучшений и demo",
-          "conditions": "Отмена за 15 дней",
-          "description": "Оптимизация воронок, промпт-инжиниринг и обучение операторов.",
+          "rd": "SLA 8 ч",
+          "timeline": "Слоты 1 раз в неделю",
+          "dod": "To-do + demo",
+          "conditions": "Оплата 70/30, отмена за 7 дней",
+          "description": "Мини-итерации, консультации архитектора и быстрые правки контента.",
           "bullets": [
-            "Обновления контента",
-            "A/B-эксперименты",
-            "Notion-отчёты"
+            "Notion-отчёты",
+            "Слоты по 2 часа",
+            "Сверхлимит 2 500 ₽/ч"
           ],
-          "deeplink": "https://t.me/BennuLabIntakeBot?start=care_monthly",
-          "cta": "Подключить Care",
-          "shortLabel": "Care · 35 000 ₽"
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=care_basic",
+          "cta": "Care Basic",
+          "shortLabel": "Care Basic · 12 000 ₽"
         },
         {
-          "id": "care_plus",
-          "title": "Care Plus",
-          "tagline": "60 ч/мес",
-          "price": 59000,
+          "id": "care_standard",
+          "title": "Care Standard",
+          "tagline": "16 ч/мес",
+          "price": 22000,
+          "period": "в месяц",
+          "rd": "SLA 4 ч",
+          "timeline": "Демо каждые 2 недели",
+          "dod": "План улучшений и demo",
+          "conditions": "Оплата 70/30, отмена за 10 дней",
+          "description": "Гипотезы, промпт-инжиниринг, A/B и единый backlog с KPI-отчётами.",
+          "bullets": [
+            "Shared backlog",
+            "Notion KPI",
+            "A/B эксперименты"
+          ],
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=care_standard",
+          "cta": "Care Standard",
+          "shortLabel": "Care Standard · 22 000 ₽"
+        },
+        {
+          "id": "care_pro",
+          "title": "Care Pro",
+          "tagline": "32 ч/мес",
+          "price": 42000,
           "period": "в месяц",
           "rd": "SLA 2 ч",
           "timeline": "Weekly релизы",
           "dod": "Roadmap и runbook",
-          "conditions": "Минимум 2 месяца",
-          "description": "Выделенная команда Bennu Labs, on-call и стратегические сессии.",
+          "conditions": "Оплата 70/30, минимум 2 месяца",
+          "description": "On-call Bennu, product analytics, RAG/AI эксперименты и C-level отчётность.",
           "bullets": [
-            "Runbook обновлений",
-            "Product analytics",
-            "Совместный backlog"
+            "On-call",
+            "Runbook",
+            "RAG/AI"
           ],
-          "deeplink": "https://t.me/BennuLabIntakeBot?start=care_plus",
-          "cta": "Запустить Care Plus",
-          "shortLabel": "Care Plus · 59 000 ₽"
+          "deeplink": "https://t.me/BennuLabIntakeBot?start=care_pro",
+          "cta": "Care Pro",
+          "shortLabel": "Care Pro · 42 000 ₽"
         }
       ]
     },
