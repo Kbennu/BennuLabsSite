@@ -508,6 +508,11 @@ header {
   color: white;
   font-weight: 600;
   transition: background 0.2s ease;
+  max-width: 100%;
+  text-align: center;
+  white-space: normal;
+  word-break: break-word;
+  line-height: 1.4;
 }
 
 .deeplink-cta:hover {
