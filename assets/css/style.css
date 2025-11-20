@@ -317,21 +317,17 @@ header {
   color: var(--muted);
 }
 
-.contact-list {
-  list-style: none;
-  padding: 0;
+.contact-links {
   margin: 0;
-  display: grid;
-  gap: 12px;
 }
 
-.contact-list a {
+.contact-links a {
   font-weight: 600;
   color: var(--primary);
 }
 
-.contact-list a:hover,
-.contact-list a:focus {
+.contact-links a:hover,
+.contact-links a:focus {
   color: var(--secondary);
 }
 
