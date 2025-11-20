@@ -243,12 +243,12 @@
           "rd": "8h SLA",
           "timeline": "Weekly slots",
           "dod": "To-do, report and demo",
-          "conditions": "70/30, 15-day cancellation, 2 200 ₽/h overage.",
+          "conditions": "70/30 billing, 15-day cancellation, 2 200 ₽/h overtime.",
           "description": "8 hours for mini-iterations, content updates and integration consults.",
           "bullets": [
             "Notion reports",
             "2h slots",
-            "Overage 2 200 ₽/h"
+            "Overtime 2 200 ₽/h"
           ],
           "deeplink": "https://t.me/BennuLabIntakeBot?start=care_basic",
           "cta": "Care Basic",
@@ -263,12 +263,13 @@
           "rd": "4h SLA",
           "timeline": "Bi-weekly demos",
           "dod": "Improvement plan + demo",
-          "conditions": "70/30, 15-day cancellation, 2 200 ₽/h overage.",
+          "conditions": "70/30 billing, 15-day cancellation, 2 200 ₽/h overtime.",
           "description": "16 hours for hypotheses, prompt engineering, releases and KPI reporting.",
           "bullets": [
             "Shared backlog",
             "Notion KPI",
-            "A/B experiments"
+            "A/B experiments",
+            "Overtime 2 200 ₽/h"
           ],
           "deeplink": "https://t.me/BennuLabIntakeBot?start=care_standard",
           "cta": "Care Standard",
@@ -283,12 +284,13 @@
           "rd": "2h SLA",
           "timeline": "Weekly releases",
           "dod": "Roadmap and runbook",
-          "conditions": "70/30, 2-month minimum, 15-day cancellation, 2 200 ₽/h overage, 30% retention on pause.",
+          "conditions": "70/30 billing, 2-month minimum, 15-day cancellation, 2 200 ₽/h overtime, 30% retention on pause.",
           "description": "32 hours of on-call Bennu, product analytics, RAG/AI experiments and C-level reporting.",
           "bullets": [
             "On-call",
             "Runbook",
-            "RAG/AI"
+            "RAG/AI",
+            "Overtime 2 200 ₽/h"
           ],
           "deeplink": "https://t.me/BennuLabIntakeBot?start=care_pro",
           "cta": "Care Pro",
