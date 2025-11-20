@@ -795,6 +795,13 @@ header {
   margin-top: 24px;
 }
 
+.cta-pair {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
 .quote-grid {
   display: grid;
   gap: 20px;
