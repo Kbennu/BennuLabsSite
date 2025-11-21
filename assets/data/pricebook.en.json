@@ -284,7 +284,7 @@
           "rd": "2h SLA",
           "timeline": "Weekly releases",
           "dod": "Roadmap and runbook",
-          "conditions": "70/30 billing, 2-month minimum, 15-day cancellation, 2 200 ₽/h overtime, 30% retention on pause.",
+          "conditions": "70/30 billing, 2-month minimum, 2 200 ₽/h overtime, 30% retention on pause.",
           "description": "32 hours of on-call Bennu, product analytics, RAG/AI experiments and C-level reporting.",
           "bullets": [
             "On-call",
