@@ -223,6 +223,7 @@ header {
   flex-direction: column;
   gap: 18px;
   word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 .package-card-header {
@@ -299,6 +300,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  overflow-wrap: anywhere;
 }
 
 .card h3 {
