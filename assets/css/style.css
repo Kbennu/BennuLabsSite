@@ -328,6 +328,13 @@ header {
   color: var(--primary);
 }
 
+.contact-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
 .contact-links a:hover,
 .contact-links a:focus {
   color: var(--secondary);
