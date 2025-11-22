@@ -231,6 +231,8 @@ header {
   justify-content: space-between;
   gap: 16px;
   align-items: flex-start;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 .package-name {
