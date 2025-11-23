@@ -343,6 +343,11 @@ header {
   flex-wrap: wrap;
 }
 
+.contact-inline.contact-inline-compact {
+  gap: 6px;
+  line-height: 1.5;
+}
+
 .contact-links a:hover,
 .contact-links a:focus {
   color: var(--secondary);
@@ -1023,5 +1028,18 @@ header {
 
   .compact-quote blockquote {
     font-size: 0.9rem;
+  }
+
+  .contact-cta {
+    align-items: flex-start;
+  }
+
+  .contact-cta .cta-group,
+  .contact-cta .cta-pair {
+    width: 100%;
+  }
+
+  .contact-inline.contact-inline-compact {
+    line-height: 1.4;
   }
 }
