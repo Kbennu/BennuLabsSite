@@ -282,6 +282,12 @@ header {
   line-height: 1.6;
 }
 
+.package-list li,
+.compact-list li {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
 .compact-quote {
   padding: 20px;
 }
