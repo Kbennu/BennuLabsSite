@@ -243,7 +243,7 @@
           "rd": "8h SLA",
           "timeline": "Weekly slots",
           "dod": "To-do, report and demo",
-          "conditions": "70/30 billing, 15-day cancellation, 2 200 ₽/h overtime.",
+          "conditions": "70/30 billing, monthly invoice, 15-day cancellation, 2 200 ₽/h overtime.",
           "description": "8 hours for mini-iterations, content updates and integration consults.",
           "bullets": [
             "Notion reports",
@@ -263,7 +263,7 @@
           "rd": "4h SLA",
           "timeline": "Bi-weekly demos",
           "dod": "Improvement plan + demo",
-          "conditions": "70/30 billing, 15-day cancellation, 2 200 ₽/h overtime.",
+          "conditions": "70/30 billing, 15-day cancellation, 2 200 ₽/h overtime, shared roadmap.",
           "description": "16 hours for hypotheses, prompt engineering, releases and KPI reporting.",
           "bullets": [
             "Shared backlog",
