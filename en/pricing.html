@@ -23,12 +23,18 @@
           </span>
         </button>
       </div>
-      <nav id="primary-navigation" class="nav-links">
+      <div class="navbar-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to night theme" data-theme-toggle data-light-label="Day" data-dark-label="Night" data-light-aria="Switch to day theme" data-dark-aria="Switch to night theme">
+          <span class="theme-toggle-icon" aria-hidden="true"></span>
+          <span class="theme-toggle-label" data-theme-toggle-label>Day</span>
+        </button>
+        <nav id="primary-navigation" class="nav-links">
         <a href="/en/index.html">Home</a>
         <a href="/en/pricing.html" class="cta-button">Pricing</a>
         <a href="/index.html">RU</a>
         <a href="/pricing/index.html">RU pricing</a>
       </nav>
+      </div>
     </div>
   </header>
   <main>
@@ -550,6 +556,7 @@
       </div>
     </div>
   </footer>
+  <script src="../assets/js/theme.js" defer></script>
   <script src="../assets/js/nav.js" defer></script>
 </body>
 </html>
