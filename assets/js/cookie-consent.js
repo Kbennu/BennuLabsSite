@@ -46,8 +46,13 @@
       banner.setAttribute('hidden', '');
     };
 
-    acceptButton?.addEventListener('click', () => handleDecision('accepted'));
-    declineButton?.addEventListener('click', () => handleDecision('declined'));
+    if (acceptButton) {
+      acceptButton.addEventListener('click', () => handleDecision('accepted'));
+    }
+
+    if (declineButton) {
+      declineButton.addEventListener('click', () => handleDecision('declined'));
+    }
 
     banner.removeAttribute('hidden');
   };
