@@ -1068,7 +1068,91 @@ header {
   margin: 0 0 8px;
 }
 
+.cookie-banner {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1100px, calc(100% - 32px));
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 16px;
+  align-items: center;
+  padding: 18px 20px;
+  background: var(--surface);
+  color: var(--text);
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-strong);
+  z-index: 1200;
+}
+
+.cookie-banner__text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.cookie-banner__link {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.cookie-banner__actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.cookie-banner__button {
+  border: 1px solid var(--border);
+  background: var(--primary);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.cookie-banner__button:hover,
+.cookie-banner__button:focus-visible {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-soft);
+}
+
+.cookie-banner__button:active {
+  transform: translateY(0);
+}
+
+.cookie-banner__button--secondary {
+  background: var(--surface-alt);
+  color: var(--text);
+}
+
 @media (max-width: 640px) {
+  .cookie-banner {
+    grid-template-columns: 1fr;
+    width: calc(100% - 24px);
+    bottom: 12px;
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .cookie-banner__actions {
+    justify-content: stretch;
+  }
+
+  .cookie-banner__button {
+    width: 100%;
+    text-align: center;
+  }
+
   .price-table th,
   .price-table td {
     padding: 16px;
