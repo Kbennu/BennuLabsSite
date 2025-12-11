@@ -577,14 +577,6 @@
         }
       }
 
-      window.handleCookieDecision = function (decision) {
-        try {
-          localStorage.setItem(STORAGE_KEY, decision);
-        } catch (error) {}
-
-        hideBanner();
-      };
-
       if (!banner) return;
 
       var savedDecision;
