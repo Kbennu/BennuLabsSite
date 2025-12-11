@@ -571,14 +571,49 @@
       <a class="cookie-banner__link" href="/privacy/">Подробнее в политике конфиденциальности</a>
     </div>
     <div class="cookie-banner__actions">
-      <button class="cookie-banner__button" type="button" data-cookie-accept>Согласен</button>
-      <button class="cookie-banner__button cookie-banner__button--secondary" type="button" data-cookie-decline>Отказаться</button>
+      <button class="cookie-banner__button" type="button" data-cookie-accept onclick="handleCookieDecision('accepted')">Согласен</button>
+      <button class="cookie-banner__button cookie-banner__button--secondary" type="button" data-cookie-decline onclick="handleCookieDecision('declined')">Отказаться</button>
     </div>
   </div>
+  <script>
+    (function () {
+      var STORAGE_KEY = 'bennu-cookie-consent';
+      var banner = document.querySelector('[data-cookie-banner]');
+
+      function hideBanner() {
+        if (banner) {
+          banner.setAttribute('hidden', '');
+        }
+      }
+
+      window.handleCookieDecision = function (decision) {
+        try {
+          localStorage.setItem(STORAGE_KEY, decision);
+        } catch (error) {}
+
+        hideBanner();
+      };
+
+      if (!banner) return;
+
+      var savedDecision;
+      try {
+        savedDecision = localStorage.getItem(STORAGE_KEY);
+      } catch (error) {
+        savedDecision = null;
+      }
+
+      if (savedDecision === 'accepted' || savedDecision === 'declined') {
+        hideBanner();
+        return;
+      }
+
+      banner.removeAttribute('hidden');
+    })();
+  </script>
   <script type="module" src="../assets/js/theme.js" defer></script>
   <script nomodule src="../assets/js/theme.legacy.js" defer></script>
   <script type="module" src="../assets/js/nav.js" defer></script>
   <script nomodule src="../assets/js/nav.legacy.js" defer></script>
-  <script src="../assets/js/cookie-consent.js" defer></script>
 </body>
 </html>
