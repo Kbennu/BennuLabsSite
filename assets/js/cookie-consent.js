@@ -1,24 +1,24 @@
-(() => {
-  const STORAGE_KEY = 'bennu-cookie-consent';
-  let memoryDecision = null;
-  let storageErrorLogged = false;
+(function () {
+  var STORAGE_KEY = 'bennu-cookie-consent';
+  var memoryDecision = null;
+  var storageErrorLogged = false;
 
-  const logStorageWarning = (error) => {
+  function logStorageWarning(error) {
     if (storageErrorLogged) return;
     console.warn('Cookie consent: localStorage is not available. Using in-memory fallback.', error);
     storageErrorLogged = true;
-  };
+  }
 
-  const getSavedDecision = () => {
+  function getSavedDecision() {
     try {
       return localStorage.getItem(STORAGE_KEY);
     } catch (error) {
       logStorageWarning(error);
       return memoryDecision;
     }
-  };
+  }
 
-  const saveDecision = (decision) => {
+  function saveDecision(decision) {
     try {
       localStorage.setItem(STORAGE_KEY, decision);
       memoryDecision = decision;
@@ -26,36 +26,40 @@
       logStorageWarning(error);
       memoryDecision = decision;
     }
-  };
+  }
 
-  const initBanner = () => {
-    const banner = document.querySelector('[data-cookie-banner]');
+  function initBanner() {
+    var banner = document.querySelector('[data-cookie-banner]');
     if (!banner) return;
 
-    const savedDecision = getSavedDecision();
+    var savedDecision = getSavedDecision();
     if (savedDecision === 'accepted' || savedDecision === 'declined') {
       banner.setAttribute('hidden', '');
       return;
     }
 
-    const acceptButton = banner.querySelector('[data-cookie-accept]');
-    const declineButton = banner.querySelector('[data-cookie-decline]');
+    var acceptButton = banner.querySelector('[data-cookie-accept]');
+    var declineButton = banner.querySelector('[data-cookie-decline]');
 
-    const handleDecision = (decision) => {
+    function handleDecision(decision) {
       saveDecision(decision);
       banner.setAttribute('hidden', '');
-    };
+    }
 
     if (acceptButton) {
-      acceptButton.addEventListener('click', () => handleDecision('accepted'));
+      acceptButton.addEventListener('click', function () {
+        handleDecision('accepted');
+      });
     }
 
     if (declineButton) {
-      declineButton.addEventListener('click', () => handleDecision('declined'));
+      declineButton.addEventListener('click', function () {
+        handleDecision('declined');
+      });
     }
 
     banner.removeAttribute('hidden');
-  };
+  }
 
   document.addEventListener('DOMContentLoaded', initBanner);
 })();
