@@ -500,76 +500,15 @@
           <p>Деплоим ботов и веб-продукты в российских облаках: перенос с Render/Vercel, выделенный инженер, runbook, наблюдение и handover.</p>
         </div>
       </div>
-      <div class="package-grid">
-        <article class="package-card">
-          <header class="package-card-header">
-            <div>
-              <p class="package-name">Express 24h</p>
-              <p class="package-tag">0.5–1 р.д.</p>
-            </div>
-            <div class="package-price-wrap">
-              <span class="package-price">19 900&nbsp;₽</span>
-              <span class="package-time">0.5–1 р.д.</span>
-            </div>
-          </header>
-          <ul class="package-list compact-list">
-            <li>Nginx + certbot (HTTPS), запуск приложения и webhook в VK/Selectel/MTS Cloud.</li>
-            <li>Cheat-sheet с командами перезапуска, <code>/health</code> и базовый журнал действий.</li>
-          </ul>
-          <p class="package-note">*Ограничения: без Redis, без Caddy/реверса, без CI/CD и лог-ротации.*</p>
-        </article>
-        <article class="package-card">
-          <header class="package-card-header">
-            <div>
-              <p class="package-name">RU Deploy LITE</p>
-              <p class="package-tag">Docker Compose</p>
-            </div>
-            <div class="package-price-wrap">
-              <span class="package-price">29 900&nbsp;₽</span>
-              <span class="package-time">1 р.д.</span>
-            </div>
-          </header>
-          <ul class="package-list compact-list">
-            <li>VM 1 vCPU/2 GB, статический IP, Docker Compose (app+redis+caddy) и HTTPS с автопродлением.</li>
-            <li>Webhooks, Runbook, инструкции по обновлениям и ротации секретов.</li>
-          </ul>
-        </article>
-        <article class="package-card">
-          <header class="package-card-header">
-            <div>
-              <p class="package-name">RU Deploy STANDARD</p>
-              <p class="package-tag">CI/CD + fail2ban</p>
-            </div>
-            <div class="package-price-wrap">
-              <span class="package-price">49 900&nbsp;₽</span>
-              <span class="package-time">1.5–2.5 р.д.</span>
-            </div>
-          </header>
-          <ul class="package-list compact-list">
-            <li>CI/CD (GitHub Actions → YCR), бэкапы <code>.env</code>/Compose, лог-менеджмент и алерты.</li>
-            <li>Hardening (SSH-ключи, fail2ban), rollback-план и 7 дней наблюдения.</li>
-          </ul>
-        </article>
-        <article class="package-card">
-          <header class="package-card-header">
-            <div>
-              <p class="package-name">RU Deploy MAX</p>
-              <p class="package-tag">Uptime-Kuma + IaC</p>
-            </div>
-            <div class="package-price-wrap">
-              <span class="package-price">119 000&nbsp;₽</span>
-              <span class="package-time">3–5 р.д.</span>
-            </div>
-          </header>
-          <ul class="package-list compact-list">
-            <li>Uptime-Kuma + TG-алерты, Sentry/self-hosted или лёгкий error-логгер, staging + blue/green.</li>
-            <li>OpenTofu (IaC), операционная дока 5–7 стр., подготовка к SLA 99.5%.</li>
-          </ul>
-        </article>
-      </div>
-      <div class="package-note">
-        <p><strong>DoD:</strong> валидный HTTPS, <code>/health=200</code>, <code>setWebhook=ok</code>, время ответа &lt; 1&nbsp;с, автоподъём и переданные доступы.</p>
-        <p><strong>OPEX:</strong> 1–2 тыс.&nbsp;₽/мес. за VM в Yandex/Timeweb/Selectel/VK Cloud; оплачивается напрямую в Yandex/Timeweb/Selectel/VK Cloud.</p>
+      <div class="section-bullet-card">
+        <ul class="compact-list">
+          <li><strong>Контуры:</strong> переносим c Render/Vercel на Yandex/Timeweb/Selectel/VK/MTS Cloud под выделенного инженера.</li>
+          <li><strong>Сборка:</strong> настраиваем Nginx + HTTPS, Docker Compose (app+redis+caddy) и рабочие вебхуки.</li>
+          <li><strong>Runbook:</strong> выдаём инструкции по перезапуску, обновлениям и ротации секретов.</li>
+          <li><strong>Наблюдение:</strong> <code>/health</code>, алерты по вебхукам, базовый лог-след и бэкапы <code>.env</code>/Compose.</li>
+          <li><strong>Fail-safe:</strong> rollback-план, антибрутфорс (SSH-ключи, fail2ban) и контроль ответа &lt; 1&nbsp;с.</li>
+          <li><strong>Handover:</strong> передаём доступы, DoD, OPEX-калькуляцию и сопровождаем 7 дней.</li>
+        </ul>
       </div>
     </section>
 

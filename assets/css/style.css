@@ -1077,6 +1077,24 @@ header {
   border: 1px solid var(--border);
 }
 
+.section-bullet-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 24px;
+  color: var(--muted);
+}
+
+.section-bullet-card .compact-list {
+  margin: 0;
+  padding-left: 16px;
+  gap: 8px;
+}
+
+.section-bullet-card strong {
+  color: var(--text);
+}
+
 .contact-cta {
   background: var(--surface);
   padding: 32px;
