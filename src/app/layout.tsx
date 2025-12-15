@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import type { ReactNode } from 'react';
 import Script from 'next/script';
 import SiteShell from '@/components/SiteShell';
 import './globals.css';
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://bennulabs.online')
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="ru">
       <head>
