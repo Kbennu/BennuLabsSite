@@ -1,0 +1,654 @@
+import type { Metadata } from 'next';
+
+const mainContent = `<section class="hero sticky-hero">
+  <div>
+    <div class="tagline">Bennu Labs Platform</div>
+    <h1>AI и данные, которые двигают выручку уже в этом квартале</h1>
+    <p>Мы проектируем и запускаем AI-ботов, аналитические фабрики данных и цифровые сервисы, которые меняют процессы продаж, поддержки и развития продуктов. Команда Bennu Labs объединяет стратегов, разработчиков и дизайнеров, чтобы ваш AI работал с первого дня.</p>
+    <p class="price-note">Кратко о ценах: сравнение пакетов, сроки и условия собраны в <a href="/pricing/">разделе тарифов</a>.</p>
+    <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 24px;">
+      <a class="cta-button" href="https://t.me/BennuLabIntakeBot?start=dev_lite">Lite · 24 900&nbsp;₽</a>
+      <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=dev_starter">Starter · 39 900 ₽</a>
+      <a class="deeplink-cta" href="#pricing">Смотреть тарифы</a>
+    </div>
+  </div>
+  <div class="hero-illustration">
+    <span>Что внутри платформы</span>
+    <ul>
+      <li>Решения по вертикалям: Retail, Fintech, Telecom, EdTech</li>
+      <li>Технологии: GPT-агенты, RAG, data fabric, product discovery</li>
+      <li>Готовые наборы лид-магнитов и пайплайн знаний</li>
+    </ul>
+    <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=dev_lite">Lite · 24 900 ₽</a>
+  </div>
+</section>
+
+<section class="section" id="verticals">
+  <div class="section-header">
+    <h2>Вертикали Bennu Labs</h2>
+    <p>Каждая вертикаль — готовый стек решений и экспертизы для ускорения внедрения AI. Мы синхронизируем команды продуктов, данных и опыта пользователей.</p>
+  </div>
+  <div class="grid">
+    <article class="card">
+      <h3>AI-боты и агенты</h3>
+      <p>Диалоговые продукты, которые понимают контекст и завершение задач, а не только ответы на вопросы.</p>
+      <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=dev_lite">Lite · 24 900 ₽</a>
+    </article>
+    <article class="card">
+      <h3>Входная точка: бот + сайт</h3>
+      <p>Сценарии intake-бота и одностраничный сайт с единой аналитикой, чтобы быстрее конвертировать лидов.</p>
+      <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=dev_lite">Lite · 24 900 ₽</a>
+    </article>
+    <article class="card">
+      <h3>AI Fabric</h3>
+      <p>Модульная платформа для генеративных сценариев, RAG, маршрутизации и наблюдаемости.</p>
+      <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=dev_starter">Starter · 39 900 ₽</a>
+    </article>
+    <article class="card">
+      <h3>Data &amp; Insights</h3>
+      <p>Каталоги данных, метрики и пайплайны, которые питают ваши AI-сервисы и дэшборды.</p>
+      <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=dev_starter">Starter · 39 900 ₽</a>
+    </article>
+    <article class="card">
+      <h3>Сервисный дизайн</h3>
+      <p>Исследования, CJM и интерфейсы для AI-продуктов, чтобы пользователи любили новые сценарии.</p>
+      <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=dev_lite">Lite · 24 900 ₽</a>
+    </article>
+    <article class="card">
+      <h3>AI Academy</h3>
+      <p>Пилотные программы переобучения команд и сертификации AI-ролей.</p>
+      <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=dev_starter">Starter · 39 900 ₽</a>
+    </article>
+    <article class="card">
+      <h3>Responsible AI</h3>
+      <p>Фреймворк RPE: политика, безопасность и прозрачность ваших AI-решений.</p>
+      <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=dev_pro">Pro · 59 900 ₽</a>
+    </article>
+  </div>
+</section>
+
+<section class="section" id="resources">
+  <div class="section-header">
+    <h2>Материалы и лид-магниты</h2>
+    <p>Используйте актуальные плейбуки и чеклисты, чтобы подготовить команду к запуску AI и данных.</p>
+  </div>
+  <div class="lead-magnet">
+    <div>
+      <h3>AI Strategy Playbook</h3>
+      <p>40-страничный гайд по запуску AI-ботов и продуктовых трибов.</p>
+    </div>
+    <a class="cta-button" href="/assets/docs/ai_strategy_playbook.pdf" download>Скачать PDF</a>
+  </div>
+  <div class="lead-magnet">
+    <div>
+      <h3>Data Maturity Checklist</h3>
+      <p>5 шагов, чтобы синхронизировать данные, процессы и метрики.</p>
+    </div>
+    <a class="cta-button" href="/assets/docs/data_maturity_checklist.txt" download>Скачать чеклист</a>
+  </div>
+</section>
+
+<section class="section" id="pricing">
+  <div class="section-header">
+    <h2>Тарифы платформы</h2>
+    <p>Все пакеты синхронизированы с нашим Telegram-ботом — заявки попадают напрямую к архитекторам Bennu Labs.</p>
+  </div>
+  <div data-pricing-grid>
+    <div class="pricing-group">
+      <div class="pricing-group-header">
+        <h3>Dev-пакеты</h3>
+        <p>Lite / Starter / Pro</p>
+      </div>
+      <div class="pricing-grid">
+        <article class="price-card">
+          <div class="badge">Intake + CRM</div>
+          <h3>Dev Lite</h3>
+          <div class="price-meta">
+            <span class="price-value">24&nbsp;900 ₽</span>
+            <span class="price-period">1–2 р.д.</span>
+          </div>
+          <p>Discovery-сессия, intake-бот, CRM-воронка и handover.</p>
+          <ul>
+            <li>Mindmap сценариев и контент</li>
+            <li>Интеграции amoCRM/Notion</li>
+            <li>UI kit и инструкции</li>
+          </ul>
+          <div class="price-card-details">
+            <span><strong>р.д.:</strong> 1–2 р.д.</span>
+            <span><strong>Срок:</strong> Discovery + build</span>
+            <span><strong>DoD:</strong> Telegram intake, CRM-пайплайн и отчёт</span>
+            <span><strong>Условия:</strong> 70/30 и 7 дней баг-фиксов</span>
+          </div>
+          <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=dev_lite">Lite · 24 900 ₽</a>
+        </article>
+        <article class="price-card popular" data-popular-label="топ-выбор">
+          <div class="badge">AI-диалог</div>
+          <h3>Dev Starter</h3>
+          <div class="price-meta">
+            <span class="price-value">39&nbsp;900 ₽</span>
+            <span class="price-period">2–4 р.д.</span>
+          </div>
+          <p>Генеративные ответы, платежи/курьеры и observability.</p>
+          <ul>
+            <li>Intent-маршрутизация</li>
+            <li>Платежные интеграции</li>
+            <li>Looker Studio дашборд</li>
+          </ul>
+          <div class="price-card-details">
+            <span><strong>р.д.:</strong> 2–4 р.д.</span>
+            <span><strong>Срок:</strong> Сборка, тесты, релиз</span>
+            <span><strong>DoD:</strong> AI-бот + microsite + observability</span>
+            <span><strong>Условия:</strong> 70/30 и поддержка 7 дней</span>
+          </div>
+          <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=dev_starter">Starter · 39 900 ₽</a>
+        </article>
+        <article class="price-card">
+          <div class="badge">ИБ + API</div>
+          <h3>Dev Pro</h3>
+          <div class="price-meta">
+            <span class="price-value">59&nbsp;900 ₽</span>
+            <span class="price-period">4–7 р.д.</span>
+          </div>
+          <p>Гибридные деплои, сложные API и документы для ИБ.</p>
+          <ul>
+            <li>ИБ-требования и аудит</li>
+            <li>Legacy API и очереди</li>
+            <li>Failover и обучение</li>
+          </ul>
+          <div class="price-card-details">
+            <span><strong>р.д.:</strong> 4–7 р.д.</span>
+            <span><strong>Срок:</strong> Многоокружный релиз</span>
+            <span><strong>DoD:</strong> 3 окружения и runbook</span>
+            <span><strong>Условия:</strong> 70/30 и runbook для ИТ</span>
+          </div>
+          <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=dev_pro">Pro · 59 900 ₽</a>
+        </article>
+      </div>
+    </div>
+    <div class="pricing-group">
+      <div class="pricing-group-header">
+        <h3>Mix + деплой</h3>
+        <p>Dev + RU-инфраструктура</p>
+      </div>
+      <div class="pricing-grid">
+        <article class="price-card">
+          <div class="badge">Intake + Docker Compose</div>
+          <h3>Lite Dev + LITE деплой</h3>
+          <div class="price-meta">
+            <span class="price-value">49&nbsp;900 ₽</span>
+            <span class="price-period">2–3 р.д.</span>
+          </div>
+          <p>Пакет Lite (mindmap, FSM, Leads/CSV) + Docker Compose (app+redis+caddy), HTTPS и webhook.</p>
+          <ul>
+            <li>VM 1 vCPU/2 GB + статический IP</li>
+            <li>Runbook и автопродление TLS</li>
+            <li>DoD: <code>/health=200</code>, <code>setWebhook=ok</code></li>
+          </ul>
+          <div class="price-card-details">
+            <span><strong>р.д.:</strong> 2–3</span>
+            <span><strong>DoD:</strong> HTTPS, Leads, автоподъём</span>
+            <span><strong>KPI:</strong> CR заявок +25%</span>
+            <span><strong>Условия:</strong> 70/30, старт после брифа</span>
+          </div>
+          <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=mix_lite">Lite Dev + LITE · 49 900 ₽</a>
+        </article>
+        <article class="price-card popular" data-popular-label="рост ops">
+          <div class="badge">AI intake + CI/CD</div>
+          <h3>Starter Dev + STANDARD</h3>
+          <div class="price-meta">
+            <span class="price-value">89&nbsp;900 ₽</span>
+            <span class="price-period">4–6 р.д.</span>
+          </div>
+          <p>Dev Starter с AI-ответами + CI/CD (GitHub Actions → YCR), бэкапы, логгинг и failover.</p>
+          <ul>
+            <li>Sheets/Яндекс Таблицы, видео-гайд</li>
+            <li>Платежи, intent-маршруты, observability</li>
+            <li>Hardening, rollback и 7 дней наблюдения</li>
+          </ul>
+          <div class="price-card-details">
+            <span><strong>р.д.:</strong> 4–6</span>
+            <span><strong>DoD:</strong> AI intake, таблица лидов, CI/CD</span>
+            <span><strong>KPI:</strong> −30% ручных касаний</span>
+            <span><strong>Условия:</strong> KPI и медиаплан включены</span>
+          </div>
+          <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=mix_ops">Starter Dev + STANDARD · 89 900 ₽</a>
+        </article>
+        <article class="price-card">
+          <div class="badge">Field + наблюдаемость</div>
+          <h3>Pro Dev + MAX</h3>
+          <div class="price-meta">
+            <span class="price-value">169&nbsp;000 ₽</span>
+            <span class="price-period">7–12 р.д.</span>
+          </div>
+          <p>Dev Pro (статусы, Quote/Pay, +1 интеграция) + Uptime-Kuma, Sentry и OpenTofu (IaC).</p>
+          <ul>
+            <li>Staging + blue/green (Caddy)</li>
+            <li>TG-алерты, операционная дока 5–7 стр.</li>
+            <li>Документы для ИБ и field-активаций</li>
+          </ul>
+          <div class="price-card-details">
+            <span><strong>р.д.:</strong> 7–12</span>
+            <span><strong>DoD:</strong> выкладки без простоя, быстрый откат</span>
+            <span><strong>KPI:</strong> NPS +12 п.п.</span>
+            <span><strong>Условия:</strong> Гибрид Selectel + резерв</span>
+          </div>
+          <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=mix_field">Pro Dev + MAX · 169 000 ₽</a>
+        </article>
+      </div>
+    </div>
+
+    </div>
+
+    <section class="section" id="bot-landing">
+      <div class="section-header">
+        <h3>Дополнительно: сайт под бота</h3>
+        <p>Одностраничный лендинг, который усиливает intake-бота: захватывает лиды, поясняет оффер и ведёт в нужный сценарий.</p>
+      </div>
+      <div class="pricing-grid">
+        <article class="price-card">
+          <div class="badge">Hero + форма</div>
+          <h3>Landing Mini</h3>
+          <div class="price-meta">
+            <span class="price-value">24&nbsp;900 ₽</span>
+            <span class="price-period">2–3 р.д.</span>
+          </div>
+          <p>Одноэкранный лендинг для быстрого запуска и связки с intake-ботом.</p>
+          <ul>
+            <li>Бриф, копирайтинг и CTA под оффер</li>
+            <li>Интеграция формы с ботом/CRM</li>
+            <li>UTM-метки и события в аналитике</li>
+          </ul>
+        </article>
+        <article class="price-card popular" data-popular-label="рост CR">
+          <div class="badge">FAQ + оффер</div>
+          <h3>Landing Core</h3>
+          <div class="price-meta">
+            <span class="price-value">39&nbsp;900 ₽</span>
+            <span class="price-period">3–5 р.д.</span>
+          </div>
+          <p>Сетка из 3–5 секций: оффер, выгоды, FAQ и соцдоказательства.</p>
+          <ul>
+            <li>Hero, оффер, блоки преимуществ и процессов</li>
+            <li>FAQ/скрипты возражений и call-to-action в каждом блоке</li>
+            <li>Три эксперимента A/B в метриках и тепловые карты</li>
+          </ul>
+        </article>
+        <article class="price-card">
+          <div class="badge">UX + SEO</div>
+          <h3>Landing Pro</h3>
+          <div class="price-meta">
+            <span class="price-value">64&nbsp;900 ₽</span>
+            <span class="price-period">5–7 р.д.</span>
+          </div>
+          <p>Story-driven лендинг с мультиязычностью, SEO и расширенными интеграциями.</p>
+          <ul>
+            <li>UX-копирайтинг, иллюстрации и анимации</li>
+            <li>Оплата/календарь, лид-магниты и оповещения</li>
+            <li>Техаудит, перформанс и безопасность</li>
+          </ul>
+        </article>
+      </div>
+      <p class="price-note" style="margin-top: 16px; text-align: center;">Техстек: Next.js, Tailwind, RU-облака.</p>
+    </section>
+
+    <div data-pricing-grid>
+      <div class="pricing-group">
+        <div class="pricing-group-header">
+          <h3>RU-деплой</h3>
+          <p>Express / Lite / Std / Max</p>
+        </div>
+      <div class="pricing-grid">
+        <article class="price-card">
+          <div class="badge">Nginx + webhook</div>
+          <h3>RU Deploy Express</h3>
+          <div class="price-meta">
+            <span class="price-value">19&nbsp;900 ₽</span>
+            <span class="price-period">0.5–1 р.д.</span>
+          </div>
+          <p>Nginx + certbot (HTTPS), запуск приложения, webhook и cheat-sheet.</p>
+          <ul>
+            <li><code>/health</code>, базовый лог и инструкции</li>
+            <li>VK/Selectel/МТС Cloud</li>
+            <li>*Без Redis/Caddy/CI/CD*</li>
+          </ul>
+          <div class="price-card-details">
+            <span><strong>р.д.:</strong> 0.5–1</span>
+            <span><strong>DoD:</strong> HTTPS + <code>setWebhook=ok</code></span>
+            <span><strong>Условия:</strong> Cheat-sheet и 1 handover</span>
+          </div>
+          <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=ru_deploy_express">Express · 19 900 ₽</a>
+        </article>
+        <article class="price-card popular" data-popular-label="выбор CTO">
+          <div class="badge">Docker Compose</div>
+          <h3>RU Deploy LITE</h3>
+          <div class="price-meta">
+            <span class="price-value">29&nbsp;900 ₽</span>
+            <span class="price-period">1 р.д.</span>
+          </div>
+          <p>VM 1 vCPU/2 GB, статический IP, Docker Compose (app+redis+caddy), HTTPS и webhook.</p>
+          <ul>
+            <li>Автопродление TLS и Runbook</li>
+            <li>Инструкции по ротации секретов</li>
+            <li>Готовность к always-on</li>
+          </ul>
+          <div class="price-card-details">
+            <span><strong>р.д.:</strong> 1</span>
+            <span><strong>DoD:</strong> HTTPS, <code>/health</code>, Leads/CSV</span>
+            <span><strong>Условия:</strong> 70/30 и поддержка 1 handover</span>
+          </div>
+          <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=ru_deploy_lite">RU LITE · 29 900 ₽</a>
+        </article>
+        <article class="price-card">
+          <div class="badge">CI/CD + fail2ban</div>
+          <h3>RU Deploy STANDARD</h3>
+          <div class="price-meta">
+            <span class="price-value">49&nbsp;900 ₽</span>
+            <span class="price-period">1.5–2.5 р.д.</span>
+          </div>
+          <p>CI/CD (GitHub Actions → YCR), бэкапы, логирование, алерты и fail2ban.</p>
+          <ul>
+            <li>Hardening доступов и rollback-план</li>
+            <li>7 дней наблюдения</li>
+            <li>Документация для ИБ</li>
+          </ul>
+          <div class="price-card-details">
+            <span><strong>р.д.:</strong> 1.5–2.5</span>
+            <span><strong>DoD:</strong> CI/CD, мониторинг и runbook</span>
+            <span><strong>Условия:</strong> On-call в первые 7 дней</span>
+          </div>
+          <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=ru_deploy_std">STANDARD · 49 900 ₽</a>
+        </article>
+        <article class="price-card">
+          <div class="badge">Uptime-Kuma + IaC</div>
+          <h3>RU Deploy MAX</h3>
+          <div class="price-meta">
+            <span class="price-value">119&nbsp;000 ₽</span>
+            <span class="price-period">3–5 р.д.</span>
+          </div>
+          <p>Uptime-Kuma + TG-алерты, Sentry/self-hosted, staging + blue/green и OpenTofu (IaC).</p>
+          <ul>
+            <li>Операционная дока 5–7 стр.</li>
+            <li>Подготовка к SLA 99.5%</li>
+            <li>Гибрид Selectel + резерв</li>
+          </ul>
+          <div class="price-card-details">
+            <span><strong>р.д.:</strong> 3–5</span>
+            <span><strong>DoD:</strong> Наблюдаемость и быстрый откат</span>
+            <span><strong>Условия:</strong> Runbook для ИБ + handover</span>
+          </div>
+          <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=ru_deploy_max">MAX · 119 000 ₽</a>
+        </article>
+      </div>
+    </div>
+    <div class="pricing-group">
+      <div class="pricing-group-header">
+        <h3>Подписка Bennu Care</h3>
+        <p>Поддержка после релиза</p>
+      </div>
+      <div class="pricing-grid">
+        <article class="price-card">
+          <div class="badge">8 ч/мес</div>
+          <h3>Care Basic</h3>
+          <div class="price-meta">
+            <span class="price-value">12&nbsp;000 ₽</span>
+            <span class="price-period">помесячно</span>
+          </div>
+          <p>Мини-итерации, обновления контента и консультации архитектора.</p>
+          <ul>
+            <li>8 часов на гипотезы и интеграции</li>
+            <li>Задачи ведём в Notion + Telegram</li>
+            <li>Слоты по 2 часа</li>
+          </ul>
+          <div class="price-card-details">
+            <span><strong>SLA:</strong> ответ до 8 часов</span>
+            <span><strong>Сверх лимита:</strong> 2 200&nbsp;₽/час</span>
+            <span><strong>Условия:</strong> 70/30, отмена за 15 дней</span>
+          </div>
+          <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=care_basic">Care Basic · 12 000 ₽</a>
+        </article>
+        <article class="price-card">
+          <div class="badge">16 ч/мес</div>
+          <h3>Care Standard</h3>
+          <div class="price-meta">
+            <span class="price-value">22&nbsp;000 ₽</span>
+            <span class="price-period">помесячно</span>
+          </div>
+          <p>Гипотезы, промпт-инжиниринг, релизы и прозрачная аналитика.</p>
+          <ul>
+            <li>16 часов, общий backlog и приоритезация</li>
+            <li>Notion-отчёты по KPI и эксперименты</li>
+            <li>Синхронизации 1–2 раза в неделю</li>
+          </ul>
+          <div class="price-card-details">
+            <span><strong>SLA:</strong> ответ до 4 часов</span>
+            <span><strong>Сверх лимита:</strong> 2 200&nbsp;₽/час</span>
+            <span><strong>Условия:</strong> 70/30, отмена за 15 дней</span>
+          </div>
+          <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=care_standard">Care Standard · 22 000 ₽</a>
+        </article>
+        <article class="price-card">
+          <div class="badge">32 ч/мес</div>
+          <h3>Care Pro</h3>
+          <div class="price-meta">
+            <span class="price-value">42&nbsp;000 ₽</span>
+            <span class="price-period">помесячно</span>
+          </div>
+          <p>On-call Bennu Labs, product analytics и совместный roadmap.</p>
+          <ul>
+            <li>32 часа, runbook обновлений и C-level отчёты</li>
+            <li>RAG/AI эксперименты и мониторинг</li>
+            <li>Weekly roadmap review</li>
+          </ul>
+          <div class="price-card-details">
+            <span><strong>SLA:</strong> ответ до 2 часов</span>
+            <span><strong>Сверх лимита:</strong> 2 200&nbsp;₽/час</span>
+            <span><strong>Условия:</strong> минимум 2 месяца, при паузе удерживаем 30%</span>
+          </div>
+          <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=care_pro">Care Pro · 42 000 ₽</a>
+        </article>
+      </div>
+    </div>
+    <div class="pricing-group">
+      <div class="pricing-group-header">
+        <h3>Дополнительные услуги</h3>
+        <p>5–10 рабочих дней</p>
+      </div>
+      <div class="pricing-grid">
+        <article class="price-card">
+          <div class="badge">Dev-ready</div>
+          <h3>Среда разработки</h3>
+          <div class="price-meta">
+            <span class="price-value">6&nbsp;000 ₽</span>
+            <span class="price-period">за окружение</span>
+          </div>
+          <p>Разворачиваем dev/test среду, настраиваем VPN, секреты и доступы.</p>
+          <ul>
+            <li>VPN + secrets</li>
+            <li>Отдельные роли</li>
+          </ul>
+          <div class="price-card-details">
+            <span><strong>Объём:</strong> 1 окружение</span>
+            <span><strong>Условия:</strong> Оплачивается после брифа</span>
+            <span><strong>Совместимость:</strong> Все Dev пакеты</span>
+          </div>
+          <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=addon_env">Среда · 6 000&nbsp;₽</a>
+        </article>
+        <article class="price-card">
+          <div class="badge">API</div>
+          <h3>Интеграция</h3>
+          <div class="price-meta">
+            <span class="price-value">4&nbsp;900 ₽</span>
+            <span class="price-period">за сервис</span>
+          </div>
+          <p>Подключаем один внешний сервис, настраиваем вебхуки и проверяем обмен.</p>
+          <ul>
+            <li>Webhook QA</li>
+            <li>Чек-лист запуска</li>
+          </ul>
+          <div class="price-card-details">
+            <span><strong>Объём:</strong> 1 интеграция</span>
+            <span><strong>Условия:</strong> SLA 2 р.д.</span>
+            <span><strong>Совместимость:</strong> Dev/Mix</span>
+          </div>
+          <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=addon_integration">Интеграция · 4 900&nbsp;₽</a>
+        </article>
+        <article class="price-card">
+          <div class="badge">DNS</div>
+          <h3>Домен + SSL</h3>
+          <div class="price-meta">
+            <span class="price-value">4&nbsp;900 ₽</span>
+            <span class="price-period">за проект</span>
+          </div>
+          <p>Регистрируем .ru домен, подключаем SSL-сертификат и обновляем DNS.</p>
+          <ul>
+            <li>Подтверждение домена</li>
+            <li>Let's Encrypt/Certum</li>
+          </ul>
+          <div class="price-card-details">
+            <span><strong>Объём:</strong> 1 домен</span>
+            <span><strong>Условия:</strong> Подходит Dev/Mix</span>
+            <span><strong>Срок:</strong> 1 р.д.</span>
+          </div>
+          <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=addon_domain_ssl">Домен · 4 900&nbsp;₽</a>
+        </article>
+        <article class="price-card">
+          <div class="badge">Walkthrough</div>
+          <h3>Видео-гайд</h3>
+          <div class="price-meta">
+            <span class="price-value">3&nbsp;900 ₽</span>
+            <span class="price-period">за скринкаст</span>
+          </div>
+          <p>Записываем 10-минутный walkthrough со сценариями, ролями и чек-листами.</p>
+          <ul>
+            <li>MP4 + Notion</li>
+            <li>FAQ команды</li>
+          </ul>
+          <div class="price-card-details">
+            <span><strong>Объём:</strong> 1 видео</span>
+            <span><strong>Условия:</strong> Оплата после демо</span>
+            <span><strong>Совместимость:</strong> Dev/Mix</span>
+          </div>
+          <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=addon_video">Видео · 3 900&nbsp;₽</a>
+        </article>
+        <article class="price-card">
+          <div class="badge">UI</div>
+          <h3>Дизайн-пакет</h3>
+          <div class="price-meta">
+            <span class="price-value">6&nbsp;900 ₽</span>
+            <span class="price-period">за комплект</span>
+          </div>
+          <p>Собираем UI kit для Telegram-бота, обложки, превью и адаптируем фирстиль.</p>
+          <ul>
+            <li>Figma файл</li>
+            <li>5+ визуалов</li>
+          </ul>
+          <div class="price-card-details">
+            <span><strong>Объём:</strong> UI kit + превью</span>
+            <span><strong>Условия:</strong> Подходит ко всем Dev пакетам</span>
+            <span><strong>Срок:</strong> 2 р.д.</span>
+          </div>
+          <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=addon_design">Дизайн · 6 900&nbsp;₽</a>
+        </article>
+        <article class="price-card">
+          <div class="badge">n8n</div>
+          <h3>Импорт сценариев</h3>
+          <div class="price-meta">
+            <span class="price-value">4&nbsp;900 ₽</span>
+            <span class="price-period">за workflow</span>
+          </div>
+          <p>Импортируем сценарий в n8n, настраиваем триггеры и передаём runbook.</p>
+          <ul>
+            <li>1 workflow</li>
+            <li>Инструкция запуска</li>
+          </ul>
+          <div class="price-card-details">
+            <span><strong>Объём:</strong> 1 сценарий</span>
+            <span><strong>Условия:</strong> Срок 1 р.д.</span>
+            <span><strong>Совместимость:</strong> Dev/Mix</span>
+          </div>
+          <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=addon_n8n">n8n · 4 900&nbsp;₽</a>
+        </article>
+        <article class="price-card">
+          <div class="badge">Pay</div>
+          <h3>Pay-панель</h3>
+          <div class="price-meta">
+            <span class="price-value">Custom</span>
+            <span class="price-period">по расчёту</span>
+          </div>
+          <p>Настраиваем Pay-панель, подключаем эквайринг, тестируем webhooks и выдаём схему модерации.</p>
+          <ul>
+            <li>Эквайринг + KYC</li>
+            <li>Failover план</li>
+          </ul>
+          <div class="price-card-details">
+            <span><strong>Объём:</strong> Custom пайплайн</span>
+            <span><strong>Условия:</strong> Согласуем после брифа</span>
+            <span><strong>Совместимость:</strong> Dev/Mix</span>
+          </div>
+          <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=addon_paypanel">Pay-панель · Custom</a>
+        </article>
+      </div>
+    </div>
+    <div class="pricing-group">
+      <div class="pricing-group-header">
+        <h3>Доступность</h3>
+        <p>Ближайшие окна команды</p>
+      </div>
+      <div class="pricing-grid">
+        <article class="price-card">
+          <div class="badge">Dev Lite/Starter</div>
+          <h3>Слот №1</h3>
+          <div class="price-meta">
+            <span class="price-value">Старт через 1–2 р.д.</span>
+            <span class="price-period">после брифа</span>
+          </div>
+          <p>Два окна на ближайшей неделе для Dev Lite и Starter.</p>
+          <ul>
+            <li>Бриф в Telegram</li>
+            <li>Demo на 2 день</li>
+          </ul>
+          <div class="price-card-details">
+            <span><strong>р.д.:</strong> Онбординг 30 мин</span>
+            <span><strong>Срок:</strong> Intake сессия</span>
+            <span><strong>DoD:</strong> Готовый спринт</span>
+            <span><strong>Условия:</strong> Слот бронируем после счета</span>
+          </div>
+        </article>
+        <article class="price-card">
+          <div class="badge">Mix / Deploy</div>
+          <h3>Слот №2</h3>
+          <div class="price-meta">
+            <span class="price-value">Старт через 4 р.д.</span>
+            <span class="price-period">после оплаты</span>
+          </div>
+          <p>Mix Starter+Std стартует через 4 р.д., Mix Pro+Max — через 6.</p>
+          <ul>
+            <li>Отдельный менеджер</li>
+            <li>BI-setup</li>
+          </ul>
+          <div class="price-card-details">
+            <span><strong>р.д.:</strong> Спринт 5–8 р.д.</span>
+            <span><strong>Срок:</strong> Медиаплан</span>
+            <span><strong>DoD:</strong> Mix DoD</span>
+            <span><strong>Условия:</strong> Согласование медиаплана</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+  <div style="margin-top: 32px; display: flex; gap: 16px; flex-wrap: wrap;">
+    <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=dev_lite">Lite · 24 900 ₽</a>
+    <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=dev_starter">Starter · 39 900 ₽</a>
+    <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=dev_pro">Pro · 59 900 ₽</a>
+  </div>
+</section>`;
+
+export const metadata: Metadata = {
+  title: 'Bennu Labs — AI-платформа для роста',
+  description: 'Bennu Labs создает и масштабирует AI-продукты: чат-боты, агенты, data fabric и дизайн цифровых сервисов.',
+  alternates: { canonical: 'https://bennulabs.online/' }
+};
+
+export default function Page() {
+  return <div dangerouslySetInnerHTML={{ __html: mainContent }} />;
+}

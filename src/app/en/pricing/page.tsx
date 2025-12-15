@@ -1,0 +1,506 @@
+import type { Metadata } from 'next';
+
+const mainContent = `<section class="hero sticky-hero hero-compact pricing-hero">
+  <div>
+    <div class="tagline">Pricing · Telegram + RU Deploy</div>
+    <h1>Fixed Bennu Labs bundles for Telegram and Russian contours</h1>
+    <p>Dev Lite/Starter/Pro, Mix combinations and RU deploy sprints let you launch intake bots, AI dialogs and infrastructure without waiting for long procurement cycles.</p>
+    <div class="cta-group">
+      <a class="cta-button" href="https://t.me/BennuLabIntakeBot?start=dev_lite" target="_blank" rel="noopener">Dev Lite · 24&nbsp;900&nbsp;₽</a>
+      <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=ru_deploy_express" target="_blank" rel="noopener">RU Deploy Express · 19&nbsp;900&nbsp;₽</a>
+      <a class="deeplink-cta" href="https://t.me/BennuLabs_global" target="_blank" rel="noopener">Global channel</a>
+    </div>
+    <div class="hero-meta">
+      <span>Kick-off in 1–2 wd after the brief</span>
+      <span>VK Cloud · Selectel · MTS Cloud</span>
+    </div>
+  </div>
+  <div class="hero-illustration">
+    <span>What you get</span>
+    <ul class="compact-list">
+      <li>Intake bot with AI replies and CRM integrations</li>
+      <li>Documentation, handover and monitoring</li>
+      <li>Transparent deploy inside Russian clouds</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section numbered" id="section-0">
+  <div class="section-heading">
+    <span class="section-marker">0)</span>
+    <div>
+      <h2>TL;DR</h2>
+      <p>A quick executive summary of the Bennu Labs catalog before you dive into the tables.</p>
+    </div>
+  </div>
+  <div class="grid">
+    <article class="card">
+      <h3>What we sell</h3>
+      <p>Ready-made Dev Lite/Starter/Pro sprints that cover the Telegram intake bot, AI replies, CRM automations and Russian-cloud deploy.</p>
+    </article>
+    <article class="card">
+      <h3>Differentiators</h3>
+      <p>We tailor flows to your KPIs, keep documentation + handover in Notion, and deliver a signed-off runbook so IT can maintain the contour.</p>
+    </article>
+    <article class="card">
+      <h3>Deploy coverage</h3>
+      <p>VK Cloud, Selectel and MTS Cloud plus hybrid reserves abroad, HTTPS, <code>/health</code>, monitoring and role-based access distribution.</p>
+    </article>
+    <article class="card">
+      <h3>Payment terms</h3>
+      <p>Invoices in RUB with VAT or cards/USDT for Russian entities, USD + USDT/TON for global; 70/30 milestone split with 30% retention on pauses.</p>
+    </article>
+  </div>
+  <ul class="tldr-list compact-list">
+    <li><strong>Dev packages:</strong> Lite/Starter/Pro cost 24&nbsp;900 / 39&nbsp;900 / 59&nbsp;900&nbsp;₽ and take 1–2 / 2–4 / 4–7&nbsp;wd with project management and demos included.</li>
+    <li><strong>Mix bundles:</strong> Lite Dev + LITE deploy, Starter Dev + STANDARD and Pro Dev + MAX at 49&nbsp;900 / 89&nbsp;900 / 169&nbsp;000&nbsp;₽ pair marketing/reporting with RU infrastructure.</li>
+    <li><strong>RU deploy:</strong> Express / LITE / STANDARD / MAX start at 19&nbsp;900&nbsp;₽ and finish within 0.5–5&nbsp;wd depending on IaC depth.</li>
+    <li><strong>Cashflow:</strong> 70% upfront before each sprint, 30% on demo day; refunds are not provided because slots are pre-booked.</li>
+  </ul>
+</section>
+
+<section class="section numbered" id="section-1">
+  <div class="section-heading">
+    <span class="section-marker">1)</span>
+    <div>
+      <h2>Dev packages — Lite / Starter / Pro</h2>
+      <p>We assemble the intake bot, AI interfaces and baseline RU deploy in a few working days. Pricing covers project management, documentation and demo.</p>
+    </div>
+  </div>
+  <div class="package-grid">
+    <article class="package-card">
+      <header class="package-card-header">
+        <div>
+          <p class="package-name">Dev Lite</p>
+          <p class="package-tag">MVP intake</p>
+        </div>
+        <div class="package-price-wrap">
+          <span class="package-price">24&nbsp;900&nbsp;₽</span>
+          <span class="package-time">1–2 wd</span>
+        </div>
+      </header>
+      <ul class="package-list compact-list">
+        <li>Discovery session, mindmap and base flows.</li>
+        <li>Telegram bot with canned replies + CRM/Notion.</li>
+        <li>Google Sheets report and handover.</li>
+      </ul>
+    </article>
+    <article class="package-card">
+      <header class="package-card-header">
+        <div>
+          <p class="package-name">Dev Starter</p>
+          <p class="package-tag">AI dialog</p>
+        </div>
+        <div class="package-price-wrap">
+          <span class="package-price">39&nbsp;900&nbsp;₽</span>
+          <span class="package-time">2–4 wd</span>
+        </div>
+      </header>
+      <ul class="package-list compact-list">
+        <li>Generative replies and intent routing.</li>
+        <li>amoCRM/Bitrix24, payments and courier flows.</li>
+        <li>Sandbox, load tests and Looker Studio dashboard.</li>
+      </ul>
+    </article>
+    <article class="package-card">
+      <header class="package-card-header">
+        <div>
+          <p class="package-name">Dev Pro</p>
+          <p class="package-tag">Security + complex APIs</p>
+        </div>
+        <div class="package-price-wrap">
+          <span class="package-price">59&nbsp;900&nbsp;₽</span>
+          <span class="package-time">4–7 wd</span>
+        </div>
+      </header>
+      <ul class="package-list compact-list">
+        <li>Multi-environment deploy and security approvals.</li>
+        <li>Legacy/internal APIs, queues and billing.</li>
+        <li>Grafana monitoring + runbook for IT.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section class="section numbered" id="section-2">
+  <div class="section-heading">
+    <span class="section-marker">2)</span>
+    <div>
+      <h2>Mix bundles with deploy</h2>
+      <p>Ideal for teams that want marketing, reporting and RU infrastructure from a single vendor. We stack Dev packages with media plans, KPIs and handover to marketing.</p>
+    </div>
+  </div>
+  <div class="package-grid">
+    <article class="package-card">
+      <header class="package-card-header">
+        <div>
+          <p class="package-name">Lite Dev + LITE deploy</p>
+          <p class="package-tag">Intake + VPN contour</p>
+        </div>
+        <div class="package-price-wrap">
+          <span class="package-price">49&nbsp;900&nbsp;₽</span>
+          <span class="package-time">2–3 wd</span>
+        </div>
+      </header>
+      <div class="package-columns">
+        <div>
+          <p class="package-subtitle">Dev</p>
+          <ul class="package-list compact-list">
+            <li>Discovery session, mindmap and intake bot with CRM pipeline.</li>
+            <li>Notion handover, Google Sheets reporting and baseline analytics.</li>
+          </ul>
+        </div>
+        <div>
+          <p class="package-subtitle">Deploy</p>
+          <ul class="package-list compact-list">
+            <li>RU Deploy Lite with VPN, network segmentation and audit logs.</li>
+            <li>Alerting setup plus instructions for updates and key rotation.</li>
+          </ul>
+        </div>
+      </div>
+      <ul class="package-list compact-list package-meta">
+        <li><strong>Timeline:</strong> 1–2&nbsp;wd for Dev + 1&nbsp;wd for deploy.</li>
+        <li><strong>DoD:</strong> Telegram intake, CRM pipeline and VK Cloud contour.</li>
+        <li><strong>KPI:</strong> +25% conversion to leads within 4 weeks.</li>
+      </ul>
+      <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=mix_lite" target="_blank" rel="noopener">Request Lite Dev + LITE deploy</a>
+    </article>
+    <article class="package-card">
+      <header class="package-card-header">
+        <div>
+          <p class="package-name">Starter Dev + STANDARD</p>
+          <p class="package-tag">AI intake + failover</p>
+        </div>
+        <div class="package-price-wrap">
+          <span class="package-price">89&nbsp;900&nbsp;₽</span>
+          <span class="package-time">4–6 wd</span>
+        </div>
+      </header>
+      <div class="package-columns">
+        <div>
+          <p class="package-subtitle">Dev</p>
+          <ul class="package-list compact-list">
+            <li>Generative replies, intent routing and amoCRM/Bitrix24 integrations.</li>
+            <li>Payments/couriers, observability and a Looker Studio dashboard.</li>
+          </ul>
+        </div>
+        <div>
+          <p class="package-subtitle">Deploy</p>
+          <ul class="package-list compact-list">
+            <li>RU Deploy Standard with multiple environments, CI/CD and Grafana.</li>
+            <li>Failover runbook plus media-plan handover for marketing.</li>
+          </ul>
+        </div>
+      </div>
+      <ul class="package-list compact-list package-meta">
+        <li><strong>Timeline:</strong> 3–4&nbsp;wd for Dev + 1–2&nbsp;wd for deploy.</li>
+        <li><strong>DoD:</strong> AI intake, BI reporting and Standard deploy.</li>
+        <li><strong>KPI:</strong> −30% manual touches within 6 weeks.</li>
+      </ul>
+      <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=mix_ops" target="_blank" rel="noopener">Request Starter Dev + STANDARD</a>
+    </article>
+    <article class="package-card">
+      <header class="package-card-header">
+        <div>
+          <p class="package-name">Pro Dev + MAX</p>
+          <p class="package-tag">Field + hybrid contour</p>
+        </div>
+        <div class="package-price-wrap">
+          <span class="package-price">169&nbsp;000&nbsp;₽</span>
+          <span class="package-time">7–12 wd</span>
+        </div>
+      </header>
+      <div class="package-columns">
+        <div>
+          <p class="package-subtitle">Dev</p>
+          <ul class="package-list compact-list">
+            <li>Field scripts, QR mechanics and integrations with internal APIs.</li>
+            <li>Monitoring, IT runbook and NPS analytics.</li>
+          </ul>
+        </div>
+        <div>
+          <p class="package-subtitle">Deploy</p>
+          <ul class="package-list compact-list">
+            <li>RU Deploy Max with Selectel + overseas reserve.</li>
+            <li>Security documentation, 99.5% SLA and monitored handover.</li>
+          </ul>
+        </div>
+      </div>
+      <ul class="package-list compact-list package-meta">
+        <li><strong>Timeline:</strong> 5–7&nbsp;wd for Dev + 2–5&nbsp;wd for deploy.</li>
+        <li><strong>DoD:</strong> Field mechanics, hybrid contour and Max-level deploy.</li>
+        <li><strong>KPI:</strong> NPS +12 p.p. over 8 weeks.</li>
+      </ul>
+      <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=mix_field" target="_blank" rel="noopener">Request Pro Dev + MAX</a>
+    </article>
+  </div>
+  <div class="package-note">
+    <p><strong>Extra combos:</strong></p>
+    <ul class="compact-list">
+      <li>Lite Dev + STANDARD deploy when you want failover without expanding Dev scope.</li>
+      <li>Starter Dev + MAX deploy to run a Selectel hybrid with an overseas reserve.</li>
+      <li>Pro Dev + Care Pro (32h) to add Bennu on-call engineers and transparent reporting.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section numbered" id="section-3">
+  <div class="section-heading">
+    <span class="section-marker">3)</span>
+    <div>
+      <h2>RU deploy as a standalone sprint</h2>
+      <p>We allocate an engineer, set up IaC and monitoring, hand over the runbook and stay online for launch. Order alone or add to any Dev/Mix bundle.</p>
+    </div>
+  </div>
+  <div class="package-grid">
+    <article class="package-card">
+      <header class="package-card-header">
+        <div>
+          <p class="package-name">Express 24h</p>
+          <p class="package-tag">0.5–1 wd</p>
+        </div>
+        <div class="package-price-wrap">
+          <span class="package-price">19&nbsp;900&nbsp;₽</span>
+          <span class="package-time">0.5–1 wd</span>
+        </div>
+      </header>
+      <ul class="package-list compact-list">
+        <li>Prep IaC, issue HTTPS and wire the <code>setWebhook</code>.</li>
+        <li><code>/health</code> endpoint and action log delivered within 24h.</li>
+      </ul>
+    </article>
+    <article class="package-card">
+      <header class="package-card-header">
+        <div>
+          <p class="package-name">RU Deploy LITE</p>
+          <p class="package-tag">Docker Compose</p>
+        </div>
+        <div class="package-price-wrap">
+          <span class="package-price">29&nbsp;900&nbsp;₽</span>
+          <span class="package-time">1 wd</span>
+        </div>
+      </header>
+      <ul class="package-list compact-list">
+        <li>Docker Compose (app + redis + caddy) plus VPN and secrets.</li>
+        <li>Document key rotation and give update instructions.</li>
+      </ul>
+    </article>
+    <article class="package-card">
+      <header class="package-card-header">
+        <div>
+          <p class="package-name">RU Deploy STANDARD</p>
+          <p class="package-tag">CI/CD + fail2ban</p>
+        </div>
+        <div class="package-price-wrap">
+          <span class="package-price">49&nbsp;900&nbsp;₽</span>
+          <span class="package-time">1.5–2.5 wd</span>
+        </div>
+      </header>
+      <ul class="package-list compact-list">
+        <li>CI/CD pipeline, fail2ban and observability (logs + alerts).</li>
+        <li>Load report, reserve guidance and an auto-recovery runbook.</li>
+      </ul>
+    </article>
+    <article class="package-card">
+      <header class="package-card-header">
+        <div>
+          <p class="package-name">RU Deploy MAX</p>
+          <p class="package-tag">Uptime-Kuma + Sentry</p>
+        </div>
+        <div class="package-price-wrap">
+          <span class="package-price">119&nbsp;000&nbsp;₽</span>
+          <span class="package-time">3–5 wd</span>
+        </div>
+      </header>
+      <ul class="package-list compact-list">
+        <li>Uptime-Kuma, Sentry and OpenTofu IaC for the hybrid contour.</li>
+        <li>Security docs, 99.5% SLA and a monitored handover.</li>
+      </ul>
+    </article>
+  </div>
+  <div class="package-note">
+    <p><strong>DoD:</strong> valid HTTPS, <code>/health=200</code>, <code>setWebhook=ok</code>, auto-recovery and delivered accesses.</p>
+    <p><strong>OPEX:</strong> 1–2k&nbsp;₽/мес. per VM in Yandex, Timeweb, Selectel or VK Cloud — paid directly to these clouds.</p>
+  </div>
+</section>
+
+<section class="section numbered" id="section-4">
+  <div class="section-heading">
+    <span class="section-marker">4)</span>
+    <div>
+      <h2>Bennu Care subscription</h2>
+      <p>We stay on the hook for Telegram bots, infrastructure and AI experiments after launch. Hours are flexible, reporting runs via Notion and Looker Studio.</p>
+    </div>
+  </div>
+  <div class="package-grid">
+    <article class="package-card">
+      <header class="package-card-header">
+        <div>
+          <p class="package-name">Care Basic</p>
+          <p class="package-tag">8 h / month</p>
+        </div>
+        <div class="package-price-wrap">
+          <span class="package-price">12 000&nbsp;₽</span>
+          <span class="package-time">monthly</span>
+        </div>
+      </header>
+      <ul class="package-list compact-list">
+        <li>8 hours for micro-iterations, content refresh and integration consultations.</li>
+        <li>Tasks live in Notion + Telegram, solution architect joins on demand.</li>
+      </ul>
+      <ul class="package-list compact-list package-meta">
+        <li><strong>SLA:</strong> response within 8 hours, booked in 2-hour slots.</li>
+        <li><strong>Overtime:</strong> 2&nbsp;200&nbsp;₽/h after the monthly limit.</li>
+        <li><strong>Terms:</strong> 70/30 billing with monthly invoices and a 15-day cancellation notice.</li>
+      </ul>
+      <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=care_basic" target="_blank" rel="noopener">Care Basic · 12&nbsp;000&nbsp;₽</a>
+    </article>
+    <article class="package-card">
+      <header class="package-card-header">
+        <div>
+          <p class="package-name">Care Standard</p>
+          <p class="package-tag">16 h / month</p>
+        </div>
+        <div class="package-price-wrap">
+          <span class="package-price">22 000&nbsp;₽</span>
+          <span class="package-time">monthly</span>
+        </div>
+      </header>
+      <ul class="package-list compact-list">
+        <li>16 hours for hypotheses, prompt engineering and A/B experiments.</li>
+        <li>Shared backlog, KPI tracking in Notion and scheduled content releases.</li>
+      </ul>
+      <ul class="package-list compact-list package-meta">
+        <li><strong>SLA:</strong> 4-hour response via a dedicated chat with bi-weekly demos.</li>
+        <li><strong>Overtime:</strong> 2&nbsp;200&nbsp;₽/h, billed monthly.</li>
+        <li><strong>Terms:</strong> 70/30 billing, a 15-day cancellation notice and a shared roadmap.</li>
+      </ul>
+      <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=care_standard" target="_blank" rel="noopener">Care Standard · 22&nbsp;000&nbsp;₽</a>
+    </article>
+    <article class="package-card">
+      <header class="package-card-header">
+        <div>
+          <p class="package-name">Care Pro</p>
+          <p class="package-tag">32 h / month</p>
+        </div>
+        <div class="package-price-wrap">
+          <span class="package-price">42 000&nbsp;₽</span>
+          <span class="package-time">monthly</span>
+        </div>
+      </header>
+      <ul class="package-list compact-list">
+        <li>32 hours of Bennu on-call engineers, product analytics and shared roadmap ownership.</li>
+        <li>RAG/AI experiments, runbook updates and C-level reporting.</li>
+      </ul>
+      <ul class="package-list compact-list package-meta">
+        <li><strong>SLA:</strong> 2-hour response with on-call coverage and weekly releases.</li>
+        <li><strong>Overtime:</strong> 2&nbsp;200&nbsp;₽/h with weekly reporting.</li>
+        <li><strong>Terms:</strong> 2-month minimum, 70/30 split, 15-day cancellation notice and 30% retention if paused.</li>
+      </ul>
+      <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=care_pro" target="_blank" rel="noopener">Care Pro · 42&nbsp;000&nbsp;₽</a>
+    </article>
+  </div>
+</section>
+
+<section class="section numbered" id="section-5">
+  <div class="section-heading">
+    <span class="section-marker">5)</span>
+    <div>
+      <h2>Add-on services</h2>
+      <p>Attach any block to a package or run it as a standalone sprint.</p>
+    </div>
+  </div>
+  <div class="grid">
+    <article class="card">
+      <h3>Dev environment — 6&nbsp;000&nbsp;₽</h3>
+      <p>Spin up dev/test, wire VPN, secrets and accesses for your team.</p>
+      <p><strong>Terms:</strong> billed after the brief, works with every Dev package.</p>
+      <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=addon_env" target="_blank" rel="noopener">Environment · 6&nbsp;000&nbsp;₽</a>
+    </article>
+    <article class="card">
+      <h3>Integration — 4&nbsp;900&nbsp;₽</h3>
+      <p>Connect one external service or API, test webhooks and hand over a checklist.</p>
+      <p><strong>Terms:</strong> 2&nbsp;wd SLA, compatible with Dev/Mix bundles.</p>
+      <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=addon_integration" target="_blank" rel="noopener">Integration · 4&nbsp;900&nbsp;₽</a>
+    </article>
+    <article class="card">
+      <h3>Domain + SSL — 4&nbsp;900&nbsp;₽</h3>
+      <p>Register a .ru domain, connect SSL and refresh DNS inside the Russian contour.</p>
+      <p><strong>Terms:</strong> works with all Dev and Mix bundles, done in 1&nbsp;wd.</p>
+      <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=addon_domain_ssl" target="_blank" rel="noopener">Domain · 4&nbsp;900&nbsp;₽</a>
+    </article>
+    <article class="card">
+      <h3>Video walkthrough — 3&nbsp;900&nbsp;₽</h3>
+      <p>Record a 10-minute walkthrough with scripts and update checklists.</p>
+      <p><strong>Terms:</strong> billed after the demo, delivered as MP4 + Notion.</p>
+      <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=addon_video" target="_blank" rel="noopener">Video · 3&nbsp;900&nbsp;₽</a>
+    </article>
+    <article class="card">
+      <h3>Design kit — 6&nbsp;900&nbsp;₽</h3>
+      <p>Prepare the Telegram UI kit, previews, covers and promo visuals.</p>
+      <p><strong>Terms:</strong> compatible with every Dev package, aligned in Figma.</p>
+      <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=addon_design" target="_blank" rel="noopener">Design · 6&nbsp;900&nbsp;₽</a>
+    </article>
+    <article class="card">
+      <h3>n8n import — 4&nbsp;900&nbsp;₽</h3>
+      <p>Prepare the workflow, import the scenario and provide a launch checklist.</p>
+      <p><strong>Terms:</strong> 1 scenario, delivered in 1&nbsp;wd, includes handover.</p>
+      <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=addon_n8n" target="_blank" rel="noopener">n8n · 4&nbsp;900&nbsp;₽</a>
+    </article>
+    <article class="card">
+      <h3>Paywall widget — Custom</h3>
+      <p>Set up the payment widget, test webhooks and provide a moderation diagram.</p>
+      <p><strong>Terms:</strong> custom estimate after the brief, available for all Dev/Mix bundles.</p>
+      <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=addon_paypanel" target="_blank" rel="noopener">Paywall · Custom</a>
+    </article>
+  </div>
+</section>
+
+<section class="section numbered" id="section-6">
+  <div class="section-heading">
+    <span class="section-marker">6)</span>
+    <div>
+      <h2>Availability</h2>
+      <p>We pin the service levels so you know how fast we respond and which artifacts arrive.</p>
+    </div>
+  </div>
+  <ul class="note-list">
+    <li><strong>Responses:</strong> intake bot 24/7, architects online 09:00–20:00 MSK with a 4h SLA.</li>
+    <li><strong>Payments:</strong> 70/30 (deposit/acceptance); RU — invoices, cards or USDT, global — USDT/TON.</li>
+    <li><strong>Refunds:</strong> not provided; pauses retain 30% of the unused balance.</li>
+    <li><strong>Docs:</strong> contract, act, runbook, security checklist, role-based access.</li>
+    <li><strong>Contours:</strong> Yandex, Timeweb, Selectel, VK Cloud, MTS Cloud plus hybrid reserves.</li>
+    <li><strong>Materials:</strong> Notion workspace, UI kit, prompt and reporting templates.</li>
+  </ul>
+</section>
+
+<section class="section numbered" id="section-7">
+  <div class="section-heading">
+    <span class="section-marker">7)</span>
+    <div>
+      <h2>Contact</h2>
+      <p>The integration team replies during business hours, the intake bot collects inputs 24/7 and instantly suggests a package.</p>
+    </div>
+  </div>
+  <div class="contact-cta">
+    <div>
+      <h3>Fast track</h3>
+      <p>The bot captures your context, picks the right package and books an architect slot.</p>
+    </div>
+    <div class="cta-group">
+      <a class="cta-button primary-cta" href="https://t.me/BennuLabIntakeBot" target="_blank" rel="noopener">Chat in Telegram</a>
+      <a class="deeplink-cta" href="https://t.me/BennuLabs_global" target="_blank" rel="noopener">Global channel</a>
+      <a class="deeplink-cta" href="https://t.me/BennuLabIntakeBot?start=ru_deploy_max" target="_blank" rel="noopener">RU Deploy Max · 119&nbsp;000&nbsp;₽</a>
+    </div>
+  </div>
+</section>`;
+
+export const metadata: Metadata = {
+  title: 'Bennu Labs Pricing · Telegram intake + RU deploy',
+  description: 'Bennu Labs pricing for Telegram AI agents, Mix bundles, RU deploy, Bennu Care support and add-on sprints.',
+  alternates: { canonical: 'https://bennulabs.online/en/pricing' }
+};
+
+export default function Page() {
+  return <div dangerouslySetInnerHTML={{ __html: mainContent }} />;
+}
