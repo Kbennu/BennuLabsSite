@@ -88,12 +88,12 @@ const mainContent = `<section class="hero sticky-hero">
   </div>
 </section>
 
-<section class="section" id="pricing">
-  <div class="section-header">
-    <h2>Тарифы платформы</h2>
-    <p>Все пакеты синхронизированы с нашим Telegram-ботом — заявки попадают напрямую к архитекторам Bennu Labs.</p>
-  </div>
-  <div data-pricing-grid>
+  <section class="section" id="pricing">
+    <div class="section-header">
+      <h2>Тарифы платформы</h2>
+      <p>Все пакеты синхронизированы с нашим Telegram-ботом — заявки попадают напрямую к архитекторам Bennu Labs.</p>
+    </div>
+    <div data-pricing-grid data-pricebook="/assets/data/pricebook.ru.json" data-sections="dev,mix">
     <div class="pricing-group">
       <div class="pricing-group-header">
         <h3>Dev-пакеты</h3>
@@ -291,7 +291,7 @@ const mainContent = `<section class="hero sticky-hero">
       <p class="price-note" style="margin-top: 16px; text-align: center;">Техстек: Next.js, Tailwind, RU-облака.</p>
     </section>
 
-    <div data-pricing-grid>
+      <div data-pricing-grid data-pricebook="/assets/data/pricebook.ru.json" data-sections="ru_deploy,subscription,addons,availability">
       <div class="pricing-group">
         <div class="pricing-group-header">
           <h3>RU-деплой</h3>
