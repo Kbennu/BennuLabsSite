@@ -28,12 +28,6 @@ const nextConfig = {
           destination: '/:path*/:slug*',
         },
       ],
-      fallback: [
-        {
-          source: '/:path*',
-          destination: '/not-found',
-        },
-      ],
     };
   },
 };
