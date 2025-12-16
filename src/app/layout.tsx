@@ -10,6 +10,8 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://bennulabs.online')
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="ru">
