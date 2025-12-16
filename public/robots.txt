@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://bennulabs.online/sitemap.xml
