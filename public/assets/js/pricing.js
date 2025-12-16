@@ -5,35 +5,59 @@ async function loadPricebook(options = {}) {
     pricebookPath = '../assets/data/pricebook.ru.json'
   } = options;
 
-  const container = document.querySelector(targetSelector);
-  const fallbackHTML = container ? container.innerHTML : '';
+  const containers = Array.from(document.querySelectorAll(targetSelector));
+  if (!containers.length) return;
+
+  const fallbackHTML = new Map(containers.map((el) => [el, el.innerHTML]));
   const lang = getDocumentLang();
 
-  try {
-    const response = await fetch(pricebookPath, { cache: 'no-store' });
-    if (!response.ok) {
-      throw new Error(`Не удалось загрузить прайсбук: ${response.status}`);
+  const scriptDataset = document.currentScript?.dataset ?? {};
+  const scriptPricebookPath = scriptDataset.pricebook;
+
+  const containersByPricebook = containers.reduce((map, container) => {
+    const path = container.dataset.pricebook || scriptPricebookPath || pricebookPath;
+    if (!map.has(path)) {
+      map.set(path, []);
     }
-    const data = await response.json();
-    renderPricing(data, container, cardTemplate);
-    syncPackageLinks(data);
-  } catch (error) {
-    console.error(error);
-    if (container) {
-      if (fallbackHTML && !container.innerHTML.trim()) {
-        container.innerHTML = fallbackHTML;
-      } else if (!container.innerHTML.trim()) {
-        container.innerHTML = `<p class="pricing-error">${getErrorMessage(lang)}</p>`;
+    map.get(path).push(container);
+    return map;
+  }, new Map());
+
+  for (const [path, pricebookContainers] of containersByPricebook.entries()) {
+    try {
+      const response = await fetch(path, { cache: 'no-store' });
+      if (!response.ok) {
+        throw new Error(`Не удалось загрузить прайсбук: ${response.status}`);
       }
+      const data = await response.json();
+      pricebookContainers.forEach((container) => {
+        renderPricing(data, container, cardTemplate, container.dataset.sections);
+      });
+      syncPackageLinks(data);
+    } catch (error) {
+      console.error(error);
+      pricebookContainers.forEach((container) => {
+        const fallback = fallbackHTML.get(container) || '';
+        if (fallback && !container.innerHTML.trim()) {
+          container.innerHTML = fallback;
+        } else if (!container.innerHTML.trim()) {
+          container.innerHTML = `<p class="pricing-error">${getErrorMessage(lang)}</p>`;
+        }
+      });
     }
   }
 }
 
-function renderPricing(data, container, cardTemplate) {
+function renderPricing(data, container, cardTemplate, sectionFilter) {
   if (!container) return;
 
+  const sectionsFilter = normalizeSectionFilter(sectionFilter);
+
   const sections = Array.isArray(data.sections) && data.sections.length
-    ? data.sections
+    ? data.sections.filter((section) => {
+        if (!sectionsFilter) return true;
+        return sectionsFilter.has(section.id);
+      })
     : [{ cards: data.packages || [] }];
 
   if (!sections.length) return;
@@ -75,6 +99,16 @@ function renderPricing(data, container, cardTemplate) {
     group.appendChild(grid);
     container.appendChild(group);
   });
+}
+
+function normalizeSectionFilter(sectionFilter) {
+  if (!sectionFilter) return null;
+  if (typeof sectionFilter !== 'string') return null;
+  const sections = sectionFilter
+    .split(',')
+    .map((item) => item.trim())
+    .filter(Boolean);
+  return sections.length ? new Set(sections) : null;
 }
 
 function createCard(pkg, popular = false) {
