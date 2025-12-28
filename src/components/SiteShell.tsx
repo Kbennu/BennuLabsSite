@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useEffect, useMemo } from 'react';
 import type { ReactNode } from 'react';
 import { usePathname } from 'next/navigation';
@@ -48,7 +49,14 @@ export default function SiteShell({ children }: { children: ReactNode }) {
         <div className="navbar">
           <div className="navbar-brand">
             <Link href={isEnglish ? '/en' : '/'}>
-              <img src="/assets/img/logo.svg" alt={isEnglish ? 'Bennu Labs logo' : 'Логотип Bennu Labs'} />
+              <Image
+                src="/assets/img/logo.svg"
+                alt={isEnglish ? 'Bennu Labs logo' : 'Логотип Bennu Labs'}
+                width={160}
+                height={48}
+                style={{ height: '44px', width: 'auto' }}
+                priority
+              />
             </Link>
             <button
               className="nav-toggle"
@@ -96,7 +104,13 @@ export default function SiteShell({ children }: { children: ReactNode }) {
         {isEnglish ? (
           <div className="footer-grid">
             <div>
-              <img src="/assets/img/logo.svg" alt="Bennu Labs" style={{ height: '40px', marginBottom: '12px' }} />
+              <Image
+                src="/assets/img/logo.svg"
+                alt="Bennu Labs"
+                width={160}
+                height={48}
+                style={{ height: '40px', width: 'auto', marginBottom: '12px' }}
+              />
               <p>Architects of AI products, data platforms and experiences.</p>
             </div>
             <div>
@@ -125,7 +139,13 @@ export default function SiteShell({ children }: { children: ReactNode }) {
         ) : (
           <div className="footer-grid">
             <div>
-              <img src="/assets/img/logo.svg" alt="Bennu Labs" style={{ height: '40px', marginBottom: '12px' }} />
+              <Image
+                src="/assets/img/logo.svg"
+                alt="Bennu Labs"
+                width={160}
+                height={48}
+                style={{ height: '40px', width: 'auto', marginBottom: '12px' }}
+              />
               <p>AI, который работает на ваших показателях.</p>
             </div>
             <div>
