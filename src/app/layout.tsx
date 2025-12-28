@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import Script from 'next/script';
 import SiteShell from '@/components/SiteShell';
+import '@/assets/css/style.css';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -17,7 +18,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="ru">
       <head>
         <link rel="icon" href="/assets/img/logo.svg" type="image/svg+xml" />
-        <link rel="stylesheet" href="/assets/css/style.css" />
       </head>
       <body>
         <SiteShell>{children}</SiteShell>
